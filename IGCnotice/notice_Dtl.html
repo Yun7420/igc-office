@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/js/swiper-bundle.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+            $(".comments_chat > p").click(function () {
+                $(".textarea_cover").show();
+                $(this).hide();
+            });
+
+            $("html").click(function (e) {
+                if (!$(".comments_chat").has(e.target).length) {
+                    $(".comments_chat > p").show();
+                    $(".textarea_cover").hide();
+                }
+            });
+
+            $(".empathy").click(function () {
+                $(this).siblings().removeClass('on');
+                $(this).addClass('on');
+                $(".person_comments").show();
+                $(".person_comments2").hide();
+            });
+
+            $(".latest").click(function () {
+                $(this).siblings().removeClass('on');
+                $(this).addClass('on');
+                $(".person_comments2").show();
+                $(".person_comments").hide();
+            });
+
+            $(".userbox_bottom").click(function () {
+                $(this).parent().siblings().children('.userbox_sub_bottom').hide();
+                $(this).next().show();
+            });
+
+            $(".noticeDtl_Comments_box .userbox_sub_bottom .ssub_chat span").click(function () {
+
+                $(this).parent().parent('.userbox_sub_bottom').hide();
+            });
+
+            $(".noticeDtl_Comments_box .comments_chat .textarea_cover button").click(function () {
+                alert(1);
+            });
+        });
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="../include/header.html"></header>
+            <!--INCLUED========================================-->
+            <section class="commonWrap">
+                <!--breadCrumbWrap브레드크럼========================================-->
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <!--subM_left사이드메뉴========================================-->
+                    <section class="subM_left">
+                        <h2>
+                            알림마당
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="on" href="notice.html">
+                                    새소식
+                                </a>
+                            </li>
+                            <li>
+                                <a href="PRzone.html">
+                                    홍보존
+                                </a>
+                            </li>
+                            <li>
+                                <a href="infor.html">
+                                    자료실
+                                </a>
+                            </li>
+                            <li>
+                                <a href="qna.html">
+                                    자주하는 질문
+                                </a>
+                            </li>
+
+                        </ul>
+                    </section>
+                    <!--content_ritBox콘텐츠========================================-->
+                    <section class="content_ritBox">
+                        <h3>새소식</h3>
+                        <div class="content_rit">
+                            <h4 class="notiBullet"> 신청시 필요한 서류는 어디에 있나요?신청시 필요한 서류는 어디에 있나요?</h4>
+                            <div class="">
+                                <table class="noticeDtl">
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="*">
+                                        <col width="40%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                작성자
+                                            </th>
+                                            <td>
+                                                홍길동
+                                            </td>
+                                            <td>
+                                                <span>
+                                                    등록일
+                                                    <span>
+                                                        2022-10-05
+                                                    </span>
+                                                </span>
+                                                <span>
+                                                    조회수
+                                                    <span>
+                                                        9999
+                                                    </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                첨부파일
+                                            </th>
+                                            <td colspan="2">
+                                                <ul class="downWrap">
+                                                    <li>
+                                                        <img src="../image/down.png">
+                                                        <a href="">
+                                                            첨부된 파일명.확장자
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../image/down.png">
+                                                        <a href="">
+                                                            첨부된 파일명.확장자
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../image/down.png">
+                                                        <a href="">
+                                                            첨부된 파일명.확장자
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="contantsBox" colspan="3">
+                                                IGC 방학캠프(온/오프라인 무료 프로그램) 참가자 모집(2022 인천글로벌캠퍼스 청소년글로벌리더스 포럼 제8기)
+                                                IGC 글로벌청소년리더스포럼(GLFY)은 국제적 수준의 IGC 4개 대학의 역량을 기반으로 청소년의 글로벌 역량 강화를 위해
+                                                개최되는 청소년 무료 참여형 포럼입니다. GLFY에서는 IGC 전공 분야에 대한 정보를 제공하고 각 분야 관련 글로벌 이슈를
+                                                탐색함으로, 청소년들의 진로 및 전공 탐색과 글로벌 리더로 성장을 도모합니다. 또한 학습한 내용을 바탕으로 개별 영어기사
+                                                작성(기본강좌) 및 팀 프로젝트 참여(심화강좌) 기회를 통해 참여형 글로벌 인재를 육성하는 것에 그 목적이 있습니다.
+                                                1. 참가대상 : 국내외 중2-고3 (K8-K12)
+                                                2. 참가비: 무료
+                                                3. 기간 : 2022년 7월 25일(월) - 30일(토)
+                                                4. 참가자 혜택: 수료증/ 상장과 상품
+                                                5. GLFY 프로그램 시간: 첨부설명자료
+                                                6. 지원하기
+                                                7. 참가문의 : glfy.igc@gmail.com​
+                                                IGC 방학캠프(온/오프라인 무료 프로그램) 참가자 모집(2022 인천글로벌캠퍼스 청소년글로벌리더스 포럼 제8기)
+                                                IGC 글로벌청소년리더스포럼(GLFY)은 국제적 수준의 IGC 4개 대학의 역량을 기반으로 청소년의 글로벌 역량 강화를 위해
+                                                개최되는 청소년 무료 참여형 포럼입니다. GLFY에서는 IGC 전공 분야에 대한 정보를 제공하고 각 분야 관련 글로벌 이슈를
+                                                탐색함으로, 청소년들의 진로 및 전공 탐색과 글로벌 리더로 성장을 도모합니다. 또한 학습한 내용을 바탕으로 개별 영어기사
+                                                작성(기본강좌) 및 팀 프로젝트 참여(심화강좌) 기회를 통해 참여형 글로벌 인재를 육성하는 것에 그 목적이 있습니다.
+                                                1. 참가대상 : 국내외 중2-고3 (K8-K12)
+                                                2. 참가비: 무료
+                                                3. 기간 : 2022년 7월 25일(월) - 30일(토)
+                                                4. 참가자 혜택: 수료증/ 상장과 상품
+                                                5. GLFY 프로그램 시간: 첨부설명자료
+                                                6. 지원하기
+                                                7. 참가문의 : glfy.igc@gmail.com​
+                                                IGC 방학캠프(온/오프라인 무료 프로그램) 참가자 모집(2022 인천글로벌캠퍼스 청소년글로벌리더스 포럼 제8기)
+                                                IGC 글로벌청소년리더스포럼(GLFY)은 국제적 수준의 IGC 4개 대학의 역량을 기반으로 청소년의 글로벌 역량 강화를 위해
+                                                개최되는 청소년 무료 참여형 포럼입니다. GLFY에서는 IGC 전공 분야에 대한 정보를 제공하고 각 분야 관련 글로벌 이슈를
+                                                탐색함으로, 청소년들의 진로 및 전공 탐색과 글로벌 리더로 성장을 도모합니다. 또한 학습한 내용을 바탕으로 개별 영어기사
+                                                작성(기본강좌) 및 팀 프로젝트 참여(심화강좌) 기회를 통해 참여형 글로벌 인재를 육성하는 것에 그 목적이 있습니다.
+                                                1. 참가대상 : 국내외 중2-고3 (K8-K12)
+                                                2. 참가비: 무료
+                                                3. 기간 : 2022년 7월 25일(월) - 30일(토)
+                                                4. 참가자 혜택: 수료증/ 상장과 상품
+                                                5. GLFY 프로그램 시간: 첨부설명자료
+                                                6. 지원하기
+                                                7. 참가문의 : glfy.igc@gmail.com​
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <div class="content_rit_formBtn Full_btnWrap">
+                                                    <button class="Keybtn listBtn">목록</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>이전글</th>
+                                            <td colspan="2">
+                                                <a href="">
+                                                    IGC 방학캠프(온/오프라인 무료 프로그램) 참가자 모집
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>다음글</th>
+                                            <td colspan="2">
+                                                <a href="">
+                                                    IGC 방학캠프(온/오프라인 무료 프로그램) 참가자 모집
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="noticeDtl_Comments_box">
+                                <div class="noticeDtl_Comments">
+                                    <div class="Comments_amount">
+                                        <h4><span>21</span>개의 댓글</h4>
+                                    </div>
+                                    <div>MY댓글</div>
+                                </div>
+
+                                <div class="comments_chat">
+                                    <p>댓글을 입력해주세요.</p>
+                                    <div class="textarea_cover">
+                                        <div>
+                                            <div class="user_image"></div>
+                                            <p>user_name</p>
+                                        </div>
+                                        <textarea class="chat" placeholder="원하시는 댓글을 입력하세요."></textarea>
+                                        <div>
+                                            <p>0 / 300</p>
+                                            <button class="Keybtn">등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="empathy_latest">
+                                    <ul>
+                                        <li class="on empathy">최신순</li>
+                                        <li class="latest">00순</li>
+                                    </ul>
+                                </div>
+                                <ul class="person_comments">
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            2022년도 직원 공개채용 면접시험 합격자 명단 및 임용등록 공고
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            인천글로벌캠퍼스운영재단 위촉직(비상근) 이사 공개모집(재공고)
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            2022년도 직원 공개채용 필기시험 합격자 명단 및 면접시험 시행공고
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            2022년도 직원 공개채용 서류전형 합격자 명단 및 일반직 필기시험 시행 공고
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="person_comments2">
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            인천글로벌캠퍼스운영재단 위촉직(비상근) 이사 공개모집
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            2022년도 직원 공개채용 공고
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            2022년도 기간제 직원 공개채용 면접시험 합격자 명단 공고
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="userbox_top">
+                                            <div class="user_information">
+                                                <div class="user_image"></div>
+                                                <div class="user_name_time">
+                                                    <div>user_name</div>
+                                                    <div>2022.11.14 10:49:52</div>
+                                                </div>
+                                            </div>
+                                            <div class="user_report"><a href="#">신고</a></div>
+                                        </div>
+                                        <div class="userbox_middle">
+                                            2022년도 기간제 직원 공개채용 서류전형 합격자 명단 및 면접시험 시행공고
+                                        </div>
+                                        <div class="userbox_bottom">
+                                            <span>답글작성</span>
+                                        </div>
+                                        <div class="userbox_sub_bottom">
+                                            <div class="sub_chat">
+                                                <textarea placeholder="댓글을 입력하세요."></textarea>
+                                            </div>
+                                            <div class="ssub_chat">
+                                                <span>답글접기</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!--INCLUED========================================-->
+            <footer data-include="../include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

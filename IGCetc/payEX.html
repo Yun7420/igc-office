@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            계약/납부
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="on" href="#" onclick="return false">
+                                    임대차 계약
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    납부하기
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    납부결과
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    세금계산서
+                                </a>
+
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <h3>임대차 계약현황 조회</h3>
+                        <div class="add_common_Wrap">
+                            <div class="content_rit_title">
+                                <img src="/image/logo_7.svg" alt="notice-logo">
+                                <h2>조건 검색</h2>
+                            </div>
+                            <!--일정선택-->
+                            <div class="facilityTime_selection add_common Consearch">
+                                <div class="flex_column">
+                                    <div class="form form_many">
+
+                                        <label class="Consearch_date">
+                                            <span>신청일</span>
+                                            <input type="date">-<input type="date">
+                                        </label>
+                                        <label class="Consearch_status">
+                                            <span>상태</span>
+                                            <select name="" id="content_rit_selectBox">
+                                                <option selected="전체">전체</option>
+                                                <option>단지</option>
+                                                <option>동</option>
+                                                <option>호</option>
+                                            </select>
+                                        </label>
+                                        <label class="Consearch_search">
+                                            <span>검색</span>
+                                            <select name="" id="content_rit_selectBox">
+                                                <option selected="전체">전체</option>
+                                                <option>단지</option>
+                                                <option>동</option>
+                                                <option>호</option>
+                                            </select>
+                                            <input type="text" placeholder="검색어 입력">
+                                        </label>
+                                    </div>
+                                    <div class="Consearch_btn">
+                                        <input type="button" value="검색" class="Keybtn"
+                                            onclick="location.href='/index.html'">
+                                        <input type="button" value="초기화" class="subKeyBtn_scd"
+                                            onclick="location.href='/index.html'">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_rit content_rit_pay">
+                            <div class="TBtop">
+                                <p class="TBtop_Lft">
+                                    총
+                                    <span class="keyColor">
+                                        11555
+                                    </span>
+                                    건
+                                    (
+                                    <span class="keyColor">
+                                        1
+                                    </span>
+                                    /
+                                    <span>
+                                        45
+                                    </span>
+                                    페이지 )
+                                </p>
+                                <form class="TBtop_rit TBtop_rit_one">
+                                    <select class="NumSelect">
+                                        <option value="">
+                                            10개씩 보기
+                                        </option>
+                                        <option value="">
+                                            20개씩 보기
+                                        </option>
+                                        <option value="">
+                                            30개씩 보기
+                                        </option>
+                                        <option value="">
+                                            40개씩 보기
+                                        </option>
+                                    </select>
+                                    <button class="exelBtn">
+
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="XscrollBox">
+                                <table class="add_common TB_addBtn td_amount td_twoline">
+                                    <colgroup>
+                                        <col width="7%">
+                                        <col width="10%">
+                                        <col width="10%">
+                                        <col width="">
+                                        <col width="7%">
+                                        <col width="10%">
+                                        <col width="10%">
+                                        <col width="*">
+                                        <col width="9%">
+                                        <col width="10%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="line_Rit">번호</th>
+                                            <th>위치(호실)</th>
+                                            <th>사용기간</th>
+                                            <th>업체명</th>
+                                            <th class="line_side">구분</th>
+                                            <th class="line_side">사용료</th>
+                                            <th class="line_side">관리비</th>
+                                            <th class="line_side">총합계</th>
+                                            <th>회차</th>
+                                            <th>납부기한</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="line_Rit">110</td>
+                                            <td>
+                                                2022-10
+                                            </td>
+                                            <td class="date">
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                            <td>스푼입니다아ㅏ</td>
+
+                                            <td class="line_side">
+                                                외부업체
+                                            </td>
+                                            <td>486,000</td>
+                                            <td class="line_side">
+                                                5,346,000
+                                            </td>
+                                            <td class="line_side">
+                                                5,346,0000
+                                                <button class="Dtl_btn"
+                                                    onclick="location.href='pay_status.html'">+</button>
+                                            </td>
+                                            <td>
+                                                2차년도/1차
+                                            </td>
+                                            <td class="date">
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="line_Rit">110</td>
+                                            <td>
+                                                2022-10
+                                            </td>
+                                            <td class="date">
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                            <td>스푼입니다아ㅏ</td>
+
+                                            <td class="line_side">
+                                                외부업체
+                                            </td>
+                                            <td>486,000</td>
+                                            <td class="line_side">
+                                                5,346,000
+                                            </td>
+                                            <td class="line_side">
+                                                5,346,0000
+                                                <button class="Dtl_btn"
+                                                    onclick="location.href='pay_status.html'">+</button>
+                                            </td>
+                                            <td>
+                                                2차년도/1차
+                                            </td>
+                                            <td class="date">
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pagination">
+                                <button>《</button>
+                                <button>〈</button>
+                                <ul>
+                                    <li><a href="#" class="on">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                </ul>
+                                <button>〉</button>
+                                <button>》</button>
+                            </div>
+                            <div class="flex_row">
+                                <div class="rit_btnWrap">
+                                    <button class="content_rit_btn subKeyBtn_scd">
+                                        가상계좌 납부
+                                    </button>
+                                    <button class="content_rit_btn subKeyBtn">
+                                        신용카드 납부
+                                    </button>
+                                </div>
+                                <div class="rit_btnWrap">
+                                    <button class="Keybtn">
+                                        목록
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="content_rit content_rit_pay">
+                                <div class="TBtop">
+                                    <p class="TBtop_Lft">
+                                        총
+                                        <span class="keyColor">
+                                            11555
+                                        </span>
+                                        건
+                                        (
+                                        <span class="keyColor">
+                                            1
+                                        </span>
+                                        /
+                                        <span>
+                                            45
+                                        </span>
+                                        페이지 )
+                                    </p>
+                                    <form class="TBtop_rit TBtop_rit_one">
+                                        <select class="NumSelect">
+                                            <option value="">
+                                                10개씩 보기
+                                            </option>
+                                            <option value="">
+                                                20개씩 보기
+                                            </option>
+                                            <option value="">
+                                                30개씩 보기
+                                            </option>
+                                            <option value="">
+                                                40개씩 보기
+                                            </option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="XscrollBox" style="overflow-x: hidden;">
+                                    <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                        <colgroup>
+                                            <col width="7%">
+                                            <col width="12%">
+                                            <col width="*">
+                                            <col width="15%">
+                                            <col width="10%">
+                                            <col width="6%">
+                                            <col width="12%">
+                                            <col width="11%">
+                                            <col width="11%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="line_Rit">번호</th>
+                                                <th class="line_Rit">신청번호</th>
+                                                <th>시설명</th>
+                                                <th>대관기간</th>
+                                                <th>신청일</th>
+                                                <th class="line_side">상태</th>
+                                                <th>결제금액</th>
+                                                <th>결제하기</th>
+                                                <th>세금계산서/<br>현금영수증</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="line_Rit">110</td>
+                                                <td class="line_Rit">
+                                                    221020-0007
+                                                </td>
+                                                <td>대강당</td>
+                                                <td>2022.10.25 10:00 <br>2022.10.25 13:00</td>
+                                                <td class="date">2022.10.05</td>
+                                                <td class="line_side">
+                                                    <span class="hidden">대기</span>
+                                                    <span class="accept">승인</span>
+                                                    <span class="reject hidden">반려</span>
+                                                </td>
+                                                <td>20,000원</td>
+                                                <td>
+                                                    <input type="button" value="결제하기" class="Keybtn"
+                                                        onclick="location.href='/index.html'">
+
+                                                    <span class="hidden">결제완료</span>
+                                                </td>
+                                                <td>
+                                                    <input type="button" value="발급" class="subKeyBtn"
+                                                        onclick="location.href='/index.html'">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line_Rit">110</td>
+                                                <td class="line_Rit">
+                                                    221020-0007
+                                                </td>
+                                                <td>대강당</td>
+                                                <td>2022-10-25 10:00 <br>2022-10-25 13:00</td>
+                                                <td class="date">2022.10.05</td>
+                                                <td class="line_side">
+                                                    <span class="hidden">대기</span>
+                                                    <span class="accept">승인</span>
+                                                    <span class="reject hidden">반려</span>
+                                                </td>
+                                                <td>20,000원</td>
+                                                <td>
+                                                    <input type="button" value="결제하기" class="Keybtn hidden"
+                                                        onclick="location.href='/pay_Dtl.html'">
+                                                    <span class="">결제완료</span>
+                                                </td>
+                                                <td>
+                                                    <input type="button" value="발급" class="subKeyBtn"
+                                                        onclick="location.href='/index.html'">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line_Rit">110</td>
+                                                <td class="line_Rit">
+                                                    221020-0007
+                                                </td>
+                                                <td>대강당</td>
+                                                <td>2022-10-25 10:00 <br>2022-10-25 13:00</td>
+                                                <td class="date">2022.10.05</td>
+                                                <td class="line_side">
+                                                    <span class="">대기</span>
+                                                    <span class="accept hidden">승인</span>
+                                                    <span class="reject hidden">반려</span>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="line_Rit">110</td>
+                                                <td class="line_Rit">
+                                                    221020-0007
+                                                </td>
+                                                <td>대강당</td>
+                                                <td>2022-10-25 10:00 <br>2022-10-25 13:00</td>
+                                                <td class="date">2022.10.05</td>
+                                                <td class="line_side">
+                                                    <span class="accept hidden">승인</span>
+                                                    <span class="reject ">반려</span>
+                                                </td>
+                                                <td>-</td>
+                                                <td>
+                                                    <input type="button" value="결제하기" class="Keybtn hidden"
+                                                        onclick="location.href='/index.html'">
+                                                    <input type="button" value="반려사유" class="subKeyBtn_scd"
+                                                        onclick="ShowPop('0')">
+                                                    <span class="hidden">결제완료</span>
+                                                </td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="pagination">
+                                    <button>《</button>
+                                    <button>〈</button>
+                                    <ul>
+                                        <li><a href="#" class="on">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                    </ul>
+                                    <button>〉</button>
+                                    <button>》</button>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </section>
+            <div class="ShowPopCon_0 subPopup">
+                <div class="popup_mask" style="display: block;"></div>
+                <div class="subpopup_Wrap">
+                    <div class="popupDivClose">
+                        <div>
+                            <img src="/image/logo_7.svg" alt="logo">
+                            <span>반려사유</span>
+                        </div>
+                        <div>
+                            <button class="popCloseBtn" id="popCloseBtn">
+                                창닫기
+                                <span class="checkedWrap">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="subpopupCon">
+                        <div class="content_rit_description rejectPop">
+                            <h5 class="H_ColorBullet noUnderline">
+                                반려사유
+                            </h5>
+                            <textarea>
+
+                            </textarea>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

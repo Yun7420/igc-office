@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="cms.css">
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/js/swiper-bundle.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+    <style>
+    </style>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <section class="monitoringWrap">
+                <div class="contentWrap ">
+                    <!--cms메뉴//임시-->
+                    <section class="subM_left">
+                        <h2>
+                            IGC Move-in information
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="on" href="#" onclick="return false">
+                                    메뉴1
+                                </a>
+                            </li>
+                            <li class="sub_depth0">
+                                <a href="#" onclick="return false">
+                                    메뉴2
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="on" href="#" onclick="return false">
+                                            하위메뉴1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a href="#" onclick="return false">
+                                    메뉴3
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <div class="monitoring_top">
+                            <!-- <div class="content_rit_title">
+                                <img src="cms_img/logo_7.svg" alt="notice-logo">
+                                <h2>모니터링</h2>
+                            </div> -->
+                            <div class="monitoring_Btn_Wrap">
+                                <button onclick="location.href='#allservice_Wrap'">
+                                    입주자 서비스 처리 현황
+                                </button>
+                                <button onclick="location.href='#allresident_Wrap'">
+                                    입주자 현황
+                                </button>
+                                <button onclick="location.href='#allfee_Wrap'">
+                                    관리비/사용료 납부 현황
+                                </button>
+                                <button onclick="location.href='#allfacility_Wrap'">
+                                    시설사용/대관 현황
+                                </button>
+                                <button onclick="location.href='#allhousing_Wrap'">
+                                    하우징 현황
+                                </button>
+                            </div>
+                        </div>
+                        <div class="monitoring_BG">
+                            <!--입주자 서비스 처리 현황 section-->
+                            <section class="allservice_Wrap" id="allservice_Wrap">
+                                <h4 class="H_ColorBullet">
+                                    입주자 서비스 처리 현황
+                                </h4>
+                                <div class="monitoring_con_box">
+                                    <!-- 실시간 접수/처리 현황 총액-->
+                                    <div class="monitoring_con">
+                                        <h5>
+                                            실시간 접수/처리 현황
+                                        </h5>
+                                        <!--콘텐츠-->
+                                        <div class="monitoring_con_box_common">
+                                            <div class="BtnTabWrap">
+                                                <button class="on">
+                                                    일간
+                                                </button>
+                                                <button>
+                                                    주간
+                                                </button>
+                                                <button>
+                                                    월간
+                                                </button>
+                                                <button>
+                                                    연간
+                                                </button>
+                                            </div>
+                                            <!--콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <ul class="service_recent">
+                                                    <li>
+                                                        <span>
+                                                            10
+                                                        </span>
+                                                        <p>
+                                                            신청
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            10
+                                                        </span>
+                                                        <p>
+                                                            접수
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            10
+                                                        </span>
+                                                        <p>
+                                                            처리
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            10
+                                                        </span>
+                                                        <p>
+                                                            완료
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 분야별 접수 현황-->
+                                    <div class="monitoring_con">
+                                        <h5>
+                                            분야별 접수 현황
+                                        </h5>
+                                        <!--콘텐츠-->
+                                        <div class="monitoring_con_box_common">
+                                            <div class="BtnTabWrap">
+                                                <button class="on">
+                                                    일간
+                                                </button>
+                                                <button>
+                                                    주간
+                                                </button>
+                                                <button>
+                                                    월간
+                                                </button>
+                                                <button>
+                                                    연간
+                                                </button>
+                                            </div>
+                                            <!--콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap service_each_Wrap">
+                                                <ul class="service_each">
+                                                    <li>
+                                                        <strong>
+                                                            임대/대관
+                                                        </strong>
+                                                        <span>
+                                                            11
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>
+                                                            시설사용예약
+                                                        </strong>
+                                                        <span>
+                                                            11
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>
+                                                            시설보수
+                                                        </strong>
+                                                        <span>
+                                                            11
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>
+                                                            출입/주차
+                                                        </strong>
+                                                        <span>
+                                                            11
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>
+                                                            하우징
+                                                        </strong>
+                                                        <span>
+                                                            11
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>
+                                                            기타
+                                                        </strong>
+                                                        <span>
+                                                            11
+                                                        </span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 연도별 신청 추이(최근 3년)-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            연도별 신청 추이(최근 3년)
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--분야별 신청 추이(최근 3년)막대그래프-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            분야별 신청 추이(최근 3년)
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--입주자 현황 section-->
+                            <section class="allresident_Wrap" id="allresident_Wrap">
+                                <h4 class="H_ColorBullet">
+                                    입주자 현황
+                                </h4>
+                                <div class="monitoring_con_box">
+                                    <!-- 입주자계약현황 막대-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            임대차 계약 현황
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 입주자계약현황 원형-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            &nbsp;
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--연도별 임대차계약 추이 (최근 3년)-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            연도별 임대차계약 추이 (최근 3년)
+                                        </h5>
+                                        <!--콘텐츠-->
+                                        <div class="monitoring_con_box_common">
+                                            <div class="BtnTabWrap">
+                                                <button class="on">
+                                                    일간
+                                                </button>
+                                                <button>
+                                                    주간
+                                                </button>
+                                                <button>
+                                                    월간
+                                                </button>
+                                                <button>
+                                                    연간
+                                                </button>
+                                            </div>
+                                            <!--신청 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--최근승인된 임대차계약-->
+                                    <div class="monitoring_con">
+                                        <h5>
+                                            최근 승인된 임대차 계약
+                                        </h5>
+                                        <div class="monitoring_con_box_common monitoring_ListBox_common">
+                                            <!--콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap monitoring_ListBox_Wrap">
+                                                <div class="monitoring_TableBox">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col width="120px">
+                                                            <col width="">
+                                                            <col width="100px">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="TBtext_Lft">
+                                                                    뭔번호지
+                                                                </th>
+                                                                <th class="TBtext_Lft">
+                                                                    임대 명?
+                                                                </th>
+                                                                <th>
+                                                                    승인일자
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--계약만기일순 임대차 계약-->
+                                    <div class="monitoring_con dueday">
+                                        <h5>
+                                            계약만기일순 임대차 계약
+                                        </h5>
+                                        <div class="monitoring_con_box_common monitoring_ListBox_common">
+                                            <!--콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap monitoring_ListBox_Wrap">
+                                                <div class="monitoring_TableBox">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col width="120px">
+                                                            <col width="">
+                                                            <col width="100px">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="TBtext_Lft">
+                                                                    뭔번호지
+                                                                </th>
+                                                                <th class="TBtext_Lft">
+                                                                    임대 명?
+                                                                </th>
+                                                                <th>
+                                                                    승인일자
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    eMart 24 편의점
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    eMart 24 편의점
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td class="TBtext_Lft">
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--관리비/사용료 납부 현황 section-->
+                            <section class="allfee_Wrap" id="allfee_Wrap">
+                                <h4 class="H_ColorBullet">
+                                    관리비/사용료 납부 현황
+                                </h4>
+                                <div class="monitoring_con_box">
+                                    <!-- 관리비/사용료 납부 총액-->
+                                    <div class="monitoring_con">
+                                        <h5>
+                                            관리비/사용료 납부 현황
+                                        </h5>
+                                        <!--콘텐츠-->
+                                        <div class="monitoring_con_box_common">
+                                            <h5>
+                                                <strong class="bold">
+                                                    2022
+                                                </strong>
+                                                년
+                                                <span class="bold">
+                                                    12
+                                                </span>
+                                                월 현황
+                                            </h5>
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap total_Amount_Wrap">
+
+                                                <div class="skyBox monitoring_NumBox total_Amount">
+
+                                                    <p class="total_Dtl">
+                                                        <strong>
+                                                            총액
+                                                        </strong>
+                                                        <span>
+                                                            490,000,000
+                                                        </span>
+                                                        원
+                                                    </p>
+                                                    <div class="Amount_Dtl">
+                                                        <p>
+                                                            <strong>
+                                                                관리비
+                                                            </strong>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                사용료
+                                                            </strong>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex_calumm">
+                                                    <div class="yellowGreenBox monitoring_NumBox">
+                                                        <p class="row_NumBox">
+                                                            <span>납부</span>
+                                                            <span>545</span>
+                                                            <span>건</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                    </div>
+                                                    <div class="greyBox monitoring_NumBox">
+                                                        <p class="row_NumBox">
+                                                            <span>미납</span>
+                                                            <span>124</span>
+                                                            <span>건</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                    </div>
+                                                    <div class=" monitoring_NumBox">
+                                                        <p class="row_NumBox">
+                                                            <span></span>
+                                                            <span class="bold">2022</span>
+                                                            <span>년 누계</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 연도별 납부액 추이(최근 3년)-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            연도별 납부액 추이(최근 3년)
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--결제 수단 별 추이(최근 3년)막대그래프-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            결제 수단 별 추이(최근 3년)
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--시설사용/대관 현황 section-->
+                            <section class="allfacility_Wrap" id="allfacility_Wrap">
+                                <h4 class="H_ColorBullet">
+                                    시설사용/대관 현황
+                                </h4>
+                                <div class="monitoring_con_box">
+                                    <!-- 대관 현황 건 수-->
+                                    <div class="monitoring_con">
+                                        <h5>
+                                            대관현황
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--신청 버튼-->
+                                            <div class="BtnTabWrap">
+                                                <button class="on">
+                                                    일간
+                                                </button>
+                                                <button>
+                                                    주간
+                                                </button>
+                                                <button>
+                                                    월간
+                                                </button>
+                                                <button>
+                                                    연간
+                                                </button>
+                                            </div>
+                                            <!--신청 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+
+                                                <div class="skyBox monitoring_NumBox">
+                                                    <span>신청</span>
+                                                    <p>
+                                                        <span>0000</span>
+                                                        <span>건</span>
+                                                    </p>
+                                                </div>
+                                                <div class="yellowGreenBox monitoring_NumBox">
+                                                    <span>승인</span>
+                                                    <p>
+                                                        <span>0000</span>
+                                                        <span>건</span>
+                                                    </p>
+                                                </div>
+                                                <div class="greyBox monitoring_NumBox">
+                                                    <span>반려</span>
+                                                    <p>
+                                                        <span>0000</span>
+                                                        <span>건</span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 대관 현황 원형-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            &nbsp;
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--당년 대관료-->
+                                    <div class="monitoring_con _Wrap">
+                                        <h5>
+                                            &nbsp;
+                                        </h5>
+                                        <!--콘텐츠-->
+                                        <div class="monitoring_con_box_common">
+                                            <h5>
+                                                <span class="bold">
+                                                    2022
+                                                </span>
+                                                년 대관료
+                                            </h5>
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap total_Amount_Wrap">
+
+                                                <div class="skyBox monitoring_NumBox total_Amount">
+                                                    총액
+                                                    <p>
+
+                                                        <span>
+                                                            490,000,000
+                                                        </span>
+                                                        원
+                                                    </p>
+                                                </div>
+                                                <div class="flex_row">
+                                                    <div class="greyBox monitoring_NumBox">
+
+                                                        <p class="row_NumBox">
+                                                            <span>납부</span>
+                                                            <span>545</span>
+                                                            <span>건</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                    </div>
+                                                    <div class="yellowGreenBox monitoring_NumBox">
+
+                                                        <p class="row_NumBox">
+                                                            <span>미납</span>
+                                                            <span>124</span>
+                                                            <span>건</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>
+                                                                490,000,000
+                                                            </span>
+                                                            원
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 연도별 대관 추이(최근 3년)-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            연도별 대관 추이(최근 3년)
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--시설별 추이(최근 3년)막대그래프-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            시설별 추이(최근 3년)
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--최근 사용 승인된 시설-->
+                                    <div class="monitoring_con facility_recent">
+                                        <h5>
+                                            최근 승인된 임대차 계약
+                                        </h5>
+                                        <div class="monitoring_con_box_common monitoring_ListBox_common">
+                                            <!--콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap monitoring_ListBox_Wrap">
+                                                <div class="monitoring_TableBox">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col width="100px">
+                                                            <col width="">
+                                                            <col width="">
+                                                            <col width="100px">
+                                                            <col width="100px">
+                                                            <col width="">
+
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="TBtext_Lft">
+                                                                    뭔번호지
+                                                                </th>
+                                                                <th class="">
+                                                                    장소
+                                                                </th>
+                                                                <th>
+                                                                    사용목적
+                                                                </th>
+                                                                <th>
+                                                                    사용일
+                                                                </th>
+                                                                <th>
+                                                                    내부/외부
+                                                                </th>
+                                                                <th>
+                                                                    비고
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    겐트대학교 학생 작품 갤러리전
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                                <td>
+                                                                    내부
+                                                                </td>
+                                                                <td>
+                                                                    겐트대학교 학생 작품 갤러리전 비고사항입니다.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    겐트대학교 학생 작품 갤러리전
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                                <td>
+                                                                    내부
+                                                                </td>
+                                                                <td>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    BT121호 전시작업실
+                                                                </td>
+                                                                <td>
+                                                                    겐트대학교 학생 작품 갤러리전
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                                <td>
+                                                                    내부
+                                                                </td>
+                                                                <td>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    겐트대학교 학생 작품 갤러리전
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                                <td>
+                                                                    내부
+                                                                </td>
+                                                                <td>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="TBtext_Lft">
+                                                                    <p>
+                                                                        00012
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    IGC 북스토어
+                                                                </td>
+                                                                <td>
+                                                                    겐트대학교 학생 작품 갤러리전
+                                                                </td>
+                                                                <td>
+                                                                    2022-05-11
+                                                                </td>
+                                                                <td>
+                                                                    내부
+                                                                </td>
+                                                                <td>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <!--하우징 현황 section-->
+                            <section class="allhousing_Wrap" id="allhousing_Wrap">
+                                <h4 class="H_ColorBullet">
+                                    하우징 현황
+                                </h4>
+                                <div class="monitoring_con_box">
+                                    <!-- 입주자계약현황 원형-->
+                                    <div class="monitoring_con graph_Wrap">
+                                        <h5>
+                                            하우징 배정 현황
+                                        </h5>
+                                        <div class="monitoring_con_box_common">
+                                            <!--그래프 콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap">
+                                                <div class="noimgBox">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--하우징 거주자 현황-->
+                                    <div class="monitoring_con">
+                                        <h5>
+                                            하우징 거주자 현황
+                                        </h5>
+                                        <div class="monitoring_con_box_common monitoring_ListBox_common">
+                                            <!--콘텐츠-->
+                                            <div class="monitoring_tabCon_Wrap monitoring_ListBox_Wrap">
+                                                <div class="housing_TableBox">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col width="220px">
+                                                            <col width="18%">
+                                                            <col width="18%">
+                                                            <col width="18%">
+                                                            <col width="150px">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    구분
+                                                                </th>
+                                                                <th>
+                                                                    배정
+                                                                </th>
+                                                                <th>
+                                                                    잔여
+                                                                </th>
+                                                                <th>
+                                                                    전체
+                                                                </th>
+                                                                <th>
+                                                                    현 거주자 수
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>
+                                                                    <p>
+                                                                        교수아파트 c동
+                                                                    </p>
+                                                                </th>
+                                                                <td>
+                                                                    <span>
+                                                                        5
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        130
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        135
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        20
+                                                                    </span>
+                                                                    명
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <p>
+                                                                        외부아파트
+                                                                    </p>
+                                                                </th>
+                                                                <td>
+                                                                    <span>
+                                                                        5
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        130
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        135
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        20
+                                                                    </span>
+                                                                    명
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <p>
+                                                                        게스트하우스
+                                                                    </p>
+                                                                </th>
+                                                                <td>
+                                                                    <span>
+                                                                        5
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        130
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        135
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        20
+                                                                    </span>
+                                                                    명
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <p>
+                                                                        가족실
+                                                                    </p>
+                                                                </th>
+                                                                <td>
+                                                                    <span>
+                                                                        5
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        130
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        135
+                                                                    </span>
+                                                                    실
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        20
+                                                                    </span>
+                                                                    명
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--*************************************전-->
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

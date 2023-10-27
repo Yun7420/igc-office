@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            계약/납부
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="on" href="#" onclick="return false">
+                                    임대차 계약
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Lease_status.html">
+                                            임대차 계약/납부 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="housing_status.html">
+                                            하우징 거주자현황 조회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    납부하기
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Rental_pay.html">
+                                            사용료/대관료 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fee_pay.html">
+                                            관리비 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Telephone_pay.html">
+                                            전화요금 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ID_pay.html">
+                                            ID카드발급비용 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housing_pay.html">
+                                            하우징사용료 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housingfee_pay.html">
+                                            하우징관리비 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            납부유예신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            연할/분할납부 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    납부결과
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            납부내역 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pay_print.html">
+                                            납부확인서 출력
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    세금계산서
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="taxBill_print.html">
+                                            세금계산서 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <h3>
+                            임대차 계약/납부 조회
+                        </h3>
+
+                        <div class="content_rit_title">
+                            <img src="/image/logo_7.svg" alt="notice-logo">
+                            <h2>
+                                임대차 상세 납부내역
+                            </h2>
+                        </div>
+                        <ul class="tabWrap tabWrap_one">
+                            <li>
+                                <button class="on tabBtn" href="">전체</button>
+                            </li>
+                            <li>
+                                <button href="" class="tabBtn">1차년도</button>
+                            </li>
+                            <li>
+                                <button href="" class="tabBtn">2차년도</button>
+                            </li>
+                        </ul>
+                        <div class="payDtl_Wrap">
+                            <h5 class="H_ColorBullet Bullet_noline">
+                                1차년도
+                            </h5>
+                            <div class="XscrollBox">
+                                <table class="payDtl_Con td_amount">
+                                    <colgroup>
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                구분
+                                            </th>
+                                            <th>
+                                                총계
+                                            </th>
+                                            <th>
+                                                1회차
+                                            </th>
+                                            <th>
+                                                2회차
+                                            </th>
+                                            <th>
+                                                3회차
+                                            </th>
+                                            <th>
+                                                4회차
+                                            </th>
+                                            <th>
+                                                5회차
+                                            </th>
+                                            <th>
+                                                6회차
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                해당기간
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                            <td>
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                사용료
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                관리비
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                연체료
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                환급/감면
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                분납이자
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                기타
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                납부금액
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                납부기한
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td class="bold keyColor">
+                                                2022.09.22
+                                            </td>
+                                            <td class="bold keyColor">
+                                                2022.09.22
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                실입금일
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                실입금액
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="payDtl_Wrap">
+                            <h5 class="H_ColorBullet Bullet_noline">
+                                2차년도
+                            </h5>
+                            <div class="XscrollBox">
+                                <table class="payDtl_Con td_amount">
+                                    <colgroup>
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                구분
+                                            </th>
+                                            <th>
+                                                총계
+                                            </th>
+                                            <th>
+                                                1회차
+                                            </th>
+                                            <th>
+                                                2회차
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                해당기간
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+                                            <td>
+                                                2022.09.01<br />
+                                                - 2022.09.30
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                사용료
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                관리비
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                연체료
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                환급/감면
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                분납이자
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                기타
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                -
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                납부금액
+                                            </th>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                납부기한
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td class="bold keyColor">
+                                                2022.09.22
+                                            </td>
+                                            <td class="bold keyColor">
+                                                2022.09.22
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                실입금일
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                실입금액
+                                            </th>
+                                            <td>
+                                                -
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+                                            <td>
+                                                200000000
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </section>
+
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

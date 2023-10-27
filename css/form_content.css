@@ -1,0 +1,650 @@
+@charset "UTF-8";
+/*formContentCommon===============================*/
+/*=========================================================*/
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+.content_rit_tableBox input[type="checkbox"] {
+    float: none;
+}
+
+input {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+.content_rit_table .content_rit_btn{/*221214*/
+    padding: 0.55rem 2rem;
+    background-color: #00a1e9;
+    color: #fff;
+    border: 0;
+    border-radius: 6px; 
+}
+.content_rit_btn:hover{
+    opacity: 0.8;
+}
+.content_rit_subKey {
+    background-color: #fff;
+    color: #00a1e9;
+    border: 1px solid #00a1e9;
+    height: calc(100% - 2px);
+}
+textarea{
+    border: 0.5px solid lightgray; /*수정*/
+    border-radius: 6px;
+    resize: none;
+    padding: 1.5rem;
+    width: calc(100% - 3rem);
+    height:10rem;/*수정*/
+    font-family: 'Nanum Gothic','Noto Sans KR', sans-serif;
+    line-height: 19px;
+}
+
+/*formContentCommonEnd===============================*/
+/*=========================================================*/
+/*하단 필수정보*/
+.essential .content_rit_description{
+margin-bottom:0.7rem;
+}
+.essential .content_rit_description .H_ColorBullet{
+    color:#000;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    border-bottom: none;
+}
+.essential .H_ColorBullet::after {
+    width: 2px;
+    height: 15px;
+}
+/*하단 필수정보*/
+.content_ritBox_notice {
+    background-color: #F5F5F5;
+    width:calc( 100% - 80px);
+    display: flex;
+    padding: 40px 40px;
+    border-radius: 10px 60px 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.notice_AddPopupBtn .rentalList_vsBtn.subPopupBtn{
+    top: -40px;
+}
+.notice_AddPopupBtn .rentalList_vsBtn.subPopupBtn p {
+    line-height: 130px;
+    transform: translateX(-21px);
+}
+.content_ritBox_notice.notice_AddPopupBtn{
+    padding: 45px 5% 30px;
+    width:90%;
+}
+.content_ritBox__noticeWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.content_ritBox__noticeWrap button{
+    margin-top:0.5rem;
+    width:170px;   
+}
+.content_ritBox_notice_img {
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.content_ritBox_notice_img img {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content_ritBox_notice_text {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content_rit_description p,
+.content_rit_description span,
+.content_rit_description li{
+    font-size: 0.85rem;
+    line-height: 19px;
+}
+.content_rit {
+    margin: 2rem 0;
+}
+.content_rit_title {
+    display: flex;
+    align-items: center;
+}
+
+/* .content_rit_title h2{
+    font-size: 1.6rem;
+    color: #000;
+} */
+
+.content_rit_form h1 {
+    width: auto;
+    margin-top: 3rem;
+    padding-top:0;
+}
+
+.content_rit_title img{
+    width:25px;
+    margin-right: .5rem;
+}
+.content_rit_tableBox {
+    margin: 1.2rem 0;
+    border-top: 0.5px solid #a7a7a7;
+}
+
+.content_rit_table_input_pd input{
+    padding: 0.5rem
+}
+
+.content_rit_table tbody {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content_rit_table tbody tr {/*221208*/
+    width: 50%;
+    display: table;
+}
+.content_rit_table .required::before{
+    content:"*";
+    color:#f17418;
+}
+.content_rit_table_oddTd {
+    width: 100% !important;
+}
+
+.content_rit_inputTable {
+    table-layout: auto;
+}
+
+.content_rit_inputTable tbody {
+    display: table-row-group;
+}
+
+.content_rit_inputTable tbody tr {
+    width: 100%;
+}
+
+.content_rit_table th{/*221208*/
+    text-align: start;
+    background-color: #F9F9F9;
+    padding: 1rem;
+    min-width: fit-content;
+    width: 5.5rem;
+    max-width: 5.5rem;
+    word-break:break-word;
+    padding-right: 2rem;
+}
+.content_rit_table td{
+    text-align: start;
+    padding: 0.5rem 0.75rem;
+}
+
+.add_common.flex_row.content_rit_table_input input[type='text']{
+    margin-right:1%;
+    flex:1 1 50%;
+}
+.content_rit_table_input_rowMulti {
+    display: flex;
+    align-items: center;
+}
+
+.content_rit_emailAt, .content_rit_dash {
+    margin: 0 0.3rem;
+}
+
+.content_rit_table_input_multi input{
+    margin-bottom: 1rem;
+}
+
+.content_rit_table_input .facilityTime_list ul li span{    
+    padding: 0 0.2rem;
+}
+.content_rit_table_fileBox .content_rit_table_input span {
+    padding: 0; 
+}
+.content_rit_file_top {
+    display: flex;
+    justify-content: space-between;
+    margin-top:0.4rem;/*수정*/
+}
+
+.content_rit_table_input_label {
+    font-size: 0.8rem;
+}
+
+.content_rit_file_numText {
+    display: flex;
+}
+
+.content_rit_file_numText span{
+    display: flex;
+    align-items: flex-end;
+}
+
+.content_rit_file_num {
+    color: #00a1e9;
+}
+/*221206요기부터*/
+.content_rit_table_fileBox {
+    padding: 1rem;
+    border: 0.5px solid lightgray;
+    border-radius: 6px;
+    margin: 0.2rem 0 0.5rem;
+    height:120px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#file_dragndrop .facilityTime_list {
+    height:100%;
+}
+#file_dragndrop .facilityTime_list ul {
+    margin:0;
+}
+#file_dragndrop .content_rit_table_fileBox li{
+    border-bottom:0;
+    padding: 0.3rem 0 0rem;
+}
+#file_dragndrop .content_rit_table_fileBox li p button{
+   margin-left:0.5rem;
+}
+#file_dragndrop .content_rit_table_fileBox li p {
+    border-bottom: 0.5px solid #ccc;
+    padding-bottom:0.2rem ;
+    line-height: 18px;
+}
+/*221206요기까지*/
+
+/*수정*/
+.file_textBox{
+    margin:0.4rem 0;
+}
+
+#fileTableTbody tr {
+    border: 0;
+}
+
+.content_rit_formBtn.Full_btnWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem .5rem .5rem .5rem;
+}
+.content_rit_formBtn_accept {
+    margin-left: 1rem;
+}
+#content_rit_select_email {
+    margin-left:0.5rem;
+    width: 75%;
+}
+.content_rit_colorText {
+    color: #00a1e9;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.content_rit_checkbox_list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: .5rem 0;
+}
+
+.content_rit_checkbox input{
+    margin-right: .5rem
+}
+
+.content_rit_checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    white-space: nowrap;
+    line-height: 34px;/*수정*/
+}
+
+.content_rit_checkbox input[type="text"] {
+    margin: 0 .5rem;
+    width: auto;
+    
+}
+
+#content_rit_selectBox,
+.facilityTime_selection select.content_rit_selectBox{
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position:
+      calc(100% - 20px) calc(1em + 0px),
+      calc(100% - 15px) calc(1em + 0px),
+      calc(100% - 2.5em);
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.content_rit_tableList th{
+    padding: 1rem .5rem;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.content_rit_tableList td{
+    padding: 1rem .5rem;
+    text-align: center;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.content_rit_tableList td input {
+    margin: 0 .5rem;
+}
+
+.content_rit_tableList input[type="checkbox"]{
+    float: none;
+}
+
+.content_rit_tableList .content_rit_btn {
+    padding: 0.7rem 2rem;
+}
+
+.content_rit_checkbox_etc_checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.font_bold_black {
+    font-weight: bold;
+}
+
+.font_bold_red {
+    font-weight: bold;
+    color: red;
+}
+
+.content_rit_table_input_rowTriple {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_rit_table_input_rowTriple input[type="text"] {
+    width: auto;
+    margin: .5rem 0;
+}
+
+.input_colMulti input[type="text"] {
+    margin: .4rem 0;
+}
+.btn_add_remove {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sub_th {
+    width: 10% !important;
+    text-align: center !important;
+}
+
+/*221220추가*/
+.ckeckedBlock_Wrap{
+    display: flex;
+}
+#recee_display,
+#tchnlgy_display {
+    display: flex;
+    width: 100%;
+}
+#recee_display > *,
+#tchnlgy_display > *{
+    margin-left:3px;
+}
+/*221220추가*/
+@media screen and (max-width: 1290px) {
+}
+@media screen and (max-width: 900px) {
+   
+    .content_rit_checkbox {
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .content_rit_table, .content_rit_inputTable {/*content_rit_inputTable 이게 인풋폼*/
+        min-width: auto !important;
+        table-layout:fixed;
+    }
+    .content_rit_inputTable td:nth-of-type(1) {
+        padding-left: 0 !important;
+    }
+    .content_rit_inputTable td:nth-last-of-type(1) {
+        padding-right: 0 !important;
+    }
+    /* .commonWrap {
+        margin: 2rem 0 !important;
+        width: 100% !important;
+    } */
+    /* .content_ritBox_middle {
+        margin: 2rem auto;
+        background-color: #F5F5F5;
+        padding: 2rem;
+    } */
+    .content_rit {
+        border-radius: .7rem;
+        margin: 0 auto;
+        background-color: #fff;
+        padding:2rem 0 2rem;
+    }
+    /* colgroup col {
+        width: 100%;
+    } */
+    /* .content_ritBox h3 {
+        margin: 2rem 0;
+    } */
+.content_rit_description p,
+.content_rit_description span,
+.content_rit_description li{
+    font-size: 0.75rem;
+}
+    /* .content_ritBox_notice {
+        padding: 2.5rem 5% 1.8rem;
+        width:90%;
+    } */
+     .content_ritBox_notice_img {
+        display: none;
+    } 
+    .content_ritBox_notice_text {
+        margin: 0;
+    }
+    .content_rit_title {
+        padding-bottom: 0.55rem;
+        border-bottom: 0.5px solid #00a1e9;
+    }
+    .content_rit_title img {
+       width:20px;
+       margin-right: 0.25rem;
+    }
+    .content_rit_inputBox {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .content_rit_table tbody tr {
+        width: 100%;
+    }
+    .content_rit_inputTable tbody tr {
+        border: 0;
+        border-top:0.5px solid #ccc;
+        margin-top:0.5rem;
+    }
+    .content_rit_inputTable tbody tr:nth-of-type(1) {
+        border-top:none;
+    }
+    .content_rit_inputTable tbody tr:nth-last-of-type(1) {
+        border-bottom:0.5px solid #ccc;
+        padding-bottom:0.5rem;
+    }
+    .content_rit_table.content_rit_inputTable th {
+        background-color: #fff;
+        padding: 0.5rem 0.5rem 0.5rem 0rem;
+        font-size: 0.9rem;
+    }
+    .content_rit_inputTable td {
+        padding: 0;
+    }
+    .content_rit_formBtn_accept {
+        margin-right: 0;
+        width: 60%;
+    }
+
+.content_rit_file_top {
+    margin-top: 0;
+}
+.content_rit_table_fileBox {
+    padding: 0.5rem;
+}
+    /* .content_rit_formBtn_accept input,
+    .content_rit_formBtn_cancel input {
+        width: 100% !important;
+    } */
+    .content_rit_checkbox_etc {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content_rit_checkbox_etc span{
+        display: none;
+    }
+    .content_rit_checkbox_etc input[type="text"] {
+        margin: .5rem 0 0;
+        width: 100%; 
+    }
+    .content_rit_table th {
+        padding: 1rem 0.5rem;
+    }
+    .content_rit_formBtn_cancel {
+        width: 35%;
+    }
+    .content_rit_formBtn_cancel .subKeyBtn{
+        width:100%;
+    }
+    .content_rit_btn.Keybtn,
+    .content_rit_btn.subKeyBtn  {
+        width: 100% !important;
+    }
+    .content_rit_checkbox_list label {
+        width: 30%;
+    }
+    .rit_btnWrap {
+        justify-content: space-between !important;
+    }
+    .content_rit_table_input_rowTriple div{
+        width: 100%;
+    }
+    .add_common button.subKeyBtn {
+
+    }
+    .btn_add_remove .content_rit_formBtn_accept{
+        width: auto;
+        margin-right: .5rem;
+    }
+    .sub_th {
+        padding: 0 !important;
+    }
+
+    .content_rit_inputTable tbody tr{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .content_ritBox_top {
+        margin: auto;
+    }
+    /* .content_ritBox_middle {
+        margin: 2rem auto;
+        background-color: #fff;
+        width: 90%;
+        padding: 0;
+    } */
+    .content_rit {
+        padding-top: 5vw;
+    }
+    .content_ritBox h3 {
+        margin: 2vw 0 1rem 0;
+    }
+    input[type="datetime-local"] {
+        width: calc(100% - 1rem);
+    }
+    .content_rit_checkbox_list label {
+        width: 45%;
+    }
+
+    /*IGCapplication===============================*/
+    #content_rit_select_email {
+        width: auto;
+        text-indent: 3px;
+    }
+    .content_rit_table th {
+        width: 4.5rem;
+    }
+    .content_rit_file_numText span {
+        font-size: 0.65rem;
+    }
+    
+    .content_rit_table td {
+        padding: 0.2rem 0 0.2rem 0.2rem;
+    }
+    .content_ritBox_notice {
+        width: calc( 100% - 60px);
+        padding: 20px 30px;
+    }
+    .content_rit_table_fileBox {
+        height: 60px;
+    }
+    #file_dragndrop .content_rit_table_fileBox li p button {
+        margin-left:0;
+    }
+    #file_dragndrop .content_rit_table_fileBox li p {
+        line-height: 20px;
+        font-size: 0.7rem;
+    }
+    /*LeaseExtension===============================*/
+    .content_rit_form h1 {
+    margin-top:8vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ckeckedBlock_Wrap{
+        flex-direction:column;
+    }
+    .content_rit_file_top {
+        margin-top: 0; 
+        flex-direction: column;
+        align-items: end;
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+<!--body==========================================================================================-->
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            계약/납부
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    임대차 계약
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Lease_status.html">
+                                            임대차 계약현황 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housing_status.html">
+                                            하우징 거주자현황 조회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="on" href="#" onclick="return false">
+                                    납부하기
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Rental_pay.html">
+                                            사용료/대관료 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fee_pay.html">
+                                            관리비 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="Telephone_pay.html">
+                                            전화요금 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ID_pay.html">
+                                            ID카드발급비용 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housing_pay.html">
+                                            하우징사용료 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housingfee_pay.html">
+                                            하우징관리비 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            납부유예신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            연할/분할납부 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    납부결과
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            납부내역 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pay_print.html">
+                                            납부확인서 출력
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    세금계산서
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="taxBill_print.html">
+                                            세금계산서 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <div class="content_ritBox_top">
+                            <h3>통신(전화) 요금 청구내역서</h3>
+                            <div class="content_ritBox_notice">
+                                <div class="content_ritBox_notice_img">
+                                    <img src="/image/rental-notice.svg" alt="notice-logo">
+                                </div>
+                                <div class="content_ritBox_notice_text">
+                                    <div>주의사항 및 설명글입니다.</div>
+                                    <div>신청에 관한 궁금한 사항은 해당 기관에 문의하시기 바랍니다.</div>
+                                    <div>IGC캠퍼스 입주자 통합정보시스템에서는업무별 전화번호를 제공하고 있습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_ritBox_middle">
+                            <div class="communication_billing_table">
+                                <div class="content_rit">
+                                    <div class="content_rit_title">
+                                        <img src="/image/logo_7.svg" alt="notice-logo">
+                                        <h2>통신(전화) 요금 청구내역서</h2>
+                                    </div>
+                                    <div class="content_rit_form" id="content_rit_d">
+                                        <div class="form">
+                                            <div class="content_rit_tableBox">
+                                                <table class="content_rit_table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>서비스명</th>
+                                                            <td>통신 서비스(전회) 이용료</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>이용자명</th>
+                                                            <td>한국 조지메이슨</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="content_rit_tableBox XscrollBox on">
+                                                <table class="billing_information">
+                                                    <colgroup>
+                                                        <col width="20%">
+                                                        <col width="50%">
+                                                        <col width="30%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>이용기간</th>
+                                                            <td>2022년 09월 01일 ~ 2022년 09월 30일</td>
+                                                            <th>산정기준</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>기본료</th>
+                                                            <td>￦0</td>
+                                                            <td>회선당 0원 / 월 * 회선</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>시내통화료</th>
+                                                            <td>￦7,740</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>시외통화료</th>
+                                                            <td>￦13,984</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>이동통화료</th>
+                                                            <td>￦179,582</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>국제통화료</th>
+                                                            <td>￦377,140</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>기타금액</th>
+                                                            <td>￦10,287</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>전화임대료</th>
+                                                            <td>￦0</td>
+                                                            <td>대당 0원 / 월 * 대</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>지원금액</th>
+                                                            <td>￦500,000</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>당부부과액계</th>
+                                                            <td>￦88,733</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>미납액( 월분)</th>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>납기 내 금액</th>
+                                                            <td>￦88,733</td>
+                                                            <td>당월부과액 + 미납액</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>납부기한</th>
+                                                            <td>2022-10-31</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>납기 후 금액</th>
+                                                            <td>￦91,395</td>
+                                                            <td>납기내 금액 + 연체료</td>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                            <div class="bullet">인천글로벌캠퍼스운영재단에서 운영중인 구내통신 서비스에 대한 전화사용요금을<br>
+                                            상기와 같이 안내하오니 아래 계좌로 입금하여 주시기 바랍니다
+                                            </div>
+                                            <h1 class="H_ColorBullet">입금통장 계좌번호 안내</h1>
+                                            <div class="content_rit_tableBox">
+                                                <table class="content_rit_table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>은행명</th>
+                                                            <td>기업은행</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>예금주</th>
+                                                            <td>인천글로벌캠퍼스운영재단법인</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>계좌번호</th>
+                                                            <td>47201814204176</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>비고</th>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="bullet">요금 관려 문의 사항<br>
+                                            인천글로벌캠퍼스운영재단 구내통신 유지보수담당:정보전사실 1015호 안창준 (내선:0201)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

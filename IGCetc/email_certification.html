@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/email_certification.css">
+    <style>
+        /*공통부분*/
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: #000;
+            list-style: none;
+            text-decoration: none;
+            word-break: keep-all;
+            border-collapse: collapse;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .warp {
+            margin: 0px auto;
+            width: 90%;
+        }
+
+        /*이메일전체 박스*/
+        .all_email_box {
+            padding: 6rem 0px 7rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            border-radius: 10px;
+            min-width: 670px;
+            box-shadow: 1px 2px 15px rgb(0 0 0 / 20%);
+        }
+
+        /*이메일 텍스트 박스*/
+        .all_email_box_t {
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        /*이메일 텍스트 내용*/
+        .email_img {
+            margin: 0px auto;
+            width: 80px;
+        }
+
+        .all_email_box h3 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /*이메일 정보*/
+        .email_inforamtion li {
+            margin: 58px 0px;
+            display: flex;
+        }
+
+        .email_inforamtion li:nth-child(1) {
+            margin-top: 40px;
+        }
+
+        .email_inforamtion li>div:nth-child(1) {
+            flex: 0.2;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .email_inforamtion li>div:nth-child(2) {
+            flex: 0.8;
+            font-size: 1.5rem;
+        }
+
+        .email_inforamtion li span {
+            font-size: 1.8rem;
+            color: #00a1e9;
+            font-weight: bold;
+        }
+
+        .homepage_go {
+            margin: 40px auto 0px;
+            ;
+            width: 90%;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+            font-size: 1.8rem;
+            text-align: center;
+            color: #fff;
+            background: #00a1e9;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /*bullet 넣기*/
+
+        .email_inforamtion1>div:nth-child(1) {
+            height: 25px;
+            position: relative;
+            display: flex;
+        }
+
+        .email_inforamtion2>div:nth-child(1) {
+            height: 25px;
+            position: relative;
+            display: flex;
+        }
+
+        .email_inforamtion3>div:nth-child(1) {
+            height: 25px;
+            position: relative;
+            display: flex;
+        }
+
+        .email_inforamtion1>div:nth-child(1)::after {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            background: url(../image/img_h/e_mail_bullet1.svg) no-repeat;
+            background-size: 2px 15px;
+            width: 2px;
+            height: 15px;
+            display: inline;
+        }
+
+        .email_inforamtion2>div:nth-child(1)::after {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            background: url(../image/img_h/e_mail_bullet2.svg) no-repeat;
+            background-size: 2px 15px;
+            width: 2px;
+            height: 15px;
+            display: inline;
+        }
+
+        .email_inforamtion3>div:nth-child(1)::after {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            background: url(../image/img_h/e_mail_bullet3.svg) no-repeat;
+            background-size: 2px 15px;
+            width: 2px;
+            height: 15px;
+            display: inline;
+        }
+
+        /*이메일 전송 반응형*/
+        @media screen and (max-width: 670px) {
+            .all_email_box {
+                padding-top: 10rem;
+                min-width: 100%;
+            }
+
+            .all_email_box h3 {
+                font-size: 1.8rem;
+            }
+
+            .email_inforamtion li {
+                flex-direction: column;
+            }
+
+            .email_inforamtion li>div:nth-child(1) {
+                font-size: 1.7rem;
+            }
+
+            .email_inforamtion li>div:nth-child(2) {
+                font-size: 1.4rem;
+            }
+
+            .email_inforamtion1>div:nth-child(1)::after {
+                display: none;
+            }
+
+            .email_inforamtion2>div:nth-child(1)::after {
+                display: none;
+            }
+
+            .email_inforamtion3>div:nth-child(1)::after {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .email_inforamtion li {
+                margin: 8vw 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="warp">
+            <div class="one_box">
+                <div class="all_email_box">
+                    <div class="all_email_box_t">
+                        <div class="email_img"><img src="/image/email.svg" alt="이메일이미지"></div>
+                        <h3>아래 인증번호를 입력하시면 이메일 인증이 완료됩니다.</h3>
+                        <div class="email_inforamtion">
+                            <ul>
+                                <li class="email_inforamtion1">
+                                    <div>인증번호</div>
+                                    <div>
+                                        <div><span>${verificationCode}</span></div>
+                                        <div>위 인증번호는 이메일 인증에 24시간 이내 1회 사용할 수 있습니다.
+                                            24시간이 경과된 후에는 다시 신청하셔야 합니다</div>
+                                    </div>
+                                </li>
+                                <li class="email_inforamtion2">
+                                    <div>CONTACT</div>
+                                    <div>
+                                        <div>21985 인천글로벌캠퍼스운영재단 인천광역시 연수구 송도 문화로 119
+                                            Tel.032-626-0114 | Fax.032-626-0549</div>
+                                    </div>
+                                </li>
+                                <li class="email_inforamtion3">
+                                    <div>수신여부</div>
+                                    <div>
+                                        <div>본 메일은 회원님께서 IGC 이메일 수신동의를 하였기에 발송되었습니다.
+                                            메일 수신을 원치 않으시면 [회원정보 관리] 메뉴에서 수신 여부를
+                                            수정해주시기 바랍니다.</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="homepage_go">IGC 홈페이지</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

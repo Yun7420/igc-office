@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0; padding:0;
+    }
+
+    section{
+      position:relative;
+
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      width:100%;
+      height:100vh;
+    }
+
+    .error_wrap{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+
+      text-align:center;
+    }
+
+    .error_ibox{
+      margin:0px auto;
+      width:100px;
+    }
+
+   .error_ibox img{
+      width:100%;
+   }
+
+    .error_box h1{
+      margin:1rem 0 0;
+      font-size:2.5rem;
+    }
+
+    .error_box span{
+      color:#3eb5eb;
+    }
+
+    .error_box h2{
+      margin:1rem 0;
+    }
+
+    .error_box .button_box{
+      margin-top:1.5rem;
+    }
+
+    .button_box button{
+      font-size:1rem;
+      font-weight:bolder;
+
+      border:0;
+      background-color:transparent;
+
+      cursor:pointer;
+    }
+
+    .button_box button a{
+      display:block;
+      padding:0.5rem 1rem;
+      border-radius:0.5rem;
+      border:1px solid #ccc;
+
+      color:#535353;
+      text-decoration:none;
+    }
+
+    .button_box button a:hover{
+      border:0;
+      background-color:#3eb5eb;
+      color:#fff;
+    }
+
+    .error_bbox{
+      position:absolute;
+      top:0;
+      width:100%;
+      height:40vh;
+      background:url(/error_bibox.png) no-repeat 0px -400px;
+      background-size:cover;
+      z-index:-1;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="error_wrap">
+      <div class="error_box">
+        <div class="error_ibox"><img src="/error_ibox.svg" alt="에러 이미지"></div>
+        <h1>죄송합니다.<br><span>페이지를 찾을 수 업습니다.</span></h1>
+        <h2>I'm sorry. <span>Page not found.</span></h2>
+        <p>페이지가 존재하지 않거나, 사용할 수 없는 페이지입니다.<br>
+        입력하신 주소가 정확한지 다시 한번 확인해 주시기 바랍니다.</p>
+        <div class="button_box">
+          <!-- 원하는 텍스트와 그에 맞는 링크 걸어주세요. -->
+          <button><a href="#">이전 화면</a></button>
+          <button><a href="#">홈으로 가기</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="error_bbox"></div>
+  </section>
+</body>
+</html>

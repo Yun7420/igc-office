@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="../image/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/include.js"></script>
+    <!--script==========================================================================================-->
+</head>
+<!--body==========================================================================================-->
+
+<body>
+    <div class="container member">
+        <div class="wrapper">
+
+            <!--loginWrap========================================-->
+            <div class="mamberBG oneDiv_mamberBG">
+                <h1 class="">
+                    <a href="../index.html">
+                        <img src="../image/logo.png" alt="로고">
+                    </a>
+                </h1>
+                <section class="memberWrap">
+                    <div class="oneDivBox">
+                        <div class="memberWrap_Rit">
+                            <div class="memberWrap_Con findWrap_Con">
+                                <div class="findWrap_Con_title">
+                                    <h3>임시 비밀번호 받기</h3>
+                                    <span>
+                                        휴대폰
+                                    </span>
+                                </div>
+
+                                <form class="CertiWriteWrap">
+                                    <p>회원가입시 등록한 정보를 입력해주세요.</p>
+                                    <input type="text" placeholder="아이디">
+                                    <input type="text" placeholder="이름">
+                                    <div class="inputLTWrap">
+                                        <input type="text" placeholder="휴대폰 번호">
+                                        <span> (‘-’ 없이 입력)</span>
+                                    </div>
+                                    <input class="subKeyBtn oneBtn Fullbtn" type="button" value="인증번호 요청">
+                                </form>
+                                <form class="CertiNumWrap">
+                                    <div class="inputLTWrap">
+                                        <input type="text" placeholder="인증번호 입력">
+                                        <span class="message_find">
+                                            남은시간(
+                                            <strong>
+                                                00:00
+                                            </strong>
+                                            )
+                                        </span>
+                                    </div>
+                                    <input class="Keybtn oneBtn Fullbtn" type="button" value="인증확인"
+                                        onclick="location.href='FindPW_result.html'">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--form========================================-->
+            <!-- <form>
+    월 : <input type="month"><br>
+    날짜 : <input type='date'/><br>
+    시간 : <input type='time'/><br> 
+    날짜시간 : <input type="datetime-local" /><br>
+</form> -->
+            <!--INCLUED========================================-->
+            <footer data-include="../include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

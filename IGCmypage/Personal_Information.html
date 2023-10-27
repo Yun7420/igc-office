@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/js/swiper-bundle.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+
+        $(document).ready(function () {
+
+            $(".join_type label").click(function () {
+                $(".join_type label").removeClass('on');
+                $(this).addClass('on');
+            });
+
+            $(".information_toggel li > div:nth-child(1)").click(function(){
+                $(this).siblings().slideToggle();
+                $(this).parents("li").toggleClass("on");
+                // $(this).children("div").animate({"rotate":"180deg"});
+            })
+        });
+        //회원가입 탭
+        function ShowJoin_type(val) {
+            for (i = 0; i < 4; i++) {
+                var tbJoin = document.getElementsByClassName('ShowJoin_typeCon' + i)[0];
+                if (i != val) tbJoin.style.display = "none";
+                else tbJoin.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="../include/header.html"></header>
+            <!--INCLUED========================================-->
+            <section class="commonWrap">
+                <!--breadCrumbWrap브레드크럼========================================-->
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <!--subM_left사이드메뉴========================================-->
+                    <section class="subM_left">
+                        <h2>
+                            마이페이지
+                        </h2>
+                        <ul>
+                            <li class="sub_depth0">
+                                <a href="#" onclick="return false">
+                                    나의 민원관리
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="inquiry_1.html" class="on">
+                                            1:1문의
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a href="#" onclick="return false">
+                                    이달의 명세서
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="push_message.html">
+                                    나의 알림함
+                                </a>
+                            </li>
+                            <li>
+                                <a class="on" href="Personal_Information.html">
+                                    개인정보수정
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!--content_ritBox콘텐츠========================================-->
+                    <section class="content_ritBox">
+                        <div class="pushMessage_Title">
+                            <h3>
+                                개인정보수정
+                            </h3>
+                        </div>
+                        <div class="content_ritBox__noticeWrap">
+                            <div class="content_ritBox_notice">
+                                <div class="content_ritBox_notice_img">
+                                    <img src="../image/rental-notice.svg" alt="notice-logo">
+                                </div>
+                                <div class="content_ritBox_notice_text">
+                                    <div>주의사항 및 설명글입니다.</div>
+                                    <div>신청에 관한 궁금한 사항은 해당 기관에 문의하시기 바랍니다.</div>
+                                    <div>IGC캠퍼스 입주자 통합정보시스템에서는업무별 전화번호를 제공하고 있습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content_rit">
+                            <div class="content_rit_title">
+                                <img src="/image/logo_7.svg" alt="notice-logo">
+                                <h2>계정 관리</h2>
+                            </div>
+                            <div class="personal_information_modification">
+                                <h5 class="H_ColorBullet">기본정보 수정</h5>
+                                <p>일부 정보가 IGC서비스를 이용하는 다른 사람에게 표시될 수 있습니다.</p>
+                                <ul class="information_toggel">
+                                    <li>
+                                        <div>
+                                            <h5>주소</h5>
+                                            <div class="allow_slide"><img src="/image/arrow.svg" alt="슬라이드 화살표 이미지"></div>
+                                        </div>
+                                        <div class="toggle_sub_content memberWrap">
+                                            <div class="join_FormWrap_adr">
+                                                <label class="essentialDotWrap">
+                                                    <input class="essentialDot" type="text" placeholder="주소를 검색하세요">
+                                                </label>
+                                                <label class="">
+                                                    <input class="subKeyBtn oneBtn Fullbtn" type="button" value="주소검색">
+                                                </label>
+                                            </div>
+                                            <label class="essentialDotWrap">
+                                                <input class="essentialDot" type="text" placeholder="상세주소 입력">
+                                            </label>
+                                            <div class="flex_row_nowrap twoFrm">
+                                                <label>
+                                                    <input type="text" placeholder="동">
+                                                </label>
+                                                <label>
+                                                    <input type="text" placeholder="호">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h5>이메일</h5>
+                                            <div class="allow_slide"><img src="/image/arrow.svg" alt="슬라이드 화살표 이미지"></div>
+                                        </div>
+                                        <div class="toggle_sub_content memberWrap">
+                                            <div class="join_FormWrap_adr">
+                                                <label class="essentialDotWrap">
+                                                    <input class="essentialDot" type="text" placeholder="이메일주소">
+                                                </label>
+                                                <label class="">
+                                                    <input class="subKeyBtn oneBtn Fullbtn" type="button" value="인증요청"
+                                                        onclick="ShowPop('3');">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h5>비밀번호</h5>
+                                            <div class="allow_slide"><img src="/image/arrow.svg" alt="슬라이드 화살표 이미지"></div>
+                                        </div>
+                                        <div class="toggle_sub_content memberWrap">
+                                            <label class="inputLTWrap essentialDotWrap">
+                                                <input class="essentialDot" type="password" placeholder="비밀번호">
+                                                <span>※영문,숫자,특수문자 조합</span>
+                                            </label>
+                                            <label class="essentialDotWrap">
+                                                <input class="essentialDot" type="password" placeholder="비밀번호 확인">
+                                            </label>
+                                            <div class="rit_btnWrap">
+                                                <div class="content_rit_formBtn_accept password_reset_btn">
+                                                    <input class="content_rit_btn Keybtn" type="button"
+                                                        value="비밀번호 재설정">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h5>수신선택</h5>
+                                            <div class="allow_slide"><img src="/image/arrow.svg" alt="슬라이드 화살표 이미지"></div>
+                                        </div>
+                                        <div class="toggle_sub_content memberWrap">
+                                            <div class="join_ConWrap join_FormWrap">
+                                                <div class="noti_type join_type">
+                                                    <!--두개일때 class 명 추가 join_type_2-->
+                                                    <label>
+                                                        <img src="../image/sns6.svg">
+                                                        카카오톡 알림
+                                                        <input type="radio" name="notification">
+                                                    </label>
+                                                    <label>
+                                                        <img src="../image/notiPhon.png">
+                                                        문자 알림
+                                                        <input type="radio" name="notification">
+                                                    </label>
+                                                    <label>
+                                                        <img src="../image/push.png">
+                                                        푸시 알림
+                                                        <input type="radio" name="notification">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h5>유형선택</h5>
+                                            <div class="allow_slide"><img src="/image/arrow.svg" alt="슬라이드 화살표 이미지"></div>
+                                        </div>
+                                        <div class="toggle_sub_content memberWrap">
+                                            <div class="join_ConWrap join_FormWrap">
+                                                <div class="join_type join_type_2">
+                                                    <!--두개일때 class 명 추가 join_type_2-->
+                                                    <label>
+                                                        <img src="../image/building1.png">
+                                                        <input type="button" value="입주업체" onclick="ShowJoin_type('2')">
+                                                    </label>
+                                                    <label>
+                                                        <img src="../image/building2.png">
+                                                        <input type="button" value="외부업체" onclick="ShowJoin_type('3')">
+                                                    </label>
+                                                </div>
+                                                <div class="join_type_Box">
+                                                    <div class="join_type_Box_check essentialDotWrap ShowJoin_typeCon0">
+                                                        <label>
+                                                            유타대학교 아시아캠퍼스
+                                                            <input type="radio" value="Utah" name="uni">
+                                                        </label>
+                                                        <label>
+                                                            한국뉴욕주립대학교
+                                                            <input type="radio" value="SUNYKorea" name="uni">
+                                                        </label>
+                                                        <label>
+                                                            한국조지메이슨대학교
+                                                            <input type="radio" value="GeorgeMason" name="uni">
+                                                        </label>
+                                                        <label>
+                                                            겐트대학교 글로벌캠퍼스
+                                                            <input type="radio" value="Ghent" name="uni">
+                                                        </label>
+                                                    </div>
+                                                    <div class="join_type_Box_check essentialDotWrap ShowJoin_typeCon1">
+                                                        <label>
+                                                            경영본부(임원실)
+                                                            <input type="radio">
+                                                        </label>
+                                                        <label>
+                                                            운영본부
+                                                            <input type="radio">
+                                                        </label>
+                                                        <label>
+                                                            전략지원본부
+                                                            <input type="radio">
+                                                        </label>
+                                                        <label>
+                                                            대학협력본부
+                                                            <input type="radio">
+                                                        </label>
+                                                        <label>
+                                                            시설안전관리부
+                                                            <input type="radio">
+                                                        </label>
+                                                        <label>
+                                                            기타
+                                                            <input type="radio">
+                                                        </label>
+                                                    </div>
+                                                    <label class="join_type_Box_text essentialDotWrap ShowJoin_typeCon2">
+                                                        <input class="essentialDot" type="text" placeholder="입주업체명 입력">
+                                                    </label>
+                                                    <label class="join_type_Box_text essentialDotWrap ShowJoin_typeCon3">
+                                                        <input class="essentialDot" type="text" placeholder="외부업체명 입력">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="rit_btnWrap">
+                                    <div class="content_rit_formBtn_accept">
+                                        <button class="content_rit_btn Keybtn" onclick="location.href='application_done.html'">
+                                            저장하기
+                                        </button>
+                                        <!-- <input class="content_rit_btn Keybtn" type="button" value="신청하기"> -->
+                                    </div>
+                                    <div class="content_rit_formBtn_cancel">
+                                        <input class="subKeyBtn" type="button" value="취소">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!--INCLUED========================================-->
+            <footer data-include="../include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/form_content.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/js/swiper-bundle.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/include.js"></script>
+    <script src="../js/attachedfile.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="../include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <!--subM_left사이드메뉴========================================-->
+                    <section class="subM_left">
+                        <h2>
+                            마이페이지
+                        </h2>
+                        <ul>
+                            <li class="sub_depth0">
+                                <a class="on" href="#" onclick="return false">
+                                    나의 민원관리
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="inquiry_1.html" class="on">
+                                            1:1문의
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a href="#" onclick="return false">
+                                    이달의 명세서
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false">
+                                            하위메뉴3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="push_message.html">
+                                    나의 알림함
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!--content_ritBox콘텐츠========================================-->
+                    <section class="content_ritBox">
+                        <h3>1:1 문의</h3>
+                        <div class="content_rit">
+                            <div class="content_rit_form">
+                                <form action="">
+                                    <div class="content_rit_tableBox">
+                                        <table class="content_rit_table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>아이디</th>
+                                                    <td>example_id</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>비밀번호</th>
+                                                    <td class="content_rit_table_input">
+                                                        <input type="text" placeholder="숫자 6자리" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>이름</th>
+                                                    <td class="content_rit_table_input">
+                                                        <input type="text" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>연락처</th>
+                                                    <td
+                                                        class="content_rit_table_input content_rit_table_input_rowMulti">
+                                                        <input type="text" />
+                                                        <span class="content_rit_dash">-</span>
+                                                        <input type="text" />
+                                                        <span class="content_rit_dash">-</span>
+                                                        <input type="text" />
+                                                    </td>
+                                                </tr>
+                                                <tr class="content_rit_table_oddTd">
+
+                                                    <th>이메일</th>
+                                                    <td
+                                                        class="content_rit_table_input content_rit_table_input_rowMulti">
+                                                        <input type="text" />
+                                                        <span class="content_rit_emailAt">@</span>
+                                                        <input type="text" />
+                                                        <select name="" id="content_rit_select_email">
+                                                            <option disabled selected>계정 선택</option>
+                                                            <option value="gmail.com">gmail.com</option>
+                                                            <option value="naver.com">naver.com</option>
+                                                            <option value="daum.net">daum.net</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="content_rit_table_oddTd">
+                                                    <th>문의 내용문의 내용내용문의 내용내용문의 내용</th>
+                                                    <td class="content_rit_table_textarea" colspan="3">
+                                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr class="content_rit_table_oddTd">
+                                                    <th>파일첨부</th>
+                                                    <td class="content_rit_table_input" colspan="3">
+                                                        <section id="file_dragndrop">
+                                                            <div class="content_rit_file_top">
+                                                                <label
+                                                                    class="content_rit_btn content_rit_table_input_label"
+                                                                    for="input_file">
+                                                                    파일 선택
+                                                                </label>
+                                                                <div class="content_rit_file_numText">
+                                                                    <span>첨부파일(<span
+                                                                            class="content_rit_file_num">0</span> 개
+                                                                        )</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content_rit_table_fileBox" id="dropZone"
+                                                                draggable="true">
+                                                                <div id="fileDragDesc">마우스로 끌어 첨부하세요.</div>
+                                                                <!-- <table id="fileListTable" width="100%">
+                                                                    <tbody id="fileTableTbody">
+
+                                                                    </tbody>
+                                                                </table> -->
+                                                            </div>
+                                                            <input type="file" id="input_file" multiple="multiple">
+                                                        </section>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </form>
+                                <div class="rit_btnWrap">
+                                    <div class="content_rit_formBtn_accept">
+                                        <input class="content_rit_btn Keybtn" type="button" value="신청하기">
+                                    </div>
+                                    <div class="content_rit_formBtn_cancel">
+                                        <input class="subKeyBtn" type="button" value="취소">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            <!--INCLUED========================================-->
+            <footer data-include="../include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

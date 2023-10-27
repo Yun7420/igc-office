@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/form_content.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/js/swiper-bundle.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/include.js"></script>
+    <script src="../js/attachedfile.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="../include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            변경/신고
+                        </h2>
+                        <ul>
+                            <li class="sub_depth0">
+                                <a href="#">
+                                    입주자 정보
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            입주자 정보 변경 신고
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a class="on" href="#">
+                                    시설물 설치/변경
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="on" href="FacilityBuild.html">
+                                            시설물 설치/변경 승인 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IDApplicationMulti.html">
+                                            시설물원상복구확인신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <div class="content_ritBox_top">
+                            <h3>시설물 설치/변경 승인 신청</h3>
+                            <div class="content_ritBox_notice">
+                                <div class="content_ritBox_notice_img">
+                                    <img src="../image/rental-notice.svg" alt="notice-logo">
+                                </div>
+                                <div class="content_ritBox_notice_text">
+                                    <h5 class="H_ColorBullet Bullet_noline">구비서류</h5>
+                                    <p class="bullet">
+                                        공사계획서(현장대리인계, 안전관리선임계, 공사현장사진, 공정표, 폐기물처리계획 등)
+                                    </p>
+                                    <p class="bullet">
+                                        공종별 설계 도서
+                                    </p>
+                                    <p class="bullet">
+                                        건축사 검토 의견서(필요시)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_ritBox_middle">
+                            <div class="content_rit">
+                                <div class="content_rit_title">
+                                    <img src="../image/logo_7.svg" alt="notice-logo">
+                                    <h2>시설물 설치/변경 승인 신청서 작성</h2>
+                                </div>
+                                <div class="content_rit_form" id="content_rit_d">
+                                    <form action="">
+                                        <div class="content_rit_tableBox">
+                                            <table class="content_rit_table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>신청자</th>
+                                                        <td>홍길동</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>등록일</th>
+                                                        <td>YYYY-MM-DD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>대표자</th>
+                                                        <td>홍길동</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>사업자번호</th>
+                                                        <td>131-84-00814</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>업체명</th>
+                                                        <td>유타대학교 아시아 캠퍼스</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>주소</th>
+                                                        <td>송도문화로 119-3</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <table class="content_rit_table content_rit_inputTable">
+                                                <tbody>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>실번호</th>
+                                                        <td class="content_rit_table_input">
+                                                            <input type="text" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>설치하고자 하는 시설</th>
+                                                        <td class="content_rit_table_input">
+                                                            <input type="text" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>설치사유</th>
+                                                        <td class="content_rit_table_input">
+                                                            <textarea placeholder="사유를 입력하세요."></textarea>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>사용허가 면적</th>
+                                                        <td class="content_rit_table_input content_rit_table_input_pd">
+                                                            <input type="number" />
+                                                            <span>㎡</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>공사기간</th>
+                                                        <td class="content_rit_table_input content_rit_table_input_pd">
+                                                            <input type="number" />
+                                                            <span>일</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>착공예정일</th>
+                                                        <td class="content_rit_table_input content_rit_table_input_pd">
+                                                            <input type='date' />
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>준공예정일</th>
+                                                        <td class="content_rit_table_input content_rit_table_input_pd">
+                                                            <input type='date' />
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="content_rit_inputBox">
+                                                        <th>파일첨부</th>
+                                                        <td class="content_rit_table_input">
+                                                            <section id="file_dragndrop">
+                                                                <div class="content_rit_file_top">
+                                                                    <label
+                                                                        class="content_rit_btn content_rit_table_input_label"
+                                                                        for="input_file">
+                                                                        파일 선택
+                                                                    </label>
+                                                                    <div class="content_rit_file_numText">
+                                                                        <span>첨부파일(<span
+                                                                                class="content_rit_file_num">0</span>
+                                                                            개 )</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="facilityTime_list add_common">
+                                                                    <ul class="YscrollBox">
+                                                                        <li>
+                                                                            <a href="">
+                                                                                <p>
+                                                                                    <span>01.</span>
+                                                                                    0000년 00월 00일 00시 00분
+                                                                                </p>
+                                                                                <button>x</button>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">
+                                                                                <p>
+                                                                                    <span>02.</span>
+                                                                                    0000년 00월 00일 00시 00분
+                                                                                </p>
+                                                                                <button>x</button>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">
+                                                                                <p>
+                                                                                    <span>03.</span>
+                                                                                    0000년 00월 00일 00시 00분
+                                                                                </p>
+                                                                                <button>x</button>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="content_rit_table_fileBox" id="dropZone"
+                                                                    draggable="true">
+                                                                    <div id="fileDragDesc">마우스로 끌어 첨부하세요.</div>
+                                                                    <table id="fileListTable" width="100%">
+                                                                        <tbody id="fileTableTbody">
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <input type="file" id="input_file" multiple="multiple">
+                                                            </section>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </form>
+                                    <div>
+                                        인천글로벌캠퍼스운영재단 시설물관리지침에 의거 별첨 구비서류를 포함하여 위와 같이 시설물 설치(변경) 승인을 신청합니다.
+                                    </div>
+                                    <div class="rit_btnWrap">
+                                        <div class="content_rit_formBtn_accept">
+                                            <input class="content_rit_btn Keybtn" type="button" value="신청하기">
+                                        </div>
+                                        <div class="content_rit_formBtn_cancel">
+                                            <input class="subKeyBtn" type="button" value="취소">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            <!--INCLUED========================================-->
+            <footer data-include="../include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

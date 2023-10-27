@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/js/swiper-bundle.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="../include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            IGC 입주안내
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="on" href="intro.html">
+                                    IGC 소개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="imfor.html">
+                                    입주안내
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact_department.html">
+                                    부서별 연락처 안내
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <h3>IGC 소개</h3>
+                        <div class="content_rit">
+                            <div class="content_ritBox_notice">
+                                <div class="content_ritBox_notice_img">
+                                    <img src="../image/information.png" alt="notice-logo">
+                                </div>
+                                <div class="content_ritBox_notice_text">
+                                    <div>주의사항 및 설명글입니다.</div>
+                                    <div>신청에 관한 궁금한 사항은 해당 기관에 문의하시기 바랍니다.</div>
+                                    <div>IGC캠퍼스 입주자 통합정보시스템에서는업무별 전화번호를 제공하고 있습니다.</div>
+                                </div>
+                            </div>
+                            <div class="contents intro_tabConwarp">
+                                <ul class="tabWrap rental_list_Btn tabWrap tabWrap_one">
+                                    <li>
+                                        <button onClick="ShowTab('0')" class="tabBtn on">
+                                            IGC 개요
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onClick="ShowTab('1')" class="tabBtn">
+                                            CI소개
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onClick="ShowTab('2')" class="tabBtn">
+                                            IGC 특장점
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="">
+                                    <ul class="tabCon on content_tab0">
+                                        <li>
+                                            <div class="tabcon_title content_rit_title">
+                                                <img src="/image/logo_7.svg" alt="notice-logo">
+                                                <h2>IGC개요</h2>
+                                            </div>
+                                            <div>
+                                                <h4>인천글로벌캠퍼스(IGC)란?</h4>
+                                                <P>인천글로벌캠퍼스는 중앙정부와 인천광역시가 국내 고급 두뇌의 유출을 막고 해외 우수 인재들을 유치하는 글로벌 교육허브 조성을
+                                                    위해 조성한
+                                                    해외대학 공동 캠퍼스입니다.
+                                                    인천글로벌캠퍼스가 자리잡고 있는 송도는 글로벌 인재를 양성하기 위한 지정학적 경쟁력을 바탕으로 지식을 기반으로 하는 연구
+                                                    관련 기관,
+                                                    기업, 교육기관이
+                                                    집적되어 있는 국제도시입니다.</P>
+                                            </div>
+                                            <div>
+                                                <div class="tabcon_sub01">
+                                                    <div>
+                                                        세계 수준의 글로벌 교육허브
+                                                    </div>
+                                                    <div>
+                                                        <div></div>
+                                                        <p>교육혁신과 경제, 산업, 문화, 예술 등<br>
+                                                            각 분야별 차세대 글로벌 인재 양성기관</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="tabcon_sub02">
+                                                    <div>
+                                                        <div></div>
+                                                        <p>대학의 학사운영 자율보장, 입주대학간<br>
+                                                            협력을 통한 동반성장 기회 제공</p>
+                                                    </div>
+                                                    <div>
+                                                        외국 명문대학 10개교 유치, 1만여명<br>
+                                                        학생의 공동캠퍼스 조성 목표
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="tabcon_sub03">
+                                                    <div>
+                                                        국가적 프로젝트
+                                                    </div>
+                                                    <div>
+                                                        <div></div>
+                                                        <p>기획재정부, 산업통상자원부, 교육부<br>
+                                                            인천시가 참여, 약 1조원을 투자하는 사업</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tabcon_table_title">
+                                                <h4>인천글로벌캠퍼스 추진경과</h4>
+                                                <div></div>
+                                            </div>
+                                            <div class="XscrollBox">
+                                                <table class="add_common TB_addBtn td_amount">
+                                                    <colgroup>
+                                                        <col width="30%">
+                                                        <col width="70%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>연도</th>
+                                                            <th>주요연혁</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2007.08.17</td>
+                                                            <td>인천경제자유구역 내 외국교육연구기관 유치지원 결정(제19차 경자위)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2009.03.27</td>
+                                                            <td>글로벌대학캠퍼스 건립사업 시행계획 수립</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2009.05.20</td>
+                                                            <td>송도글로벌대학캠퍼스 기공식</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2009.07.31</td>
+                                                            <td>1단계 1,2공구 착공</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2012.02.21</td>
+                                                            <td>송도글로벌대학운영재단법인 설립</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2012.03.03</td>
+                                                            <td>한국뉴욕주립대학교 개교</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2012.07.27</td>
+                                                            <td>1단계 1,2공구 준공</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2014.03.10</td>
+                                                            <td>한국조지메이슨대학교 개교</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2014.08.29</td>
+                                                            <td>1단계 3공구 착공</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2014.09.01</td>
+                                                            <td>유타대학교ㆍ겐트대학교 개교</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2015.03.02</td>
+                                                            <td>인천글로벌캠퍼스운영재단 명칭변경 조례 공포</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2015.12.29</td>
+                                                            <td>3공구 준공</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2017.09</td>
+                                                            <td>뉴욕주립대 패션기술대학교(FIT) 개교</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2021.06.03</td>
+                                                            <td>스탠퍼드대학교 스마트시티 연구소 개소</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabCon content_tab1">
+                                        <li>
+                                            <div class="tabcon_title content_rit_title">
+                                                <img src=" /image/logo_7.svg" alt="notice-logo">
+                                                <h2>CI소개</h2>
+                                            </div>
+                                            <div class="tabcon_sub01_2">
+                                                <div class="subline"></div>
+                                                <div><img src="/image/ci_logo01.jpg" alt="흑백로고이미지"></div>
+                                                <h4>CI (Corporate Identity)</h4>
+                                                <p>캠퍼스 전체를 아우르는 듯한 반원의 형태와 하늘과 맞닿을 것 같이 수직으로 곧게
+                                                    뻗어있는 직선 등 건축물이 가지고 있는 형태적 특성을 직접적 모티브로 활용하였습니다.
+                                                    이를 인천글로벌캠퍼스(Incheon Global Campus)의 영문 이니셜 ‘IGC’와 조합하여
+                                                    전 세계의 인재를 아우르고 글로벌 교육기관 중 으뜸이라는 대표성과 상징성을 표현하였습니다. </p>
+                                            </div>
+                                            <div class="tabcon_sub02_2">
+                                                <div class="subline"></div>
+                                                <div><img src="/image/ci_logo02.jpg" alt="컬러로고이미지"></div>
+                                                <h4>브랜드 전용 색상</h4>
+                                                <p>넓은 바다를 상징하는 파란색을 주 색상으로, 자연을 포괄하고
+                                                    친환경 캠퍼스를 나타낼 수 있는 녹색을 보조색상으로 적용하였습니다. </p>
+                                            </div>
+                                        </li>
+                                        <ul class="tabcon_sub_colorchip">
+                                            <li>
+                                                <div></div>
+                                                <p>process Color 4/color printing</p>
+                                                <span> c:100 m:0 y:0 k:0</span>
+                                                <p>rgb for Screen Application</p>
+                                                <span>r:0 g:160 b:230</span>
+                                                <p>rgb for Web Application</p>
+                                                <span>r:0 g:153 b:255</span>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                                <p>process Color 4/color printing</p>
+                                                <span>c:50 m:0 y:90 k:0</span>
+                                                <p>rgb for Screen Application</p>
+                                                <span>r:142 g:196 b:61</span>
+                                                <p>rgb for Web Application</p>
+                                                <span> r:153 g:204 b:51</span>
+                                            </li>
+                                            <li class="no_m">
+                                                <div></div>
+                                                <p>process Color 4/color printing</p>
+                                                <span>c:90 m:50 y:100 k:10</span>
+                                                <p>rgb for Screen Application</p>
+                                                <span>r:0 g:100 b:55</span>
+                                                <p>rgb for Web Application</p>
+                                                <span>r:0 g:100 b:50</span>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <ul class="tabCon content_tab2">
+                                        <li>
+                                            <div class="tabcon_title content_rit_title">
+                                                <img src="/image/logo_7.svg" alt="notice-logo">
+                                                <h2>IGC 특장점</h2>
+                                            </div>
+                                            <div>
+                                                <h4>왜 인천글로벌캠퍼스인가?</h4>
+                                                <p>기획재정부, 산업통상자원부, 교육부, 인천시가 참여하는 국가 프로젝트!</p>
+                                            </div>
+                                            <div class="tabcon_sub_warp">
+                                                <h4 class="H_ColorBullet">인천글로벌캠퍼스에 유치된 대학은</h4>
+
+                                                <div class="tabcon_sub03_1">
+                                                    <h5 class="bullet">외국명문대학 홈캠퍼스와 동일한 학위를 수여합니다.</h5>
+                                                    <p>인천글로벌캠퍼스의 대학에서 학업을 마친 학생들은 홈캠퍼스 학생들과 마찬가지로 외국명문대학의 학위를 수여받습니다.
+                                                    </p>
+                                                </div>
+                                                <div class="tabcon_sub03_2">
+                                                    <h5 class="bullet">홈캠퍼스와 동일한 커리큘럼으로 수업합니다.</h5>
+                                                    <p>인천글로벌캠퍼스에 유치되는 대학은 외국명문대학의 분교가 아닌 독립적인 확장 캠퍼스(Exteneded Campus)
+                                                        또는
+                                                        글로벌캠퍼스(Global Campus)입니다.
+                                                        확장 캠퍼스 는 해외대학 분교와 달리 홈캠퍼스와 동일한 커리큘럼으로 운영되고, 입학 및 졸업사정, 학위수여 등 모든
+                                                        학사운영과
+                                                        학칙을 홈캠퍼스에서 직접 관리합니다. </p>
+                                                </div>
+                                                <div class="tabcon_sub03_3">
+                                                    <h5 class="bullet">교수진들도 홈캠퍼스에서 직접 파견합니다.</h5>
+                                                    <p>각 학교의 교수진은 홈캠퍼스에서 파견되며 수업은 전 과목 영어로 진행됩니다. 인천글로벌캠퍼스에서 운영하는 학과는
+                                                        홈캠퍼스에서 가장
+                                                        우수하고 경쟁력 있다고 평가받는 학과를
+                                                        중심으로 개설됩니다. 따라서 입학생은 세계 여러 대학의 최우수 교과과정을 여기 인천글로벌캠퍼스에서 배우실 수
+                                                        있습니다.</p>
+                                                </div>
+                                                <div class="tabcon_sub03_4">
+                                                    <h5 class="bullet">재학 중 1년은 홈캠퍼스에서 수업을 받습니다.</h5>
+                                                    <p>인천글로벌캠퍼스의 재학생은 인천캠퍼스에서 3년, 홈캠퍼스에서 1년 간 수학하며 홈캠퍼스 학생들과 동일한 수업을 받으며
+                                                        홈캠퍼스의
+                                                        문화를 경험할 수 있습니다. 또한 홈캠퍼스의
+                                                        학생들도 자유롭게 인천글로벌캠퍼스로 건너와서 공부할 수 있습니다.</p>
+                                                </div>
+                                                <div class="tabcon_sub03_5">
+                                                    <h5 class="bullet">저렴한 학비와 생활비</h5>
+                                                    <div class="tabcon1_sub03_5">
+                                                        <div>48%</div>
+                                                        <div></div>
+                                                        <p>igc tuition + fee (외국인 동일) $20,000</p>
+                                                        <p>기숙사 비용 $2,000 ~ 3,000</p>
+                                                    </div>
+                                                    <div class="tabcon2_sub03_5">
+                                                        <div>100%</div>
+                                                        <div></div>
+                                                        <p>미국 공립대학 100위권 이상 평균 학비 (외국인 기준) $32,000</p>
+                                                        <p>기숙사 등 주거 비용 (최소) $13,000 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabcon_sub03_6">
+                                                    <h5 class="bullet">해외명문대 공동캠퍼스</h5>
+                                                    <div class="tabcon1_sub03_6">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>종합대학의 면모</p>
+                                                            <p>외국명문대학의 우수학과가 모여 종합대학 형태로 발전</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon2_sub03_6">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>글로벌 인적 네트워크</p>
+                                                            <p>대학 간 학점 교류, 공동 프로그램 등을 통한 글로벌 인적 네트워크 형성</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon3_sub03_6">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>저렴한 유학비</p>
+                                                            <p>저렴한 비용으로 해외 유학의 효과를 극대화 할 수 있는 새로운 교육 시스템</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon4_sub03_6">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>한류문화 관심충족</p>
+                                                            <p>한국어 및 한류문화에 대한 관심을 충족시킬 수 있는 플랫폼 역할</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon5_sub03_6">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>안정적인 정주여건</p>
+                                                            <p>국제도시로서 편리한 교통, 여가, 쇼핑, 교육 등 탁월한 정주여건</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon6_sub03_6">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>글로벌 시민의식 함양</p>
+                                                            <p>세계 각지 학생들의 상호 교류를 통한 다양한 언어와 문화 습득의 기회 제공</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabcon_sub03_7">
+                                                    <h5 class="bullet">세계 치안순위 1위, 최첨단 스마트 도시</h5>
+                                                    <h6>전 세계에서 가장 안전한 나라, 대한민국 / 최첨단 보안을 갖춘 송도 U - City </h6>
+                                                    <p>세계에서 가장 안전한 국가 3년 연속 선정(세계 최대 국가∙도시 비교 통계사이트 Numbeo 발표 기준)<br>
+                                                        유비쿼터스 도시(U-city) 시스템을 활용한 세계 최고 수준의 안전 도시<br>
+                                                        500만 화소의 다중 CCTV, 침입자 추적 CCTV 등 최첨단 보안시스템 24시간 가동
+                                                    </p>
+                                                </div>
+                                                <div class="tabcon_sub03_8">
+                                                    <h5 class="bullet">IGC의 취업환경</h5>
+                                                    <div class="tabcon1_sub03_8">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>종합대학의 면모</p>
+                                                            <p>외국명문대학의 우수학과가 모여 종합대학 형태로 발전</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon2_sub03_8">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>글로벌 인적 네트워크</p>
+                                                            <p>대학 간 학점 교류, 공동 프로그램 등을 통한 글로벌 인적 네트워크 형성</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon3_sub03_8">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>저렴한 유학비</p>
+                                                            <p>저렴한 비용으로 해외 유학의 효과를 극대화 할 수 있는 새로운 교육 시스템</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabcon4_sub03_8">
+                                                        <div></div>
+                                                        <div>
+                                                            <p>한류문화 관심충족</p>
+                                                            <p>한국어 및 한류문화에 대한 관심을 충족시킬 수 있는 플랫폼 역할</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        </section>
+
+        <!--INCLUED========================================-->
+        <footer data-include="../include/footer.html"></footer>
+        <!--INCLUED=======================p=============-->
+    </div>s
+    an </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <script src="/js/attachedfile.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            신청/등록
+                        </h2>
+                        <ul>
+
+                            <li class="sub_depth0">
+                                <a href="#">
+                                    입주·임대차
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="LeaseTenant_agree.html">
+                                            입주자 등록 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="LeaseExtension.html">
+                                            임대차 연장 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="LeaseRenewal.html">
+                                            임대차 갱신 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            임대차 해지 신청
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a class="on" href="#">
+                                    출입·주차
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="IDApplication.html">
+                                            ID카드 발급신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="IDApplicationMulti.html">
+                                            ID카드 발급신청(다건)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ParkingTicket.html">
+                                            주차권 발급신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Bicycle.html">
+                                            자전거 등록신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Banner.html">
+                                            현수막 등록신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a href="#">
+                                    시설사용·보수
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Facility.html">
+                                            시설물 보수 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Telephone.html">
+                                            전화 가설/이전/철거 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Drawing.html">
+                                            도면신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Equipment.html">
+                                            장비 반출입 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BuildingEntry.html">
+                                            건물출입스케줄조정신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AirConditioning.html">
+                                            냉난방 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Lighting.html">
+                                            조명 스케줄 조정신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Cleaning.html">
+                                            청소 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a href="#">
+                                    하우징
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Guesthouse.html">
+                                            게스트하우스 사용신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Professor.html">
+                                            교수하우징 사용신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Family.html">
+                                            가족실 사용 신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ResidenceCertificate.html">
+                                            거주확인서 발급신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <div class="content_ritBox_top">
+                            <h3>ID카드 발급신청 (다건)</h3>
+                        </div>
+                        <div class="content_ritBox_notice">
+                            <div class="content_ritBox_notice_img">
+                                <img src="/image/rental-notice.svg" alt="notice-logo">
+                            </div>
+                            <div class="content_ritBox_notice_text">
+                                <div class="content_rit_description">
+                                    <p class="caution">
+                                        신규 및 재발급시 반명함사이즈 사진 첨부요망(셀카, 기타사진 이용불가)
+                                    </p>
+                                    <p class="bullet">
+                                        신청한 카드를 양도 및 대여하지 않는다.
+                                    </p>
+                                    <p class="bullet">
+                                        카드 소지자가 변경된 경우 즉시 소속기관에 알리고, 대학운영재단에 통보하여야 한다.
+                                    </p>
+                                    <p class="bullet">
+                                        카드의 오남용, 복제 등 어떠한 방법으로도 변칙 사용하지 않는다.
+                                    </p>
+                                    <p class="bullet">
+                                        분실 및 훼손시 즉시 소속기관에 알리고, 대학운영재단을 통해 적절한 조치를 받아야 한다.
+                                    </p>
+                                    <p class="bullet">
+                                        분실시 재발급에 드는 비용은 실비 부담을 원칙으로 한다.
+                                    </p>
+                                    <p class="bullet">
+                                        출입통제 시간은 평일 19:00부터 익일 07:00으로 하며, 토/일요일, 공휴일 및 재단에서 지정한 특정한 일에는 24시간으로 함을
+                                        원칙으로 한다.
+                                    </p>
+                                    <p class="bullet">
+                                        사전 통보 없이 출입시스템이 작동된 경우 이의를 제기하지 않는다.
+                                    </p>
+                                    <p class="bullet">
+                                        발급받은 카드는 항상 휴대한다.
+                                    </p>
+                                    <p class="bullet">
+                                        졸업/퇴직시에는 반드시 카드를 소속기관에 반납하고, 소속기관은 대학운영재단에 해당사실을 통보하고 카드도 함께 반납한다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_ritBox_middle">
+                            <div class="content_rit">
+                                <div class="content_rit_title">
+                                    <img src="/image/logo_7.svg" alt="notice-logo">
+                                    <h2>ID카드 발급신청서 작성</h2>
+                                </div>
+                                <div class="content_rit_form" id="content_rit_d">
+                                    <div class="form">
+                                        <div class="content_rit_tableBox">
+                                            <table class="content_rit_table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>등록일</th>
+                                                        <td>YYYY-MM-DD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>신청자</th>
+                                                        <td>홍길동</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>구분</th>
+                                                        <td>대학직원</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>연락처</th>
+                                                        <td>010-1231-1231</td>
+                                                    </tr>
+                                                    <tr class="content_rit_table_oddTd">
+                                                        <th>소속</th>
+                                                        <td>유타대학교 아시아 캠퍼스</td>
+                                                    </tr>
+                                                    <table class="content_rit_table content_rit_inputTable">
+                                                        <tbody>
+                                                            <tr class="content_rit_inputBox">
+                                                                <th>신청유형</th>
+                                                                <td>
+                                                                    <select name="" id="content_rit_selectBox">
+                                                                        <option value="신규발급">신규발급</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="content_rit_inputBox">
+                                                                <th>출입사항</th>
+                                                                <td>
+                                                                    <div class="content_rit_checkbox_list">
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="기숙사A"> 기숙사A
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="기숙사B"> 기숙사B
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="교수진APT"> 교수진APT
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="강의실BLD"> 강의실BLD
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="도서관"> 도서관
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="중앙도서관"> 중앙도서관
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="출입사항" value="지원센터"> 지원센터
+                                                                        </label>
+                                                                        <label
+                                                                            class="content_rit_checkbox content_rit_checkbox_etc">
+                                                                            <div
+                                                                                class="content_rit_checkbox_etc_checkbox">
+                                                                                <input type="checkbox" class="checkBox"
+                                                                                    name="신청이유" value="기타">
+                                                                                기타
+                                                                            </div>
+                                                                            <span>(</span>
+                                                                            <input type="text">
+                                                                            <span>)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="content_rit_inputBox">
+                                                                <th>신청이유</th>
+                                                                <td>
+                                                                    <div class="content_rit_checkbox_list">
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="신청이유" value="기숙사A"> 신입생
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="신청이유" value="신규채용"> 신규채용
+                                                                        </label>
+                                                                        <label class="content_rit_checkbox">
+                                                                            <input type="checkbox" class="checkBox"
+                                                                                name="신청이유" value="분실,마모,손상"> 분실,마모,손상
+                                                                        </label>
+                                                                        <label
+                                                                            class="content_rit_checkbox content_rit_checkbox_etc">
+                                                                            <div
+                                                                                class="content_rit_checkbox_etc_checkbox">
+                                                                                <input type="checkbox" class="checkBox"
+                                                                                    name="신청이유" value="기타">
+                                                                                기타
+                                                                            </div>
+                                                                            <span>(</span>
+                                                                            <input type="text">
+                                                                            <span>)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="content_rit_inputBox">
+                                                                <th>분실사유</th>
+                                                                <td class="content_rit_table_textarea">
+                                                                    <textarea name="" id="" cols="30"
+                                                                        rows="10"></textarea>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="content_rit_inputBox">
+                                                                <th>구비서류</th>
+                                                                <td class="content_rit_table_input">
+                                                                    <section id="file_dragndrop">
+                                                                        <div class="content_rit_file_top">
+                                                                            <label
+                                                                                class="content_rit_btn content_rit_table_input_label"
+                                                                                for="input_file">
+                                                                                파일 선택
+                                                                            </label>
+                                                                            <div class="content_rit_file_numText">
+                                                                                <span>첨부파일(<span
+                                                                                        class="content_rit_file_num">0</span>
+                                                                                    개 )</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="content_rit_table_fileBox"
+                                                                            id="dropZone" draggable="true">
+                                                                            <div id="fileDragDesc">마우스로 끌어 첨부하세요.</div>
+                                                                            <table id="fileListTable" width="100%">
+                                                                                <tbody id="fileTableTbody">
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <input type="file" id="input_file"
+                                                                            multiple="multiple">
+                                                                    </section>
+                                                                    <div class="file_textBox">
+                                                                        <div>※ 신분증 사진2장 (3x4cm, 컬러)</div>
+                                                                        <div>※ 현재신분증 (마모, 손상 또는 다른 이유로 새카드를 신청하는 경우)
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <!--행추가-->
+                                    <div class="add_selection_apply add_common_Wrap">
+                                        <div>
+                                            <h2 class="H_ColorBullet">ID카드 발급 신청자 선택</h2>
+                                        </div>
+                                        <!--일정선택-->
+                                        <div class="add_common add_form add_table td_amount td">
+                                            <div class="XscrollBox">
+                                                <table class="td_many">
+                                                    <colgroup>
+                                                        <col width="5%" />
+                                                        <col width="7%" />
+                                                        <col width="10%" />
+                                                        <col width="10%" />
+                                                        <col width="12%" />
+                                                        <col width="12%" />
+                                                        <col width="13%" />
+                                                        <col width="*" />
+                                                        <col width="8%" />
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="line_Rit">
+                                                                <input type="checkbox" class="checkBox">
+                                                            </th>
+
+                                                            <th>구분</th>
+                                                            <th>신청자</th>
+                                                            <th>소속</th>
+                                                            <th>학번/사번</th>
+                                                            <th>학과/부서</th>
+                                                            <th class="line_Lft">연락처</th>
+                                                            <th class="line_side">이메일</th>
+                                                            <th>신분증<br> 반납여부</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="line_Rit">
+                                                                <input type="checkbox" class="checkBox">
+                                                            </td>
+                                                            <td>재단직원</td>
+                                                            <td>
+                                                                홍길동
+                                                            </td>
+                                                            <td>유타대학교</td>
+                                                            <td>
+                                                                2022000812
+                                                            </td>
+                                                            <td>
+                                                                0000000과
+                                                            </td>
+                                                            <td class="line_Lft">010-0000-0000</td>
+                                                            <td class="line_side">0000000@gamil.com</td>
+                                                            <td>
+                                                                <input type="checkbox" class="checkBox">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="line_Rit">
+                                                                <input type="checkbox" class="checkBox">
+                                                            </td>
+                                                            <td>재단직원</td>
+                                                            <td>
+                                                                홍길동
+                                                            </td>
+                                                            <td>유타대학교</td>
+                                                            <td>
+                                                                2022000812
+                                                            </td>
+                                                            <td>
+                                                                0000000과
+                                                            </td>
+                                                            <td class="line_Lft">010-0000-0000</td>
+                                                            <td class="line_side">0000000@gamil.com</td>
+                                                            <td>
+                                                                <input type="checkbox" class="checkBox">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="rit_btnWrap">
+                                                <div class="content_rit_formBtn_accept">
+                                                    <input class="content_rit_btn Keybtn" type="button"
+                                                        value="ID카드 발급신청">
+                                                </div>
+                                                <div class="content_rit_formBtn_cancel">
+                                                    <input class="subKeyBtn" type="button" value="삭제">
+                                                </div>
+                                            </div>
+                                            <button class="subKeyBtn subPopupBtn" onclick="">
+                                                + 신청자 선택/추가
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--행추가-->
+                                    <!--ritbtn-->
+                                    <div class="rit_btnWrap">
+                                        <div class="content_rit_formBtn_accept">
+                                            <input class="content_rit_btn Keybtn" type="button" value="신청하기">
+                                        </div>
+                                        <div class="content_rit_formBtn_cancel">
+                                            <input class="subKeyBtn" type="button" value="취소">
+                                        </div>
+                                    </div>
+                                    <!--ritbtn-->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="subPopup idapplicationmulti">
+                <div class="popup_mask" style="display: block;"></div>
+                <div class="subpopup_Wrap subpopup_Wrap_wide">
+                    <div class="popupDivClose">
+                        <div>
+                            <img src="/image/logo_7.svg" alt="logo">
+                            <span>ID 카드 발급신청자 선택</span>
+                        </div>
+                        <div>
+                            <button class="popCloseBtn">
+                                창닫기
+                                <sapn class="checkedWrap">
+                                </sapn>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="subpopupCon">
+                        <div class="TBtop">
+                            <p class="TBtop_Lft">
+                                총
+                                <span class="keyColor">
+                                    11555
+                                </span>
+                                건
+                                (
+                                <span class="keyColor">
+                                    1
+                                </span>
+                                /
+                                <span>
+                                    45
+                                </span>
+                                페이지 )
+                            </p>
+                            <div class="form TBtop_rit">
+                                <select>
+                                    <option value="">
+                                        조건선택
+                                    </option>
+                                    <option value="">
+                                        제목
+                                    </option>
+                                    <option value="">
+                                        내용
+                                    </option>
+                                    <option value="">
+                                        제목 + 내용
+                                    </option>
+                                </select>
+                                <input type="text" placeholder="검색어 입력">
+                                <input type="submit" value="검색" class="subKeyBtn_scd">
+                            </div>
+                        </div>
+                        <div class="XscrollBox on" style="overflow-x: hidden;">
+                            <table class="popTB td_many td_amount">
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="*">
+                                    <col width="27%">
+                                    <col width="15%">
+                                    <col width="12%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="">이름</th>
+                                        <th class="">아이디</th>
+                                        <th class="">구분</th>
+                                        <th class="">소속명</th>
+                                        <th>선택</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="line_Rit">
+                                            홍길동
+                                        </td>
+                                        <td class="line_Rit">
+                                            sdfklsd!@gmail.com
+                                        </td>
+                                        <td class=" ">
+                                            인천글로벌 캠퍼스 운영재단운영재단
+                                        </td>
+                                        <td class="">
+                                            재단직원
+                                        </td>
+                                        <td class="line_Lft">
+                                            <input type="button" name="선택" value="선택" class="Keybtn">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line_Rit">
+                                            홍길동
+                                        </td>
+                                        <td class="line_Rit">
+                                            sdfklsd!@gmail.com
+                                        </td>
+                                        <td class=" ">
+                                            인천글로벌 캠퍼스 운영재단
+                                        </td>
+                                        <td class="">
+                                            재단직원
+                                        </td>
+                                        <td class="line_Lft">
+                                            <input type="button" name="선택" value="선택" class="Keybtn">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line_Rit">
+                                            홍길동
+                                        </td>
+                                        <td class="line_Rit">
+                                            sdfklsd!@gmail.com
+                                        </td>
+                                        <td class=" ">
+                                            인천글로벌 캠퍼스 운영재단
+                                        </td>
+                                        <td class="">
+                                            재단직원
+                                        </td>
+                                        <td class="line_Lft">
+                                            <input type="button" name="선택" value="선택" class="Keybtn">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line_Rit">
+                                            홍길동
+                                        </td>
+                                        <td class="line_Rit">
+                                            sdfklsd!@gmail.com
+                                        </td>
+                                        <td class=" ">
+                                            인천글로벌 캠퍼스 운영재단
+                                        </td>
+                                        <td class="">
+                                            재단직원
+                                        </td>
+                                        <td class="line_Lft">
+                                            <input type="button" name="선택" value="선택" class="Keybtn">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line_Rit">
+                                            홍길동
+                                        </td>
+                                        <td class="line_Rit">
+                                            sdfklsd!@gmail.com
+                                        </td>
+                                        <td class=" ">
+                                            인천글로벌 캠퍼스 운영재단
+                                        </td>
+                                        <td class="">
+                                            재단직원
+                                        </td>
+                                        <td class="line_Lft">
+                                            <input type="button" name="선택" value="선택" class="Keybtn">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <button>《</button>
+                            <button>〈</button>
+                            <ul>
+                                <li><a href="#" class="on">1</a></li>
+                                <li><a href="#">2</a></li>
+                            </ul>
+                            <button>〉</button>
+                            <button>》</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

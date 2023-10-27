@@ -1,0 +1,2042 @@
+.container{
+  overflow: hidden;
+}
+.keycolor{
+  color:#00A1E9 !important;
+  font-weight: bold;
+}
+.customMenuWrap .swiper-container.swiper-containerTab0{
+  display: block;
+}
+/*hover=====================================================*/
+
+/*keyColor*/
+.notiBtn:hover,
+.payMenuWrap .titleWrap a:hover,
+.conTop_rit .conTop_ritBT a:hover,
+.applyBtn:hover{
+  background-color: #2196f3;
+}
+.conTop_rit .conTop_ritTop a:hover{
+  background-color: #83b931;
+}
+
+/*commonClass=====================================================*/
+.linkLT strong{
+  font-size:1.1rem !important;
+}
+.linkLT p{
+  font-size: 0.7rem;
+  line-height:15px;
+  margin-top:0.4rem;
+  font-weight: 600;
+}
+
+/*swiperSlide
+===================================*/
+.custom-fraction {
+  text-align:right; 
+  margin:15px 5px 0 0;
+}
+.activetop>a {
+  color:rgb(67, 115, 99);
+}
+.frame {
+  line-height: 5rem;
+  overflow: hidden;
+}
+.frame ul {
+  font-size: 50px;
+  display: flex;
+}
+.frame ul li {
+  width: 14rem;
+  margin: 0 10px 0 0;
+  background-color:rgb(224, 232, 255);
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+  flex:none;
+}
+.frame ul li a{
+  font-size: 1.3rem;
+  font-weight: bold;
+  display:block;
+}
+/*swiperSlideEnd===================================================
+============================================================*/
+
+/*mainvisual
+===============================*/
+.mainvisualWrap{
+  width:100%;
+  height:270px;
+  padding-top:20px;
+  background-color:#8ebfff;
+}
+.MVWrap{
+  width:1300px;
+  margin:0 auto;
+  position:relative;
+ height:245px;
+}
+.MVtextBox{
+  /* width:450px; */
+  display: inline-block;
+  z-index: 10;
+}
+
+.MVtextBox h3{
+  font-size: 2.2rem;
+  color: #00b0ff;
+}
+.MVtextBox p{
+  font-size:1.2rem;
+  color: #00b0ff;
+  font-weight: 600;
+}
+.MVtextBox p.ctDtl{
+  padding-top:1rem;
+  font-size:0.8rem;
+  color:#fff;
+  line-height: 20px;
+  font-weight: 400;
+}
+.MVimgWrap{
+  width:644px;
+  height:100%;
+  background: url(../image/bannerimg2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-position: bottom;
+  top:9px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.MVspecifiWrap{
+  overflow: hidden;
+  float:right;
+  margin-top: 15px;
+}
+.MVspecifiBox,
+.MVloginBox{
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.55rem;
+  width: 250px;
+  height:180px;
+  overflow: hidden;
+  position: relative;
+}
+.MVspecifiBox{
+ display: none;
+}
+.MVloginBox{
+  /* display: none; */
+}
+.MVspecifiBox p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.MVspecifiBox .titleWrap p{
+  text-indent: 5px;
+  padding-top:0.4rem;
+}
+.MVspecifiBox .titleWrap span{
+  font-size: 1.2rem;
+}
+.MVloginBox .titleWrap p{
+  text-indent: 0px;
+  color:#999;
+  font-size: 0.75rem;
+}
+/*3d아이콘 위치 및 크기*/
+.iconVisual{
+  background-color: #00A1E9;
+  border-radius: 50%;
+  width: 160px;
+  height: 120px;
+  transform: rotate(170deg);
+  position: absolute;
+  top: -40px;
+  right: -50px;
+}
+.iconVisual img{
+  width: 75px;
+  transform: translate(69px, 15px) rotate(205deg);
+}
+.conTop_ritCon .iconVisual img{
+  width: 96px;
+  transform: translate(43px, 15px) rotate(174deg);
+}
+.MVspecifiWrap .iconVisual img{
+  width: 69px;
+  transform: translate(76px, 20px) rotate(205deg);
+}
+.infoLft .iconVisual>div img{
+  transform: translate(53px, 34px) rotate(192deg);
+  width: 68px;
+}
+
+/*3d아이콘 위치 및 크기 End*/
+.paymentWrap{
+  color: #00A1E9;
+  font-size: 1.5rem;
+  font-weight:700;  
+  text-align:right;
+  letter-spacing: -2px;
+  padding:2.5rem 0 0.5rem 0;
+}
+.loginVSbtn span:after{
+  display: none;
+}
+.paymentWrap  .arrow{
+  padding-left:20%;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.paymentWrap span{
+  padding-left:12px;
+  position: relative;
+}
+.paymentWrap span:after{
+  content: "+";
+  position: absolute;
+  top:0;
+  left:-20px;
+  width:25px;
+  height:25px;
+  background-color:#00A1E9;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color:#fff;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 25px;
+}
+.statusWrap{
+  color:#a9a9a9;
+  text-align:right;
+}
+
+.MVspecifiBox a,
+.MVloginBox a{
+  display: block;
+}
+.billNumWrap{
+  position: relative;
+  margin-top:1.5rem;
+}
+.billNumWrap:after{
+  position: absolute;
+  right:0;
+  top:2px;
+  content:">";
+  font-size: 0.6rem;
+  font-weight:bold;
+}
+.MVloginBox .iconVisual img {
+  width: 52px;
+  transform: translate(70px, 20px) rotate(198deg);
+}
+.loginVSbtn span{
+  letter-spacing: 0px;  
+}
+.loginVSbtn .arrow{
+  padding-left:0;
+  transform: scale(0.8);
+  display: inline-block;
+}
+.joinVSbtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+  position: relative;
+}
+.joinVSbtn:after{
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 40%;
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
+.joinVSbtn a{
+  width:100%;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/*conTopWrap
+===============================*/
+.swiper-slide ul li a p {
+  word-break:keep-all;
+}
+.conTopWrap{
+  display: flex;
+  /*position: relative;*/
+  justify-content: space-between;
+}
+.conTop_lft{
+  width:815px;
+  position: relative;
+  flex: 1 1 50%;
+}
+.conTop_lft .searchWrap{
+  width:100%;
+  height:55px;
+  overflow: hidden;
+  position: relative;
+  border-radius:10px;
+  margin-bottom: 1.5rem;
+  display: none;
+}
+.conTop_lft .searchWrap input[type="text"]{
+  width: 100%;
+  height: 100%;
+  text-indent: 1.2rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 2px solid #00A1E9;
+}
+.searchWrap .closeBtn{
+  display: none;
+}
+.searchBtnWrap{
+  position: absolute;
+  top:0;
+  right:0;
+  width:60px;
+  height:100%;
+  background-color: #00A1E9;
+}
+.conTop_lft .searchWrap input[type="submit"]{
+  width: 100%;
+  height:100%;
+  background:url(../image/kor.svg);
+  background-repeat: no-repeat;
+  background-size:30px;
+  background-position: 50% 50%;
+  border:none;
+}
+.customMenuWrap{
+ background-color: #F4F4F4;
+ border-radius: 10px;
+ padding:3rem 2rem;
+ overflow: hidden;
+ position: relative;
+}
+.customMenuWrap .titleWrap strong{
+  font-size:1.3rem;
+}
+.customMenuWrap .titleWrap{
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+.customMenuWrap .swiper-slide ul{
+  min-height:287px;
+}
+.customTabWrap{/*221214*/
+  overflow: hidden;
+  /* border-radius: 20px; */
+  background-color: #e4e4e4;
+  position: absolute;
+  display: inline-flex;
+  height: 50px;
+  width: 351px;
+  margin-left: 1rem;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 10px;
+}
+
+.customTabWrap button{
+  width:100%;
+  height:100%;
+  border:none;
+  color:#ADADAD;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+.customTabWrap button.on{
+  color:#fff;
+  background-color: #00A1E9;
+  border-radius: 0px;
+}
+.applyBtn{
+  float: right;
+  background-color: #00A1E9;
+  width: 170px;
+  height: 70px;
+  border-radius: 0 0 0 25px;
+  transform: translate(32px, -48px);
+}
+.applyBtn span{
+  color:#fff;
+  font-weight: 700;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 80px;
+  margin-left:30px;
+}
+.applyBtn span:after{
+  content: "+";
+  position: absolute;
+  top: 0;
+  left:-2px;
+  width: 17px;
+  height: 17px;
+  border:1.5px solid #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 17px;
+  border-radius: 17px;
+}
+/*=====swiper-----*/
+.customMenuWrap .swiper-container {
+  width: 100%;
+  margin:0rem 0 0;
+  position: relative;
+  display: none;
+  /* overflow: hidden; */
+}
+ .swiper-slide {
+  text-align: center;
+  display: flex;
+  width:100%;
+}
+.swiper-slide ul{
+    padding:0 4.5rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+ .swiper-slide ul li{
+    width:20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom:1.7rem;
+}
+ .swiper-slide ul li a{
+    display: block;
+    font-size: 0.85rem;
+    font-weight:700;
+    width:110px;
+    height:100%;
+}
+.swiper-slide ul li a .Iconbox{
+    width:80px;
+    height:80px;
+    border-radius: 80px;
+    background-color: #fff;
+    position: relative;
+    margin:0 auto 5px;
+}
+ .swiper-slide ul li a .Iconbox img{
+   width:35px;
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+}
+
+.swiper-pagination-bullets{
+display: none;
+}
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next{
+/* transform: translateY(-50%); */
+}
+.swiper-container .swiper-button-next{
+ right:-4px; 
+}
+.swiper-container .swiper-button-prev{
+ left:-4px; 
+}
+.swiper-container .swiper-button-prev:after,
+.swiper-container .swiper-button-next:after,
+.swiper-containerV .swiper-button-prev:after,
+.swiper-containerV .swiper-button-next:after,
+.swiper-containerStop .swiper-button-prev:after,
+.swiper-containerStop .swiper-button-next:after{
+font-size:1rem;
+font-weight:bold;
+color:#999;
+}
+.swiper-containerStop .swiper-button-prev:after,
+.swiper-containerStop .swiper-button-next:after{
+  color:#000;
+  font-size:0.85rem;
+}
+/*=====swiper-----*/
+
+.conTop_rit{
+  width:350px;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.conTop_ritCon{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.conTop_ritCon::after{
+  content:"";
+  position: absolute;
+  top:50%;
+  left:0;
+  width:100%;
+  height:0.5px;
+  opacity: 0.5;
+  background-color: #fff;
+}
+.conTop_ritTop::before{
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  width: 162px;
+  height: 131px;
+  background: url(../image/logo_3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.conTop_rit a{
+ display: block;
+ padding: 1.4rem 2.5rem 0;
+ height:83px;
+}
+.conTop_rit .titleWrap >*{
+  color:#fff;
+}
+.titleWrap p{
+  margin-top:0.7rem;
+  font-size: 0.75rem;
+}
+.conTop_rit .conTop_ritTop a{
+  background-color:#8FC43E;
+}
+.conTop_rit .conTop_ritBT{
+  
+}
+.conTop_rit .conTop_ritBT .iconVisual{
+  background-color:#DDF0F4;
+  width: 140px;
+  height: 120px;
+  transform: rotate(180deg);
+  right: -45px;
+  top:-38px;
+  border-radius:43%;
+}
+.conTop_rit .conTop_ritBT a{
+  background-color:#00A1E9;
+}
+/*conMiddleWrap
+===============================*/
+.conMiddleWrap{
+ background-color: #f9f9f9;
+ overflow: hidden;
+ margin: 3rem 0 0 0;
+ padding-bottom:2rem;
+}
+.payMenuWrap{
+  width:calc(100% - 11rem);
+  padding:1.5rem 5.5rem 1.3rem 5.5rem;
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 10px 40px 10px 40px;
+  border: 1px solid #e3e3e3;
+}
+.payMenuWrap .titleWrap{
+  width: 180px;  
+  display: flex;
+  justify-content: space-between;
+}
+.payMenuWrap .titleWrap strong{
+  height: 50px;
+  line-height:26px;
+}
+.payMenuWrap .titleWrap a{
+  background-color: #00A1E9;
+  color:#fff;
+  font-weight:600;
+  font-size: 0.82rem;
+  line-height: 17px;
+  text-align: center;
+  padding: 0.5rem 0.7rem;
+  border-radius: 15px;
+  height: 35px;
+}
+.FstFloorWrap{
+  width:765px;
+}
+.FstFloorWrap .swiper-container{
+  overflow: hidden;
+}
+.FstFloorWrap .swiper-slide ul{
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding:0;
+}
+.FstFloorWrap .swiper-slide ul li{
+  width:calc(100% / 6 );
+  margin:0;
+}
+.FstFloorWrap .swiper-slide ul li a .Iconbox {
+  background-color: #f4f4f4; 
+}
+.FstFloorWrap .swiper-container .swiper-button-next {
+  right: 30px;
+}
+.FstFloorWrap .swiper-container .swiper-button-prev {
+  left: 30px;
+}
+.notiWrap{
+  display:flex;
+  justify-content: space-between;
+  height:60px;
+  margin:3rem 0;
+  line-height: 60px;
+}
+.notiCon_left{
+  width: 630px;
+  background: #fff;
+  padding: 0 110px 0 50px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  border: 1px solid #e3e3e3;
+}
+
+.notiCon_left .swiper-containerV{
+  width:calc(100% - 140px);
+  overflow: hidden;
+}
+.notiCon_left .swiper-containerV .swiper-wrapper{
+  flex-direction: column;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.swiper-containerV .swiper-button-prev{
+  left: 88%;
+  transform: rotate(90deg);
+}
+.swiper-containerV .swiper-button-next{
+  right: 5%;
+  transform: rotate(90deg);
+}
+.notiCon_left .titleWrap{
+  width: 140px;
+}
+.notiCon_left .swiper-slide a{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size:0.88rem;
+  font-weight: 500;
+}
+.notiBtn{
+  width:350px;
+  background-color: #00A1E9;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+.notiBtn.titleWrap strong{
+  margin-left:3rem;
+  color:#fff;
+}
+.notiBtn .iconVisual{
+  background-color: #DDF0F4;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  right: -18px;
+  height:137px;
+}
+.notiBtn .iconVisual >div{
+  width:140px;
+  height:120px;
+  background-color: #fff;
+  border-radius: 140px;
+  transform: translate(-5%, 6%);
+}
+.notiBtn .iconVisual >div img {
+  width: 52px;
+  transform: translate(60px, 38px) rotate(168deg);
+}
+.infoWrap{
+  display:inline-flex;
+  justify-content:space-between;
+  width:100%;
+}
+
+.infoBox{
+  width:300px;
+  height:266px;
+  background-color:#fff;
+  border-radius: 15px;
+  padding:2rem 30px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e3e3e3;
+}
+.infoLft {
+  border-bottom-left-radius: 45px;
+  border: 1px solid #e3e3e3;
+}
+.infoLft .iconVisual{
+  background-color: #DDF2BF;
+  border-radius: 50%;
+  width: 185px;
+  height: 160px;
+  top: -36px;
+}
+.iconVisual>div{
+  width: 150px;
+  height: 115px;
+  background: #b3da78;
+  border-radius: 150px;
+  transform: translate(14px, 24px);
+}
+.infoBox.titleWrap>strong,
+.infoBox .titleWrap>strong{
+  display: inline-block;
+  padding-bottom: 1.2rem
+}
+.infoBox a{
+  display: block;
+  position: relative;
+}
+.infoLft a {
+  border-radius: 10px;
+  width:90%;
+  margin:0 auto;
+  padding: 1.35rem 5%;
+}
+.infoLft a.guideBtn{
+  background-color: #008246;
+  color:#fff;
+  margin-bottom:1rem;
+}
+.guideBtn.linkLT p{
+ color:#fff;
+}
+.linkLT p{
+  font-weight:500;
+}
+.infoLft a.guideBtn:after{
+  content:"";
+  width:37px;
+  height:37px;
+  position: absolute;
+  right:20px;
+  top:50%;
+  transform: translateY(-50%);
+  background:url("../image/infoIcon_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.infoLft a.guideBtn strong{
+  color:#fff;
+}
+.infoLft a.introBtn{
+  background-color: #f5f5f5;
+}
+.infoLft a.introBtn:after{
+  content:"";
+  width:40px;
+  height:40px;
+  position: absolute;
+  right:20px;
+  top:50%;
+  transform: translateY(-50%);
+  background:url("../image/infoIcon_2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.swiper-containerStop{
+  height:225px;
+}
+.infoMdl .titleWrap .custom-fraction{
+  float: right;
+  margin: 4px 28px 0 0;
+  font-weight: bold;
+  font-size:1.05rem;
+}
+.swiper-containerStop .swiper-button-next, 
+.swiper-containerStop .swiper-button-prev {
+  top: 14%;
+}
+.swiper-containerStop .swiper-button-next{
+  right:26px;
+}
+.swiper-containerStop .swiper-button-prev {
+  left:245px;
+}
+.promoCon{
+  width:100%;
+  background-color: #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.promoCon img{
+  width:100%;
+  height:100%;
+}
+.infoRit {
+  background-color: #008246;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 45px;
+}
+.infoRit a{
+  color:#fff;
+  font-size: 1.2rem;
+  height:100%;
+  line-height:53px;
+  position: relative;
+}
+.infoRit a:after{
+  content:"";
+  position: absolute;
+  bottom:0;
+  left:-40%;
+  width:200%;
+  height:0.5px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.infoRit a:before{
+  content:"";
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:25px;
+  width:27px;
+  height:27px;
+}
+.infoRit a:nth-of-type(1):before{
+  background:url(../image/edit.svg);
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.infoRit a:nth-of-type(2):before{
+  background:url(../image/credit-card.svg);
+  background-repeat:no-repeat;
+   background-size: contain;
+}
+.infoRit a:nth-of-type(3):before{
+  background:url(../image/home.svg);
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.infoRit a:nth-of-type(4):before{
+  background:url(../image/wind.svg);
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.infoRit a:nth-of-type(5):before{
+  background:url(../image/settings.svg);
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.infoRit a:nth-last-child(1):after{
+  height:0;
+}
+
+
+/*반응형****************************************************/
+@media screen and (max-width: 1650px) {
+/*conTopWrap
+===============================*/
+.MVWrap {
+  width:90%;
+}
+/*conMiddleWrap
+===============================*/
+}
+/*반응형****************************************************/
+@media screen and (max-width: 1400px) {
+/*conTopWrap
+===============================*/
+.MVWrap {
+  width:95%;
+}
+/*conTopWrap
+===============================*/
+.conTop_lft{
+  width:67%;
+}
+}
+/*반응형****************************************************/
+@media screen and (max-width: 1290px) {
+
+/*mainvisual
+===============================*/
+.MVtextBox h3 {
+  font-size: 1.5rem;
+}
+.MVtextBox p {
+  font-size: 0.81rem;
+}
+.MVtextBox p.ctDtl {
+  padding-top: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.MVimgWrap {
+  left: 424px;
+}
+/*conTopWrap
+===============================*/
+.conTop_rit a {
+  padding: 1.2rem 1.2rem 0;
+}
+/*conMiddleWrap
+===============================*/
+
+.payMenuWrap .titleWrap {
+  width: 138px;
+}
+.payMenuWrap {
+  width: calc(100% - 7rem);
+  padding: 1.5rem 3.5rem 1.3rem 3.5rem;
+}
+.payMenuWrap .titleWrap a {
+  font-size: 0.6rem;
+}
+.FstFloorWrap .swiper-container .swiper-button-prev {
+  left: 15px;
+}
+.FstFloorWrap .swiper-container .swiper-button-next {
+right: 15px;
+}
+/*footer
+===============================*/
+}
+/*반응형****************************************************/
+@media screen and (max-width: 1230px) {
+/*mainvisual
+===============================*/
+/*conTopWrap
+===============================*/
+.customMenuWrap .swiper-slide ul {
+  min-height: 250px;
+}
+.swiper-slide ul li a {
+  font-size: 0.75rem;
+  width:90px;
+}
+.swiper-slide ul li a .Iconbox {
+  width: 65px;
+  height: 65px;
+}
+.conTop_rit a {
+  height: 75px;
+}
+.conTop_lft{
+  width:65%;
+}
+.conTop_rit {
+  margin-left: 4%;
+}
+.conTop_rit .iconVisual,
+.conTop_ritTop::before {
+ /*display: none;*/
+}
+.conTop_ritTop::before {
+  width: 135px;
+  height: 108px;
+}
+.swiper-slide ul {
+  padding: 0 2.5rem;
+}
+.conMiddleWrap {
+  margin: 2rem 0 0 0;
+}
+.FstFloorWrap {
+  width: 630px;
+}
+.FstFloorWrap .swiper-slide ul li {
+  width: calc(94% / 6 );
+}
+/*conTopmiddle
+===============================*/
+.notiCon_left {
+  width: 584px;
+  padding: 0 110px 0 28px;
+}
+.notiBtn {
+  width: 390px;
+}
+.infoBox {
+  width: calc(77% / 3);
+}
+.infoMdl .titleWrap .custom-fraction {
+  position: absolute;
+  top: 36px;
+  left: 77%;
+  margin:0;
+}
+.swiper-containerStop .swiper-button-prev {
+  left: 68%;
+}
+.swiper-containerStop .swiper-button-next {
+    left: 86%;
+}
+}
+/*반응형****************************************************/
+@media screen and (max-width: 1200px) {
+
+/*conTopmiddle
+===============================*/
+.notiWrap {
+  margin: 2rem 0;
+}
+.notiCon_left {
+  width:55%;
+  padding: 0 7% 0 3%;
+}
+.notiBtn {
+  width:35%;
+  margin-left: 3%;
+}
+.swiper-containerV .swiper-button-prev {
+  left: 89%;
+}
+.swiper-containerV .swiper-button-next{
+  right: 2%;
+}
+}
+/*반응형****************************************************/
+@media screen and (max-width: 1120px) {
+  .MVimgWrap {
+    left:1.5%;
+    transform: translateX(0);
+    top:0px;
+}
+.MVtextBox{
+  position: absolute;
+  left:0;
+  top:0;
+}
+.notiBtn .iconVisual >div img {
+  width: 44px;
+  transform: translate(60px, 41px) rotate(168deg);
+}
+.infoLft a.guideBtn:after,
+.infoLft a.introBtn:after {
+  width:32px;
+  height:32px;
+}
+.infoRit a:before{
+  width:25px;
+  height:25px;
+}
+}
+/*반응형****************************************************/
+@media screen and (max-width: 1024px) {
+/*basic
+===============================*/
+/*mainvisual
+===============================*/
+.MVimgWrap {
+ width:calc(100% - 320px ); 
+}
+/*conTopWrap
+===============================*/
+.infoLft .iconVisual>div img {
+  transform: translate(53px, 42px) rotate(192deg);
+  width: 63px;
+}
+.conTop_lft .searchWrap{
+  height:44px;
+  position: absolute !important;
+  width:90%;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 1rem 5%;
+  border-radius: 10px;
+  background: #fff;
+  border-radius: 0;
+  display: none;
+  border-bottom: 0.5px solid #00A1E9;
+}
+.applyBtn {
+  float: right;
+  background-color: #00A1E9;
+  width: 170px;
+  height: 70px;
+  border-radius: 0 0 0 25px;
+  transform: translate(40px, -32px);
+}
+.searchBtnWrap{
+  width:47px;
+  height:47px;
+  background-color: #00A1E9;
+  border-radius: 20px;
+  border:none;
+  float:right;
+  position:relative;
+
+}
+.conTop_lft .searchWrap input[type="text"] {
+  width:calc(95% - 56px);
+  margin:0 auto;
+}
+.searchWrap .closeBtn{
+  display: block;
+  width:30px;
+  height:30px;
+  line-height: 30px;
+  background-color: #ccc;
+  color:#fff;
+  font-size:1.5rem;
+  font-weight: 500;
+  border:none;
+  border-radius: 30px;
+  float:right;
+  margin: 8px 9px 0 0;
+}
+.conTopWrap {
+  display: flex;
+  flex-direction: column;
+}
+.conTop_lft {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.conTop_rit {
+  width: 100%;
+  margin-left:0;
+  flex-direction:row;
+}
+.customMenuWrap {
+  border-radius:15px;
+  padding: 2rem 2rem;
+}
+.customMenuWrap .swiper-slide ul li a .Iconbox img {
+  width: 47px;
+}
+.swiper-slide ul li a .Iconbox {
+  width: 95px;
+  height: 95px;
+}
+.swiper-slide ul li a {
+  font-size: 0.85rem;
+  width:110px;
+}
+.conTop_ritCon {
+  width: 48%;
+}
+.conTop_rit a {
+  height: 88px;
+  padding: 33px 5% 0;
+}
+.conTop_rit .conTop_ritBT .iconVisual {
+  right: -36px;
+  width: 150px;
+  height: 129px;
+}
+.index .titleWrap strong {
+  font-size: 1.05rem !important;
+}
+/*conMiddleWrap
+===============================*/
+.FstFloorWrap {
+  width: 560px;
+}
+.FstFloorWrap .swiper-slide ul li a .Iconbox {
+  width: 65px;
+  height: 65px;
+}
+.FstFloorWrap .swiper-slide ul li a {
+  font-size: 0.7rem;
+  width: 80px;
+}
+.notiBtn.titleWrap strong {
+  margin-left: 2rem;
+}
+.notiCon_left .titleWrap {
+  width: 100px;
+}
+.notiCon_left .swiper-containerV {
+    width: calc(100% - 100px);
+}
+.infoBox {
+    padding:20px;
+    width: calc(79% / 3);
+}
+.infoMdl.infoBox{
+  height:190px;
+}
+.swiper-containerStop {
+  height: 150px;
+}
+.infoMdl .titleWrap .custom-fraction {
+  top: 19px;
+}
+.infoWrap{
+  align-items: end;
+}
+.infoRit a {
+  font-size: 0.9rem;
+}
+.infoRit a:before {
+  right: 0px;
+}
+.notiWrap{
+  height:auto;
+  display: block;
+  position: relative;
+}
+.notiCon_left{
+  height:60px;
+  width:82%;
+  padding: 0px 15% 0 3%;
+}
+.notiBtn.titleWrap{
+  width: calc(77% / 3);
+  height: 60px;
+  display: block;
+  padding: 0 20px;
+  margin-left: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6rem;
+}
+.notiBtn.titleWrap strong {
+  margin-left: 0rem;
+}
+.infoMdl .titleWrap .custom-fraction {
+  top: 22px
+}
+.linkLT strong {
+  font-size: 0.9rem !important;
+}
+.linkLT p {
+  font-size: 0.75rem;
+}
+.infoLft a.guideBtn:after {
+  right: 11px;
+}
+.notiBtn .iconVisual {
+  right: -48px;
+}
+.notiBtn .iconVisual >div img {
+  transform: translate(72px, 41px) rotate(168deg);
+}
+
+}
+/*반응형****************************************************/
+@media screen and (max-width: 900px) {
+  /*conTopWrap
+===============================*/
+  .swiper-slide ul li a .Iconbox {
+    width: 80px;
+    height: 80px;
+}
+.swiper-slide ul li a {
+  font-size: 0.7rem;
+  width: 90px;
+}
+.conTop_rit .conTop_ritBT .iconVisual {
+  right: -42px;
+}
+/*conMiddleWrap
+===============================*/
+.payMenuWrap {
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% - 5rem);
+  padding: 1.5rem 2.5rem 1.3rem 2.5rem;
+  overflow: hidden;
+  }
+  .payMenuWrap .titleWrap {
+    width: 145px;
+    flex-direction: row;
+    margin-bottom:0.5rem;
+  }
+  .payMenuWrap .titleWrap a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    padding: 0.5rem 2.5rem;
+  }
+  .FstFloorWrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow:hidden;
+  }
+
+  .FstFloorWrap .swiper-slide ul li {
+    width: calc(100% / 6 );
+  }
+.notiBtn .iconVisual {
+  right: -70px;
+}
+.infoLft a.guideBtn:after,
+.infoLft a.introBtn:after{
+  display: none;
+}
+.notiBtn .iconVisual >div {
+  transform: translate(5%, 6%);
+}
+
+
+}
+/*반응형****************************************************/
+@media screen and (max-width: 760px) {
+
+  /*mobile navi
+===============================*/
+/*mainvisual
+===============================*/
+.index .MVspecifiBox .titleWrap strong,
+.MVloginBox .titleWrap strong{
+  font-size: 1.5rem !important;
+}
+.MVspecifiBox .titleWrap span {
+  font-size: 1.4rem;
+}
+.MVspecifiBox .titleWrap p{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.MVloginBox .titleWrap p {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+.paymentWrap {
+  font-size: 1.7rem;
+  padding: 1rem 0 0.5rem 0;
+}
+.loginVSbtn {
+  font-size: 1.7rem;
+  padding: 1.3rem 0 0.5rem 0;
+}
+.loginVSbtn .arrow {
+  transform: scale(1.1) translateY(-2px);
+}
+.paymentWrap span:after {
+  top: 2px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+}
+.MVloginBox .titleWrap span{
+  font-size:1.4rem;
+}
+.joinVSbtn a {
+width:auto;
+  font-size: 0.95rem;
+}
+.joinVSbtn:after {
+  top: 3px;
+  left: 45%;
+}
+/*conTopWrap
+===============================*/
+
+.MVtextBox{
+  width:100%;
+}
+.MVtextBox > *{
+  text-align: center;
+}
+.MVtextBox h3 {
+  font-size: 2rem;
+  color:#fff;
+}
+.MVtextBox p {
+  font-size: 1.09rem;
+}
+.MVtextBox p.ctDtl {
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.MVspecifiBox,
+.MVloginBox {
+  margin: 0 auto;
+  width:72%;
+  box-shadow: 0px 8px 21px #00000017;
+  
+}
+.MVspecifiWrap{
+  width: 111%;
+  padding: 53vw 0 1rem;
+  transform: translateX(5%);
+  position: relative;
+  margin:0;
+  overflow: inherit;
+}
+.MVimgWrap {
+  width: 94%;
+  left: 3%;
+  top: -8vw;
+}
+.mainvisualWrap,
+.MVWrap {
+  height:61vw;
+}
+
+.customMenuWrap {
+  padding: 2rem 1rem;
+}
+.conTop_lft {
+  margin-top: 3rem;
+}
+.notiBtn .iconVisual {
+  right: -20px;
+}
+.notiBtn .iconVisual >div img {
+  transform: translate(50px, 37px) rotate(172deg);
+}
+/*conMiddleWr===============================*/
+.infoRit a {
+  font-size: 1.2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.infoRit a:before {
+  width: 30px;
+  height: 30px;
+}
+.notiWrap{
+  border-radius: 20px;
+}
+.notiCon_left{
+  flex-direction: column;
+  height:100px;
+  padding: 20px 13% 0 5%;
+  border-radius: 20px 20px 0 0;
+  border:1px solid #e3e3e3;
+  border-bottom:none;
+}
+.notiCon_left .swiper-containerV {
+  width: calc(100% - 10px);
+}
+.notiWrap .notiCon_left .titleWrap{
+  line-height: 40px;
+}
+.swiper-containerV .swiper-button-prev {
+  top:30%;
+  left: 87%;
+}
+.swiper-containerV .swiper-button-next {
+  right: 2%;
+  top: 30%;
+}
+.notiBtn.titleWrap {
+  width:94%;
+  position:relative;
+  left: 0;
+  border:1px solid #e3e3e3;
+  transform: none;
+  top: 0;
+  padding: 0 3%;
+}
+.notiBtn{
+  border-radius: 0 0 20px 20px;
+}
+.infoLft .iconVisual>div img {
+  transform: translate(53px, 31px) rotate(192deg);
+  width: 75px;
+}
+.index .infoWrap{
+  flex-direction:column;
+  align-items: center;
+}
+.infoBox{
+    padding: 5% 50px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+.infoLft{
+  height:auto;
+}
+.infoLft a.guideBtn:after,
+.infoLft a.introBtn:after{
+  display:block;
+}
+.infoLft a {
+  padding: 2.5rem 5%;
+}
+.infoLft a.guideBtn:after,
+.infoLft a.introBtn:after {
+  right: 5%;
+  width:50px;
+  height:50px;
+}
+.linkLT strong {
+  font-size: 1.2rem !important;
+}
+.infoWrap .infoBox {
+  height:auto;
+}
+.index .serviceCTWrap {
+  margin: 0;
+}
+/**750마이페이지**/
+.mypageWrap .infoWrap>div:not(.My_etcWrap) {
+  flex: 0 1 100%;
+  margin-bottom: 2.5rem;
+}
+/* .mypageWrap .infoWrap>div:not(.My_etcWrap) {
+  flex: 0 1 100%;
+} */
+.promoCon {
+  height: 44vw;
+}
+
+.swiper-containerStop .swiper-button-next, 
+.swiper-containerStop .swiper-button-prev {
+  top:35px;
+}
+.swiper-containerStop{
+  height:auto;
+}
+.infoMdl .titleWrap .custom-fraction {
+  left: 77%;
+  top: 25px;
+}
+
+}
+/*반응형****************************************************/
+@media screen and (max-width: 640px) {
+
+  /*mainvisual
+===============================*/
+  .MVtextBox h3 {
+    font-size: 1.5rem;
+}
+.MVtextBox p {
+  font-size: 0.8rem;
+}
+.MVtextBox p.ctDtl {
+  padding-top: 0.25rem;
+  font-size: 0.6rem;
+  transform: scale(0.85);
+  line-height: 14px;
+}
+/*conTopWrap
+===============================*/
+
+  .customMenuWrap .titleWrap {
+    padding-left: 0;
+
+}
+  .swiper-slide ul {
+    padding: 0 1rem;
+  }
+  .customTabWrap {
+    width: 40%;
+    margin-left: 0.4rem;
+}
+.customMenuWrap {
+  padding: 2rem 0 1rem 2rem;
+  border-radius: 15px 0 0 15px;
+}
+.customMenuWrap .tabCon{
+  overflow: hidden;  
+}
+.customMenuWrap .swiper-container {
+  width: 110%;
+  float: right;
+  overflow: hidden;
+}
+.conTop_lft {
+  width: 106%;
+}
+.applyBtn {
+  transform: translate(-12px, -33px);}
+.FstFloorWrap .swiper-slide ul li a {
+  font-size: 0.68rem;
+  width: 80px;
+}
+.swiper-slide ul {
+  padding:0;
+}
+.customMenuWrap .swiper-button-next,
+.customMenuWrap .swiper-button-prev{
+  display: none !important;
+}
+.swiper-slide ul li a .Iconbox {
+  width:70px;
+  height:70px;
+}
+.swiper-slide ul li a .Iconbox img,
+.customMenuWrap .swiper-slide ul li a .Iconbox img {
+  width: 40px;
+}
+.conTop_rit {
+  flex-direction: column;
+}
+.conTop_ritCon {
+  width: 100%;
+}
+.conTop_ritTop{
+  margin-bottom:2rem;
+}
+.conTop_rit a {
+  height: 100px;
+}
+.applyBtn {
+  width: 130px;
+  height: 51px;
+  transform: translate(0, -33px);
+}
+.applyBtn span {
+  font-size: 0.8rem;
+  line-height: 46px;
+  margin-left: 19px;
+}
+.customTabWrap button {
+  font-size: 0.68rem;
+  border-radius: 0;
+}
+
+.swiper-containerV .swiper-button-prev {
+  left: 80%;
+}
+.swiper-containerV .swiper-button-next {
+  right: 5%;
+}
+.notiCon_left .swiper-slide p {
+  font-size: 0.9rem;
+}
+.linkLT p {
+  margin-top: 0.8rem;
+}
+/*conMiddleWrap
+===============================*/
+.notiBtn .iconVisual >div {
+  transform: translate(0%, 6%);
+}
+.payMenuWrap {
+  width: calc(102%);
+  padding: 1.5rem 0 1.3rem 1.5rem;
+  border-radius: 10px 0 10px 40px;
+}
+.payMenuWrap .swiper-button-next, .payMenuWrap .swiper-button-prev {
+  display: none !important;
+}
+  .payMenuWrap .swiper-slide ul li a .Iconbox {
+    width: 60px;
+    height: 60px;
+}
+  .payMenuWrap .swiper-slide ul li a .Iconbox img{
+    width: 30px;
+    height: 30px;
+}
+.payMenuWrap .titleWrap a {
+  right: 0;
+}
+.payMenuWrap .swiper-slide ul li a p{
+  width:60px;
+  margin:0 auto;
+}
+.payMenuWrap  .FstFloorWrap .swiper-container {
+  overflow: hidden;
+  width: 117%;
+  float: right;
+}
+.notiWrap {
+  line-height: 40px;
+}
+.notiCon_left {
+  padding-bottom: 0; 
+  width: 90%;
+  padding: 20px 5% 0;
+}
+.notiWrap .notiCon_left .titleWrap {
+  line-height: 45px;
+}
+.notiCon_left .swiper-containerV {
+  height: 60px;
+}
+.notiBtn.titleWrap {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+}
+.notiBtn.titleWrap strong {
+  font-size: 0.9rem;
+}
+.notiBtn .iconVisual {
+  right: -9px;
+}
+.notiBtn .iconVisual >div img {
+  transform: translate(126%, 55px) rotate(172deg);
+  width: 35px;
+}
+
+}
+/*반응형****************************************************/
+@media screen and (max-width: 500px) {
+
+.infoBox {
+    padding: 25px 5%;
+  }
+  .customTabWrap {
+    height: 37px;
+    width:50%;
+  }
+
+.notiWrap .notiCon_left .titleWrap {
+    line-height: 35px;
+}
+.notiCon_left .swiper-containerV {
+  height: 50px;
+}
+.notiCon_left {
+  padding: 10px 5% 0;
+  height:auto;
+}
+.notiCon_left .swiper-slide p {
+  line-height: 50px;
+}
+.notiWrap {
+  line-height: 50px;
+}
+.customMenuWrap .swiper-slide ul {
+  min-height: 215px;
+}
+.customMenuWrap .titleWrap {
+  margin-bottom: 1rem;
+}
+.customMenuWrap {
+padding: 2rem 0 1rem 2rem;
+}
+.swiper-slide ul li a .Iconbox {
+  width: 50px;
+  height: 50px;
+}
+.swiper-slide ul li {
+  margin-bottom: 1rem;
+}
+.swiper-slide ul li a .Iconbox img,
+.customMenuWrap .swiper-slide ul li a .Iconbox img {
+  width: 29px;
+}
+.customMenuWrap .swiper-slide ul li a  p{
+  width: 60px;
+  margin: 0 auto;
+}
+.FstFloorWrap {
+  width: 100%;
+}
+.payMenuWrap .swiper-slide ul li a .Iconbox {
+  width: 50px;
+  height: 50px;
+}
+
+.promoCon {
+  height: 52vw;
+}
+}
+/*반응형****************************************************/
+@media screen and (max-width: 450px) {
+
+.checkedBtn {
+  margin-right: 0px;
+}
+/*mainvisual
+===============================*/
+
+.MVspecifiBox, .MVloginBox {
+  width: 73%;
+  height:170px;
+}
+.index .MVspecifiBox .titleWrap strong,
+.MVloginBox .titleWrap strong{
+  font-size: 1.1rem !important;
+}
+.MVspecifiBox .titleWrap span {
+  font-size: 1.1rem;
+}
+.MVspecifiBox .titleWrap p{
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+.MVloginBox .titleWrap p {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.paymentWrap {
+  font-size: 1.5rem;
+  padding: 2rem 0 0.5rem 0;
+}
+.loginVSbtn {
+  font-size: 1.5rem;
+  padding: 2.3rem 0 0.5rem 0;
+}
+.paymentWrap span:after {
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+.billNumWrap {
+  position: relative;
+  margin-top: 1.75rem;
+}
+.MVloginBox .titleWrap span{
+  font-size: 1.1rem;
+}
+.joinVSbtn a {
+font-size: 0.8rem;
+}
+.joinVSbtn {
+  margin-top: 2rem;
+}
+
+.MVimgWrap {
+  width: 90%;
+  left: 5%;
+}
+.mainvisualWrap, .MVWrap {
+  height: 65vw;
+}
+.MVspecifiWrap {
+  padding: 57vw 0 0.5rem;
+}
+/*conTopWrap
+===============================*/
+.customMenuWrap .swiper-container {
+  width: 109%;
+}
+.customMenuWrap {
+  padding: 2.5rem 0 0.5rem 1rem;
+}
+.customMenuWrap .titleWrap strong {
+  display: block;
+  padding-bottom: 10px;
+}
+.customTabWrap {
+  margin-left: 0rem;
+}
+.customMenuWrap .swiper-slide ul {
+  min-height: 200px;
+}
+.customMenuWrap .titleWrap {
+  margin-bottom: 0.2rem;
+}
+.customTabWrap button {
+  font-size: 0.6rem;
+}
+.swiper-slide ul li {
+  margin-bottom: 0.5rem;
+  transform: scale(0.9);
+}
+.applyBtn {
+  transform: translate(0, -64px);
+}
+  .payMenuWrap .swiper-button-next,
+   .payMenuWrap .swiper-button-prev {
+   display: none !important; 
+}
+.FstFloorWrap .swiper-slide ul li a {
+  font-size: 0.6rem;
+}
+.customMenuWrap .swiper-slide ul li a p {
+  width: 50px;
+}
+/*conMiddleWrap
+===============================*/
+.infoLft a.guideBtn:after, .infoLft a.introBtn:after {
+  right: 6%;
+  width: 35px;
+  height: 35px;
+}
+.infoRit a {
+  font-size: 1rem;
+}
+.infoRit a:before {
+  width: 21px;
+  height: 21px;
+}
+.infoLft .iconVisual>div img {
+  transform: translate(53px, 38px) rotate(192deg);
+  width: 65px;
+}
+.payMenuWrap {
+  padding: 1rem 0 1rem 1rem;
+}
+.payMenuWrap .titleWrap strong {
+  margin-left: 10px;
+}
+.swiper-containerV .swiper-button-prev {
+  left: 76%;
+}
+
+}
+/*반응형****************************************************/
+@media screen and (max-width: 350px) {
+  /*header
+===============================*/
+/*mainvisual
+===============================*/
+.mainvisualWrap, .MVWrap {
+  height: 58vw;
+}
+.MVspecifiWrap {
+  padding: 50vw 0 0.5rem;
+}
+.MVtextBox {
+  margin-top:1vw;
+}
+.MVtextBox h3{
+  font-size: 1.35rem;
+  color:#fff;
+}
+.MVtextBox p {
+  font-size: 0.75rem;
+}
+
+.MVtextBox p.ctDtl{
+  /* display: none; */
+  text-align: left;
+  width: 286px;
+  margin: 0 auto;
+}
+.mainvisualWrap {
+  padding-top: 15px;
+}
+.MVspecifiBox .titleWrap span {
+  font-size: 1rem;
+}
+.MVspecifiBox .titleWrap p {
+  margin-top: 0;
+}
+.paymentWrap {
+font-size: 1.3rem;
+padding: 1.5rem 0 0.5rem 0;
+}
+.paymentWrap span:after {
+width: 20px;
+height: 20px;
+font-size: 1.2rem;
+line-height: 20px;
+border-radius: 20px;
+top:2px;
+}
+.MVspecifiBox, .MVloginBox {
+  height: 150px;
+}
+.MVspecifiBox p, .MVloginBox p {
+font-size: 0.7rem;
+}
+.MVloginBox .titleWrap p {
+  font-size: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+.joinVSbtn {
+  margin-top: 1.7rem;
+}
+.joinVSbtn a {
+  font-size: 0.7rem;
+}
+/*conTopWrap
+===============================*/
+.MVspecifiBox, .MVloginBox {
+  width: 69%;
+}
+.customMenuWrap {
+  padding: 2rem 0 1rem 1rem;
+}
+.customTabWrap {
+  height: 31px;
+  width: 58%;
+}
+.swiper-slide ul li a .Iconbox {
+  width: 44px;
+  height: 44px;
+}
+.applyBtn {
+  transform: translate(0, -88px);
+}
+.conTop_rit .conTop_ritBT .iconVisual {
+  right:-58px;
+  top:-68px;
+  border-radius: 40%;
+}
+/*conMiddleWrap
+===============================*/
+.payMenuWrap .FstFloorWrap .swiper-slide ul li {
+  transform: scale(0.8);
+}
+.payMenuWrap .FstFloorWrap .swiper-container {
+  width: 118%;
+}
+.notiBtn .iconVisual >div img {
+  transform: translate(79px, 55px) rotate(172deg);
+  width: 35px;
+}
+.notiCon_left {
+  padding: 7px 7% 0;
+  width: 85%;
+}
+.notiBtn .iconVisual {
+  right: -45px;
+}
+.iconVisual img {
+  width: 42px;
+}
+.linkLT strong {
+  font-size: 0.9rem !important;
+}
+.infoRit a {
+  font-size: 0.9rem;
+}
+.infoRit a:before {
+  width: 17px;
+  height: 17px;
+}
+.infoLft a.guideBtn:after, .infoLft a.introBtn:after {
+  right: 8%;
+  width: 30px;
+  height: 30px;
+}
+.conTop_ritCon.conTop_ritBT .iconVisual img {
+  transform: translate(45px, 8px) rotate(174deg);
+}
+.notiBtn .iconVisual >div img {
+  transform: translate(57px, 54px) rotate(172deg);
+}
+}
+/*반응형****************************************************/
+@media screen and (max-width: 300px) {
+.infoLft a.guideBtn:after, .infoLft a.introBtn:after {
+  right: 5%;
+  width: 40px;
+  height: 40px;
+}
+/*mainvisual
+===============================*/
+  /*mobile navi
+===============================*/
+/*conTopWrap
+===============================*/
+/*conMiddleWrap
+===============================*/
+}

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+    </script>
+    <style>
+
+
+
+    </style>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <!-- =============================================================================================== -->
+    <!-- ================================================================================================ -->
+
+    <!-- 선택될 div id  이부분에 div id 를 삽입하면 된다.
+        print 버튼을 누르면 지정된 div 안의 내용이 프린트 된다. -->
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            계약/납부
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    임대차 계약
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Lease_status.html">
+                                            임대차 계약현황 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housing_status.html">
+                                            하우징 거주자현황 조회
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    납부하기
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Rental_pay.html">
+                                            사용료/대관료 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fee_pay.html">
+                                            관리비 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Telephone_pay.html">
+                                            전화요금 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ID_pay.html">
+                                            ID카드발급비용 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housing_pay.html">
+                                            하우징사용료 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="housingfee_pay.html">
+                                            하우징관리비 납부
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            납부유예신청
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            연할/분할납부 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="on" href="#" onclick="return false">
+                                    납부결과
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            납부내역 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="pay_print">
+                                            납부확인서 출력
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false">
+                                    세금계산서
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="taxBill_print.html">
+                                            세금계산서 발행
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <h3>납부확인서 출력</h3>
+                        <div class="add_common_Wrap">
+                            <div class="content_rit_title">
+                                <img src="/image/logo_7.svg" alt="notice-logo">
+                                <h2>조건 검색</h2>
+                            </div>
+                            <!--일정선택-->
+                            <div class="facilityTime_selection add_common Consearch">
+                                <div class="form">
+                                    <label class="Consearch_date">
+                                        <span>결제기간</span>
+                                        <input type="date">-<input type="date">
+                                    </label>
+                                    <label class="Consearch_search">
+                                        <span>검색</span>
+                                        <select name="" id="content_rit_selectBox">
+                                            <option selected="전체">전체</option>
+                                            <option>단지</option>
+                                            <option>동</option>
+                                            <option>호</option>
+                                        </select>
+                                        <input type="text" placeholder="검색어 입력">
+                                    </label>
+                                    <div class="Consearch_btn">
+                                        <input type="button" value="검색" class="Keybtn"
+                                            onclick="location.href='/index.html'">
+                                        <input type="button" value="초기화" class="subKeyBtn_scd"
+                                            onclick="location.href='/index.html'">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_rit content_rit_pay">
+                            <div class="TBtop">
+                                <p class="TBtop_Lft">
+                                    총
+                                    <span class="keyColor">
+                                        11555
+                                    </span>
+                                    건
+                                    (
+                                    <span class="keyColor">
+                                        1
+                                    </span>
+                                    /
+                                    <span>
+                                        45
+                                    </span>
+                                    페이지 )
+                                </p>
+                                <form class="TBtop_rit TBtop_rit_one">
+                                    <select class="NumSelect">
+                                        <option value="">
+                                            10개씩 보기
+                                        </option>
+                                        <option value="">
+                                            20개씩 보기
+                                        </option>
+                                        <option value="">
+                                            30개씩 보기
+                                        </option>
+                                        <option value="">
+                                            40개씩 보기
+                                        </option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="XscrollBox">
+                                <table class="add_common td_amount td_twoline">
+                                    <colgroup>
+                                        <col width="7%">
+                                        <col width="30%">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="13%">
+                                        <col width="13%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th class="line_side">상품명</th>
+                                            <th>결제금액</th>
+                                            <th>결제수단</th>
+                                            <th class="line_side">결제일시</th>
+                                            <th>납부확인서</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>110</td>
+                                            <td class="TBtext_Lft line_side">
+                                                ID카드발급비용 납부
+                                            </td>
+                                            <td>
+                                                486,0000
+                                            </td>
+                                            <td>
+                                                신용카드
+                                            </td>
+                                            <td class="date line_side">
+                                                2022.05.30
+                                            </td>
+                                            <td>
+                                                <input onclick="ShowPop(0)" type="button" value="출력" class="Keybtn">
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pagination">
+                                <button>《</button>
+                                <button>〈</button>
+                                <ul>
+                                    <li><a href="#" class="on">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                </ul>
+                                <button>〉</button>
+                                <button>》</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="ShowPopCon_0 subPopup pay_print_Wrap ">
+                    <div class="popup_mask" style="display: block;"></div>
+                    <div class="subpopup_Wrap">
+                        <div class="popupDivClose">
+                            <div>
+                                <img src="/image/logo_7.svg" alt="logo">
+                                <span>납부확인서 출력</span>
+                            </div>
+                            <div>
+                                <button class="popCloseBtn" id="popCloseBtn">
+                                    창닫기
+                                    <span class="checkedWrap">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="subpopupCon YscrollBox">
+                            <div class="subpopup_printWrap">
+                                <div class="rit_btnWrap">
+                                    <input type="button" class="Keybtn" value="출력"
+                                        onclick="javascript:content_print();">
+                                </div>
+                                <div id="printWrap">
+                                    <!--납부 확인서-->
+                                    <div class="conformPay_print">
+                                        <div class="table_print_Con">
+                                            <table border="1">
+                                                <colgroup>
+                                                    <col width="17%">
+                                                    <col width="">
+                                                    <col width="17%">
+                                                    <col width="">
+                                                    <col width="9%">
+                                                    <col width="9%">
+                                                </colgroup>
+                                                <tr>
+                                                    <th colspan="6">
+                                                        <h3>
+                                                            ID카드 발급 납부확인서
+                                                        </h3>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="TBtext_Lft">
+                                                        상호
+                                                    </th>
+                                                    <td>
+                                                        <input type="text">
+                                                    </td>
+                                                    <th class="TBtext_Lft">
+                                                        대표자
+                                                    </th>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="TBtext_Lft">
+                                                        사업자번호
+                                                    </th>
+                                                    <td>
+                                                        <input type="text">
+                                                    </td>
+                                                    <th class="TBtext_Lft">
+                                                        용도
+                                                    </th>
+                                                    <td>
+                                                        <input type="text">
+                                                    </td>
+                                                    <th class="td_narrow">
+                                                        신청
+                                                    </th>
+                                                    <td class="td_narrow">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="TBtext_Lft">
+                                                        소재지
+                                                    </th>
+                                                    <td colspan="5">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="6">
+                                                        ID카드 발급 신청내역
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="3">
+                                                        상품명
+                                                    </th>
+                                                    <th colspan="3">
+                                                        금액
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                    <td colspan="3">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr class="print_text_Wrap">
+                                                    <td colspan="6">
+                                                        <p class="print_text_top">
+                                                            위와 같이 ID카드 발급 납부확인서를 신청합니다.
+                                                        </p>
+                                                        <div class="print_date">
+                                                            <input type="text">
+                                                            <span>
+                                                                년
+                                                            </span>
+                                                            <input type="text">
+                                                            <span>
+                                                                월
+                                                            </span>
+                                                            <input type="text">
+                                                            <span>
+                                                                일
+                                                            </span>
+                                                        </div>
+                                                        <div class="print_sign">
+                                                            <span>
+                                                                신청인
+                                                            </span>
+                                                            <span>
+                                                                <input type="text">
+                                                            </span>
+                                                            <span>
+                                                                (인)
+                                                            </span>
+                                                        </div>
+                                                        <strong>
+                                                            인천글로벌캠퍼스운영재단
+                                                        </strong>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

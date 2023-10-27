@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="../image/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!--js==========================================================================================-->
+    <script src="../vendor/js/jquery.min.js"></script>
+    <script src="../vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/include.js"></script>
+    <style>
+        .certi .memberWrap{
+            width:500px;
+        }
+    </style>
+    <!--script==========================================================================================-->
+</head>
+<!--body==========================================================================================-->
+
+<body>
+    <div class="container member">
+        <div class="wrapper">
+            <!--loginWrap========================================-->
+            <div class="mamberBG">
+                <h1 class="">
+                    <a href="../index.html">
+                        <img src="../image/logo.png" alt="로고">
+                    </a>
+                </h1>
+                <section class="memberWrap commonWrap">
+                    <div class="borderWrap">
+                        <div class="memberWrap_Lft">
+                            <div class="memberWrap_Con">
+                                <div class="loginVS"></div>
+                                <strong>처음 오셨나요?</strong>
+                                <p>
+                                    IGC입주자시스템 서비스를 이용하시려면
+                                    <span>회원가입</span> 후 로그인해 주세요.
+                                </p>
+                                <button class="joinBtn" onclick="location.href='joinCerti.html'">
+                                    Join us
+                                </button>
+                                <div class="findBox">
+                                    <a href="FindCerti.html">
+                                        아이디 / 비밀번호 찾기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="memberWrap_Rit">
+                            <div class="memberWrap_Con">
+                                <h3>Sign In</h3>
+                                <form class="IDloginWrap">
+                                    <input type="checkbox" id="checkVs">
+                                    <label for="checkVs"></label>
+                                    <input type="text" placeholder="ID">
+                                    <input type="password" placeholder="PASSWORD">
+                                    <input class="Keybtn oneBtn Fullbtn" type="button" value="LOGIN">
+                                </form>
+
+                                <div class="loginMathodWrap">
+                                    <button class="naver">
+                                        네이버로 로그인
+                                    </button>
+                                    <button class="cacao">
+                                        카카오로 로그인
+                                    </button>
+                                    <button class="apple">
+                                        애플로 로그인
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--form========================================-->
+            <!-- <form>
+    월 : <input type="month"><br>
+    날짜 : <input type='date'/><br>
+    시간 : <input type='time'/><br> 
+    날짜시간 : <input type="datetime-local" /><br>
+</form> -->
+            <!--INCLUED========================================-->
+            <footer data-include="../include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/include.js"></script>
+    <script src="/js/attachedfile.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+
+
+        $(document).ready(function () {
+            //할인 삭제 클릭시
+            $(".facility_sale_form button").click(function () {
+                $(this).siblings('input[type="text"]').removeAttr('value');
+                $(this).siblings('input[type="hidden"]').remove();
+            });
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            시설사용/대관
+                        </h2>
+                        <ul>
+                            <li class="sub_depth0">
+                                <a class="" href="#">
+                                    시설사용예약
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="" href="facility_calender.html">
+                                            예약현황조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="facility_1.html">
+                                            시설 예약
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_depth0">
+                                <a class="on" href="#" onclick="return false">
+                                    시설대관
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="Rental_calender.html">
+                                            대관현황 조회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="on" href="Rental_1.html">
+                                            대관 신청
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox facilityWrap">
+                        <h3>대관 신청</h3>
+                        <div class="content_ritBox_notice">
+                            <div class="content_ritBox_notice_img">
+                                <img src="/image/rental-notice.svg" alt="notice-logo">
+                            </div>
+                            <div class="content_ritBox_notice_text">
+                                <div>주의사항 및 설명글입니다.</div>
+                                <div>신청에 관한 궁금한 사항은 해당 기관에 문의하시기 바랍니다.</div>
+                                <div>IGC캠퍼스 입주자 통합정보시스템에서는업무별 전화번호를 제공하고 있습니다.</div>
+                            </div>
+                        </div>
+                        <div class="content_rit">
+                            <div class="content_rit_title content_rit_title_border">
+                                <img src="/image/logo_7.svg" alt="notice-logo">
+                                <h2>
+                                    이용 및 일정안내
+                                </h2>
+                            </div>
+
+                            <div class="content_rit_con">
+                                <h3 class="">
+                                    이용안내
+                                </h3>
+                                <div class="content_rit_infor">
+                                    <a href="#" class="rentalList_vsBtn">
+                                        <p>
+                                            현황조회
+                                            <span>
+                                                >
+                                            </span>
+                                        </p>
+                                    </a>
+                                    <div class="content_rit_infor_Dtl">
+                                        <div class="facility_Dtl_lft">
+                                            <h5 class="H_ColorBullet Bullet_noline">소강당</h5>
+                                            <div class="facility_Dtl_lft_imgWrap">
+                                                <div class="noimgBox"></div>
+                                            </div>
+                                        </div>
+                                        <table class="facility_Dtl_rit">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="30%">
+                                                <col width="20%">
+                                                <col width="30%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        대관문의
+                                                    </th>
+                                                    <td colspan="3">
+                                                        캠퍼스 운영본부 최지혜
+                                                        <span class="call">032-000-0000</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="3">
+                                                        사용료
+                                                    </th>
+                                                    <td class="th_Depth2">
+                                                        2시간
+                                                    </td>
+                                                    <td colspan="2">
+                                                        000000000원
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="th_Depth2">
+                                                        4시간
+                                                    </td>
+                                                    <td colspan="2">
+                                                        000000000원
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="th_Depth2">
+                                                        8시간
+                                                    </td>
+                                                    <td colspan="2">
+                                                        000000000원
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        운영시간
+                                                    </th>
+                                                    <td>
+                                                        09:00-09:00
+                                                    </td>
+                                                    <th>
+                                                        개방시간
+                                                    </th>
+                                                    <td>
+                                                        09:00-09:00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        위치
+                                                    </th>
+                                                    <td colspan="3">
+                                                        지원센터 5층 (5074호)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        현수막
+                                                    </th>
+                                                    <td colspan="3">
+                                                        9m x 60~70cm
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        운영시간
+                                                    </th>
+                                                    <td>
+                                                        09:00-09:00
+                                                    </td>
+                                                    <th>
+                                                        개방시간
+                                                    </th>
+                                                    <td>
+                                                        09:00-09:00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        활용용도
+                                                    </th>
+                                                    <td colspan="3">
+                                                        회의 / 교육 / 강연회 / 소규모 행사
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content_rit_con">
+                                <h3>
+                                    일정 및 사용료 선택
+                                </h3>
+                                <div class="calenderWrap">
+                                    <div class="calender">
+                                        <div class="noimgBox">
+                                        </div>
+                                    </div>
+                                    <div class="content_rit_infor_Dtl calenderPlanWrap">
+                                        <!--일정 / 사용료-->
+                                        <div class="facilityPayWrap facility_halfWrap  scheduleWrap">
+                                            <div class="facility_half ">
+                                                <!--일정선택-->
+                                                <div class="facilityTime_selection add_common add_common_Wrap">
+                                                    <div>
+                                                        <h3 class="H_ColorBullet">
+                                                            일정 선택
+                                                            <span>*선택 후 추가하실 수 있습니다.</span>
+                                                        </h3>
+                                                    </div>
+
+                                                    <div class="form">
+                                                        <input type="date">
+                                                        <select>
+                                                            <option>
+                                                                시
+                                                            </option>
+                                                            <option>
+                                                                2시
+                                                            </option>
+                                                            <option>
+                                                                3시
+                                                            </option>
+                                                            <option>
+                                                                4시
+                                                            </option>
+                                                        </select>
+                                                        <select>
+                                                            <option>
+                                                                분
+                                                            </option>
+                                                            <option>
+                                                                00분
+                                                            </option>
+                                                            <option>
+                                                                30분
+                                                            </option>
+                                                        </select>
+                                                        <span> ~ </span>
+                                                        <select>
+                                                            <option>
+                                                                시
+                                                            </option>
+                                                            <option>
+                                                                2시
+                                                            </option>
+                                                            <option>
+                                                                3시
+                                                            </option>
+                                                            <option>
+                                                                4시
+                                                            </option>
+                                                        </select>
+                                                        <select>
+                                                            <option>
+                                                                분
+                                                            </option>
+                                                            <option>
+                                                                00분
+                                                            </option>
+                                                            <option>
+                                                                30분
+                                                            </option>
+                                                        </select>
+                                                        <input type="button" value="선택" class="Keybtn"
+                                                            onClick="location.href='/index.html'">
+                                                    </div>
+                                                </div>
+                                                <!--일정리스트-->
+                                                <div class="add_common facilityTime_list addListWrap">
+                                                    <h6>일정 목록</h6>
+                                                    <span class="List_empty">
+                                                        선택하신
+                                                        일정목록이 없습니다.
+                                                    </span>
+                                                    <ul class="YscrollBox">
+                                                        <li>
+                                                            <p>
+                                                                <span>01.</span>
+                                                                0000년 00월 00일 00시 00분
+                                                            </p>
+                                                            <button>x</button>
+                                                        </li>
+                                                        <li>
+                                                            <p>
+                                                                <span>02.</span>
+                                                                0000년 00월 00일 00시 00분
+                                                            </p>
+                                                            <button>x</button>
+                                                        </li>
+                                                        <li>
+                                                            <p>
+                                                                <span>03.</span>
+                                                                0000년 00월 00일 00시 00분
+                                                            </p>
+                                                            <button>x</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="facility_half add_common_Wrap">
+                                                <div>
+                                                    <h3 class="H_ColorBullet">사용료</h3>
+                                                </div>
+                                                <!--추가시설-->
+                                                <div class="facility_add">
+                                                    <h6>추가시설</h6>
+                                                    <div class="form">
+                                                        <label for="">
+                                                            <input type="checkbox" class="checkBox">
+                                                            영상시설<span>(￦5,000)</span>
+                                                        </label>
+                                                        <label for="">
+                                                            <input type="checkbox" class="checkBox">
+                                                            조명시설<span>(￦5,000)</span>
+                                                        </label>
+                                                        <label for="">
+                                                            <input type="checkbox" class="checkBox">
+                                                            영상시설<span>(￦5,000)</span>
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                                <!--할인팝업-->
+                                                <div class="facility_sale">
+                                                    <h6>할인선택</h6>
+                                                    <div class="facility_sale_form">
+                                                        <input type="text" placeholder="" value="할인명 지워진당" disabled>
+                                                        <input type="button" value="할인선택" class="Keybtn subPopupBtn"
+                                                            onClick="">
+                                                        <button>x</button>
+                                                        <input type="hidden" placeholder="" value="할인명 지워진당" disabled>
+                                                        <input type="hidden" placeholder="" value="할인명 지워진당" disabled>
+                                                        <input type="hidden" placeholder="" value="할인명 지워진당" disabled>
+                                                    </div>
+                                                    <div class="subPopup">
+                                                        <div class="popup_mask"></div>
+                                                        <div class="subpopup_Wrap">
+                                                            <div class="popupDivClose">
+                                                                <div>
+                                                                    <img src="/image/logo_7.svg" alt="logo">
+                                                                    <span>대관 할인선택</span>
+                                                                </div>
+                                                                <div>
+                                                                    <button class="popCloseBtn">
+                                                                        창닫기
+                                                                        <sapn class="checkedWrap"></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="subpopupCon">
+                                                                <div class="TBtop">
+                                                                    <p class="TBtop_Lft">
+                                                                        총
+                                                                        <span class="keyColor">
+                                                                            11555
+                                                                        </span>
+                                                                        건
+                                                                        (
+                                                                        <span class="keyColor">
+                                                                            1
+                                                                        </span>
+                                                                        /
+                                                                        <span>
+                                                                            45
+                                                                        </span>
+                                                                        페이지 )
+                                                                    </p>
+                                                                    <div class="TBtop_rit">
+                                                                        <select>
+                                                                            <option value="">
+                                                                                조건선택
+                                                                            </option>
+                                                                            <option value="">
+                                                                                제목
+                                                                            </option>
+                                                                            <option value="">
+                                                                                내용
+                                                                            </option>
+                                                                            <option value="">
+                                                                                제목 + 내용
+                                                                            </option>
+                                                                        </select>
+                                                                        <input type="text" placeholder="검색어 입력">
+                                                                        <input type="submit" value="검색"
+                                                                            class="subKeyBtn_scd">
+                                                                    </div>
+                                                                </div>
+                                                                <table class="popTB">
+                                                                    <colgroup>
+                                                                        <col width="*">
+                                                                        <col width="20%">
+                                                                        <col width="15%">
+                                                                    </colgroup>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="TBtext_Lft">할인명</th>
+                                                                            <th class="TBtext_Lft line_side">할인율(%)
+                                                                            </th>
+                                                                            <th>선택</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="TBtext_Lft">
+                                                                                운영재단 할인
+                                                                            </td>
+                                                                            <td class="TBtext_Lft line_side">
+                                                                                25%
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" name="선택"
+                                                                                    value="선택" class="Keybtn">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="TBtext_Lft">
+                                                                                운영재단 할인
+                                                                            </td>
+                                                                            <td class="TBtext_Lft line_side">
+                                                                                25%
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" name="선택"
+                                                                                    value="선택" class="Keybtn">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="TBtext_Lft">
+                                                                                운영재단 할인
+                                                                            </td>
+                                                                            <td class="TBtext_Lft line_side">
+                                                                                25%
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" name="선택"
+                                                                                    value="선택" class="Keybtn">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="TBtext_Lft">
+                                                                                운영재단 할인
+                                                                            </td>
+                                                                            <td class="TBtext_Lft line_side">
+                                                                                25%
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" name="선택"
+                                                                                    value="선택" class="Keybtn">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="TBtext_Lft">
+                                                                                운영재단 할인
+                                                                            </td>
+                                                                            <td class="TBtext_Lft line_side">
+                                                                                25%
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="button" name="선택"
+                                                                                    value="선택" class="Keybtn">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="pagination">
+                                                                    <button>《</button>
+                                                                    <button>〈</button>
+                                                                    <ul>
+                                                                        <li><a href="#" class="on">1</a></li>
+                                                                        <li><a href="#">2</a></li>
+                                                                    </ul>
+                                                                    <button>〉</button>
+                                                                    <button>》</button>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--금액-->
+                                                <div class="facilityPay_calculate">
+
+                                                    <div class="calculate_price">
+                                                        <p>사용료</p>
+                                                        <div>
+                                                            <p class="price">
+                                                                <input type="text" value=" 300,000">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calculate_price">
+                                                        <p>부가세</p>
+                                                        <div>
+                                                            <p class="price_vat">
+                                                                <span>
+
+                                                                </span>
+
+                                                                <input type="text" value=" 300,000">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calculate_price">
+                                                        <p>추가시설료</p>
+                                                        <div>
+                                                            <p class="price_add">
+
+                                                                <input type="text" value=" 300,000">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calculate_price">
+                                                        <p>할인</p>
+                                                        <div>
+                                                            <p class="price_sale">
+
+                                                                <input type="text" value=" 300,000">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calculate_price">
+                                                        <p>총합계</p>
+                                                        <div>
+                                                            <p class="price_final">
+                                                                <input type="text" value=" 300,000">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <!--일정 / 사용료 End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rental_2_warp_mp">
+                            <div class="content_rit_con">
+                                <div class="content_rit onlyrental">
+                                    <div class="content_rit_title">
+                                        <img src="/image/logo_7.svg" alt="notice-logo">
+                                        <h2>대관 신청서 작성</h2>
+                                    </div>
+                                    <div class="content_rit_form">
+                                        <div action="">
+                                            <div class="content_rit_tableBox">
+                                                <table class="content_rit_table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>시설명</th>
+                                                            <td>10777호 공연장</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>등록일</th>
+                                                            <td>YYYY-MM-DD</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>신청자</th>
+                                                            <td>홍길동</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>구분</th>
+                                                            <td>대학직원</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>연락처</th>
+                                                            <td>010-1231-1231</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>소속</th>
+                                                            <td>유타대학교 아시아 캠퍼스</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="content_rit_table content_rit_inputTable">
+                                                    <tbody>
+                                                        <tr class="content_rit_inputBox">
+                                                            <th>행사명</th>
+                                                            <td class="content_rit_table_input">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="content_rit_inputBox">
+                                                            <th>사용인원</th>
+                                                            <td
+                                                                class="content_rit_table_input content_rit_table_input_pd">
+                                                                <input type="number">
+                                                                <span>명</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="content_rit_inputBox">
+                                                            <th>사용목적</th>
+                                                            <td class="content_rit_table_input">
+                                                                <input type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="content_rit_inputBox">
+                                                            <th class="content_rit_inputRow_th">시설답사</th>
+                                                            <td class="content_rit_table_input ckeckedBlock_Wrap">
+                                                                <label class="content_rit_checkbox" for="recce_at">
+                                                                    답사 여부
+                                                                    <input type="checkbox" class="normal"
+                                                                        name="recce_at" id="recce_at" />
+                                                                </label>
+                                                                <div id="recee_display">
+                                                                    <label class="dateWrap dateFrom" for="recce_dt">
+                                                                        <input type="text" name="recce_dt" id="recce_dt"
+                                                                            title="접수 시작일" autocomplete="off" />
+                                                                    </label>
+                                                                    <select name="recce_tm" id="recce_tm"
+                                                                        class="normal w75">
+                                                                        <c:forEach begin="0" end="23" step="1" var="hh">
+                                                                            <option value="${suf:lpad(hh, 2, '0')}:00">
+                                                                                ${suf:lpad(hh, 2, '0')}:00
+                                                                            </option>
+                                                                        </c:forEach>
+                                                                    </select>
+                                                                    <input type="text" class="normal w200"
+                                                                        name="recce_cn" id="recce_cn" />
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="content_rit_inputBox">
+                                                            <th>파일첨부</th>
+                                                            <td class="content_rit_table_input">
+                                                                <section id="file_dragndrop">
+                                                                    <div class="content_rit_file_top">
+                                                                        <label
+                                                                            class="content_rit_btn content_rit_table_input_label"
+                                                                            for="input_file">
+                                                                            파일 선택
+                                                                        </label>
+                                                                        <div class="content_rit_file_numText">
+                                                                            <span>첨부파일(<span
+                                                                                    class="content_rit_file_num">0</span>
+                                                                                개 )</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="content_rit_table_fileBox"
+                                                                        id="dropZone">
+                                                                        <div id="fileDragDesc">마우스로 끌어 첨부하세요.</div>
+                                                                        <table id="fileListTable" width="100%">
+                                                                            <tbody id="fileTableTbody">
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <input type="file" id="input_file"
+                                                                        multiple="multiple">
+                                                                </section>
+                                                                <div>
+                                                                    <div>※ 행사시 행사계획서를 제출해야 합니다.</div>
+                                                                    <div>※ 대관료는 대관 계약 후 5일 이내 전액 납부해야 합니다.</div>
+                                                                    <div>※ 기한 내 (사용 10일전) 미납시 대관 승인은 자동 취소됩니다.</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!--ritbtn-->
+                                        <div class="rit_btnWrap">
+                                            <div class="content_rit_formBtn_accept">
+                                                <input class="content_rit_btn Keybtn" type="button" value="신청하기">
+                                            </div>
+                                            <div class="content_rit_formBtn_cancel">
+                                                <input class="subKeyBtn" type="button" value="취소">
+                                            </div>
+                                        </div>
+                                        <!--ritbtn-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

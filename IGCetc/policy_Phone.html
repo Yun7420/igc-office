@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/member.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <script src="/js/attachedfile.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+        });
+
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            사이트 이용정책
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="policy_Privacy.html">
+                                    개인정보처리방침
+                                </a>
+                            </li>
+                            <li>
+                                <a href="policy_Video.html">
+                                    영상기기 관리방침
+                                </a>
+                            </li>
+                            <li>
+                                <a href="policy_Email.html">
+                                    이메일 무단수집거부
+                                </a>
+                            </li>
+                            <li>
+                                <a class="on" href="policy_Phone.html">
+                                    전화녹취시스템 관리방침
+                                </a>
+                            </li>
+
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <div class="content_ritBox_top">
+                            <h3>
+                                전화녹취시스템 관리방침
+                            </h3>
+                            <div class="content_ritBox_notice">
+                                <div class="content_ritBox_notice_img">
+                                    <img src="/image/rental-notice.svg" alt="notice-logo">
+                                </div>
+                                <div class="content_ritBox_notice_text">
+                                    <div class="content_rit_description">
+                                        <p>
+                                            인천글로벌캠퍼스 부가 정보(녹취 및 통화내용)의 이용‧관리 방식을 명시화하고 보호 책임자
+                                            지정으로 이용자의 권익 강화와 개인정보 보호를 목적으로 한다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="content_rit">
+                                <div class="content_rit_title">
+                                    <img src="/image/logo_7.svg" alt="notice-logo">
+                                    <h2>목차</h2>
+                                </div>
+                                <div class="commonTGWrap policy_Wrap content_rit_con">
+                                    <button class="subKeyBtn_scd">
+                                        전체열기
+                                    </button>
+                                    <ul class="commonTG">
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    01
+                                                </strong>
+                                                설치 근거
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        개인정보보호법 제15조 제1항 제6호
+                                                    </p>
+                                                    <p class="bullet">
+                                                        통신비밀보호법 제3조
+                                                    </p>
+                                                    <p class="bullet">
+                                                        민원행정 및 제도개선 기본지침(행정안전부)
+                                                    </p>
+                                                    <p class="bullet">
+                                                        인천글로벌캠퍼스운영재단 전화 녹취시스템 운영·관리 규칙 제1조
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    02
+                                                </strong>
+                                                설치 운영범위
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <table class="td_amount XscrollBox">
+                                                        <tr>
+                                                            <th>
+                                                                설치대수
+                                                            </th>
+                                                            <th class="line_side">
+                                                                설치위치
+                                                            </th>
+                                                            <th>
+                                                                운영범위
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                인터넷전화 녹취시스템 1식
+                                                            </td>
+                                                            <td class="line_side">
+                                                                지원센터 서버실
+                                                            </td>
+                                                            <td>
+                                                                인천글로벌캠퍼스
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    03
+                                                </strong>
+                                                담당자 지정 및 역할
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        전화 녹취정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 책임자를 지정한다.
+                                                    </p>
+                                                    <table class="td_amount XscrollBox">
+                                                        <tr>
+                                                            <th>
+                                                                구분
+                                                            </th>
+                                                            <th class="line_side">
+                                                                직위
+                                                            </th>
+                                                            <th class="line_Rit">
+                                                                소속
+                                                            </th>
+                                                            <th>
+                                                                연락처
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                총괄책임자
+                                                            </td>
+                                                            <td class="line_side">
+                                                                캠퍼스운영본부장
+                                                            </td>
+                                                            <td class="line_Rit">
+                                                                인천글로벌캠퍼스운영재단
+                                                            </td>
+                                                            <td>
+                                                                032-626-0580
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                관리책임자
+                                                            </td>
+                                                            <td class="line_side">
+                                                                IT인프라관리 과장
+                                                            </td>
+                                                            <td class="line_Rit">
+                                                                인천글로벌캠퍼스운영재단
+                                                            </td>
+                                                            <td>
+                                                                032-626-0206
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                운영책임자
+                                                            </td>
+                                                            <td class="line_side">
+                                                                IPT관리 반장
+                                                            </td>
+                                                            <td class="line_Rit">
+                                                                인천글로벌캠퍼스운영재단
+                                                            </td>
+                                                            <td>
+                                                                032-626-0201
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <p class="bullet">
+                                                        각 책임자의 주요 역할은 다음과 같다.
+                                                    </p>
+                                                    <table class="td_amount XscrollBox">
+                                                        <tr>
+                                                            <th class="line_Rit">
+                                                                구분
+                                                            </th>
+                                                            <th>
+                                                                주요역할
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="line_Rit">
+                                                                총괄책임자
+                                                            </td>
+                                                            <td class="TBtext_Lft">
+                                                                <p>
+                                                                    - 전화 녹취시스템 총괄 관리
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="line_Rit">
+                                                                관리책임자
+                                                            </td>
+                                                            <td class="TBtext_Lft">
+                                                                <p>
+                                                                    - 전화 녹취 관련 개인정보보호
+                                                                </p>
+                                                                <p>
+                                                                    - 녹취정보 안전성 확보
+                                                                </p>
+                                                                <p>
+                                                                    - 녹취정보 운영지침 수립
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="line_Rit">
+                                                                운영책임자
+                                                            </td>
+                                                            <td class="TBtext_Lft">
+                                                                <p>
+                                                                    - 녹취정보 이용제공
+                                                                </p>
+                                                                <p>
+                                                                    - 녹취정보 설치 및 운영 실무
+                                                                </p>
+                                                                <p>
+                                                                    - 녹취정보 현황관리, 유지보수
+                                                                </p>
+                                                                <p>
+                                                                    - 녹취정보 설치현황 관리
+                                                                </p>
+                                                                <p>
+                                                                    - 녹취정보 안정성 확보
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    04
+                                                </strong>
+                                                녹취 처리 방법
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <table class="td_amount XscrollBox">
+                                                        <tr>
+                                                            <th>
+                                                                구분
+                                                            </th>
+                                                            <th class="line_side">
+                                                                보관기간
+                                                            </th>
+                                                            <th>
+                                                                보관장소
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                통화녹취 내용
+                                                            </td>
+                                                            <td class="line_side">
+                                                                1년
+                                                            </td>
+                                                            <td>
+                                                                캠퍼스운영본부 정보화팀
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <p class="bullet">
+                                                        녹취신청 당사자의 상대방과의 전화 통화 내용 녹음에 한정하며, 녹취 사전 멘트로 녹취사실을 알린다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        처리방법 : 녹취 일자, 시간, 사용자 정보 순으로 관리하고, 보관기간 만료 시 삭제한다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    05
+                                                </strong>
+                                                전화 녹취의 사용원칙
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        운영재단은 시스템의 설치 목적에 부합하는 범위 안에서 전화 녹취정보를 수집하여야 한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        고객과의 전화 응대 과정에서 폭언, 협박, 성희롱 등의 법적 조치가 필요한 경우 사용한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        녹취가 필요한 경우 반드시 고객에게 사전고지를 하고 녹취한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        누구든지 공개되지 아니한 당사자 간의 대화를 녹취하거나
+                                                        전자장치 또는 기계적 수단을 이용하여 청취할 수 없다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        운영부서는 캠퍼스 운영본부로 한다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    06
+                                                </strong>
+                                                녹취정보 열람 및 제공
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        전화 녹취정보에 관하여 열람 또는 존재 확인을 원하는 경우는
+                                                        본인이 녹취된 정보 및 법률적인 대응이 필요한 전화 녹취정보에 한정된다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    07
+                                                </strong>
+                                                녹취 확인 방법
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        운영책임자에게 사전 연락하고 절차에 따라 확인할 수 있다.
+                                                    </p>
+                                                    <p class="caution">
+                                                        상황에 따라 열람 불가하므로 반드시 사전 확인 요망
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    08
+                                                </strong>
+                                                정보제공 및 절차
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        다음 각호의 경우를 제외하고는 전화 녹취정보를 수집목적 이외로 이용하거나 제삼자에게 제공하여서는 아니 된다.
+                                                    </p>
+                                                    <p class="smallBullet">
+                                                        당사자 모두의 동의가 있는 경우
+                                                    </p>
+                                                    <p class="smallBullet">
+                                                        다른 법률에 특별한 규정이 있는 경우
+                                                    </p>
+                                                    <p class="smallBullet">
+                                                        범인 검거 및 범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우
+                                                    </p>
+                                                    <p class="smallBullet">
+                                                        법원의 재판업무 수행을 위하여 필요한 경우
+                                                    </p>
+                                                    <p class="smallBullet">
+                                                        그 밖의 급박한 재난 상황 등 공익목적으로 필요한 경우
+                                                    </p>
+                                                    <p class="bullet">
+                                                        운영재단은 제1항의 각호에 해당하는 녹취정보는 별지 제1호 서식에 따라 신청받은 후 총괄책임자의 승인을 받아
+                                                        녹취신청·열람·제공할 수 있다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        운영재단은 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 주민등록증, 운전면허증, 여권 등의 신분증명서를
+                                                        제출받아 확인하여야 한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        녹취정보를 받은 당사자는 사용 완료 후 반드시 파기를 해야 하며, 별지 제3호 서식에 따라 녹취정보 제공부서에 파기
+                                                        결과를 통보해야 한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        운영재단은 녹취정보의 제공 시 별지 제4호 서식의 녹취신청·열람·제공 관리대장을 작성하여 보관하여야 한다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    09
+                                                </strong>
+                                                시스템 관리 등 안전성 확보
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        시스템이 있는 서버실은 통제구역으로 입출입자의
+                                                        관리대장을 비치하고 관리한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        전화 녹취 계정 관리부서는 캠퍼스 운영본부로 하며,
+                                                        분기별로 패스워드를 변경한다.
+                                                    </p>
+                                                    <p class="bullet">
+                                                        총괄책임자는 본 지침의 시행과 운영에 보완이 필요할 경우 관리책임자,
+                                                        정보화팀장 등과 검토하여 보완한다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    10
+                                                </strong>
+                                                비밀준수의 의무
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        전화 녹취정보를 열람한 당사자는 직무상 녹취한 정보를 누설 또는
+                                                        권한 없이 처리하거나 타인에게 제공하는 등 부당한 목적을
+                                                        위하여 사용하여서는 아니 된다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    11
+                                                </strong>
+                                                개인정보 처리 방침 변경에 관한 사항
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        전화 녹취 운영․관리 방침은 법령ㆍ정책 변경에 따라 내용의 추가ㆍ삭제 및 수정이 있을 수 있습니다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    12
+                                                </strong>
+                                                전화 녹취시스템 처리 방침 변경에 관한 사항
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        본 방침은 2022년 5월에 제정되었으며 법령ㆍ정책 또는
+                                                        보안기술의 변경에 따라 내용의 추가ㆍ삭제 및 수정이 있을
+                                                        시에는 홈페이지를 통해 변경 사유 및 내용 등을 공지합니다.
+                                                    </p>
+                                                    <strong>
+                                                        최초 공고 및 시행일자 : 2022년 5월 일자
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>
+                                                    13
+                                                </strong>
+                                                전화녹취시스템에 관련한 불만의 처리 및 피해구제에 관한 사항
+                                            </p>
+                                            <div>
+                                                <div class="policy_description">
+                                                    <p class="bullet">
+                                                        전화 녹취시스템의 처리 및 불만,
+                                                        피해구제에 관한 사항은 캠퍼스 운영본부 정보화팀 (032-626-0201) 연락해주시기 바라며,
+                                                        해당 부서와 분쟁이 발생 시 행정안전부 개인정보보호
+                                                        종합지원 포털(http://www.privacy.go.kr)로 연락하시기 바랍니다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="Policy_downWrap">
+                                        <h5 class="H_ColorBullet">
+                                            첨부파일
+                                        </h5>
+                                        <ul class="downWrap">
+                                            <li>
+                                                <img src="../image/down.png">
+                                                <a href="" href="별지 제1호 서식.hwp" download="[ 별지 제1호 서식 ] 전화녹취시스템 녹취신청서">
+                                                    [ 별지 제1호 서식 ] 전화녹취시스템 녹취신청서
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <img src="../image/down.png">
+                                                <a href="별지 제3호 서식.hwp" download="[ 별지 제3호 서식 ] 녹취정보 활용 및 파기 결과 통보서">
+                                                    [ 별지 제3호 서식 ] 녹취정보 활용 및 파기 결과 통보서
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <img src="../image/down.png">
+                                                <a href="별지 제4호 서식.hwp" download="[ 별지 제4호 서식 ] 전화 녹취시스템 관리대장">
+                                                    [ 별지 제4호 서식 ] 전화 녹취시스템 관리대장
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

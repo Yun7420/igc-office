@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon1.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--js==========================================================================================-->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="vendor/js/swiper-bundle.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/include.js"></script>
+    <!--script==========================================================================================-->
+</head>
+<!--body==========================================================================================-->
+
+<body>
+    <!--BGpopup========================================-->
+    <div class="popup_mask"></div>
+    <!--설문조사 팝업-->
+    <div class="popupDiv_Wrap on">
+
+        <!--설문조사 팝업-->
+        <div class="popupDiv">
+            <div class="popupDivCon">
+                <div class="pop_serveyBG">
+                    <div class="pop_topVS">
+                        <img src="/image/servey2.png">
+                    </div>
+                    <div class="servey_Con">
+                        <div class="servey_Con_Wrap">
+                            <h2>IGC 설문지 타이틀</h2>
+                            <div class="servey_Con_txt">
+                                <p>
+                                    각 학교의 교수진은 홈캠퍼스에서 파견되며
+                                    수업은 전 과목 영어로 진행됩니다.
+                                </p>
+                                <p>
+                                    인천글로벌캠퍼스에서 운영하는 학과는 홈캠퍼스에서
+                                    가장 우수하고 경쟁력 있다고 평가받는 학과를 중심으로 개설됩니다.
+                                </p>
+                                <p>
+                                    따라서 입학생은 세계 여러 대학의 최우수 교과과정을 여기 인천글로벌캠퍼스에서
+                                    배우실 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="servey_Con_info">
+                                <p class="bold">설문기간 : 2022.05.06 - 2022.06.06</p>
+                                <p class="caution">비고/주의사항 입니다.</p>
+                            </div>
+                            <div class="Full_btnWrap">
+                                <button class="Keybtn oneBtn Fullbtn" onclick="location.href='IGCetc/servey.html'">설문
+                                    바로가기 >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popupDivClose">
+                <img src="/image/logo.png" alt="logo">
+                <div>
+                    <button class="checkedBtn">
+                        오늘하루 열지않기
+                        <sapn class="checkedWrap"></span>
+                    </button>
+                    <button class="popCloseBtn">
+                        창닫기
+                        <sapn class="checkedWrap"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--기본팝업 ////주석해제시 팝업위치 변경-->
+        <div class="popupDiv" style="display: none;">
+            <div class="popupDivCon noimgBox">
+            </div>
+
+            <div class="popupDivClose">
+                <img src="/image/logo.png" alt="logo">
+                <div>
+                    <button class="checkedBtn">
+                        오늘하루 열지않기
+                        <sapn class="checkedWrap"></span>
+                    </button>
+                    <button class="popCloseBtn">
+                        창닫기
+                        <sapn class="checkedWrap"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BGpopup========================================-->
+    <div class="container index">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <!--banner=========================================-->
+
+            <section class="mainvisualWrap">
+                <div class="MVWrap">
+                    <div class="MVtextBox">
+                        <h3>
+                            Incheon Global Campus
+                        </h3>
+                        <p>
+                            The Best Global Education Hub in the World
+                        </p>
+                        <p class="ctDtl">
+                            인천글로벌캠퍼스 입주자 포털은 입주자를 위한 다양한 서비스를 제공합니다.
+                            <br>
+                            납부 및 신청을 보다 쉽게 이용하실 수 있으며 다양한 정보를 제공합니다.
+                        </p>
+                    </div>
+                    <div class="MVimgWrap"></div>
+                    <div class="MVspecifiWrap">
+                        <div class="MVspecifiBox">
+                            <div class="titleWrap">
+                                <strong>이달의 명세서</strong>
+                                <p>
+                                    <span class="year">
+                                        2022
+                                    </span>
+                                    년
+                                    <span class="month">
+                                        09
+                                    </span>
+                                    월
+                                </p>
+                            </div>
+                            <div class="iconVisual">
+                                <img src="/image/3cVS_1.svg" alt="이달의명세서아이콘">
+                            </div>
+                            <a class="paymentWrap" href="#">
+                                <span class="payment">
+                                    150,000
+                                </span>
+                                원
+                            </a>
+                            <p class="statusWrap">' <span class="status">납부완료</span> '</p>
+                            <a class="billNumWrap" href="#">
+                                <p>
+                                    <span class="nick">홍길동</span>
+                                    님의 청구서는 총
+                                    <span class="billNum">00</span>
+                                    개 입니다.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="MVloginBox">
+                            <div class="titleWrap">
+                                <span>반가워요!</span>
+                                <strong>로그인</strong>
+                                <p>
+                                    로그인하시고 <br>
+                                    다양한 서비스를 이용해 보세요.
+                                </p>
+                            </div>
+                            <div class="iconVisual">
+                                <img src="/image/member.png" alt="로그인아이콘">
+                            </div>
+                            <a class="paymentWrap loginVSbtn" href="#">
+                                <span>
+                                    로그인
+                                </span>
+                                <span class="arrow"> > </span>
+                            </a>
+
+                            <dis class="joinVSbtn">
+                                <a href="">
+                                    간편 회원가입
+                                </a>
+                                <a href="">
+                                    아이디/비밀번호 찾기
+                                </a>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--contentTop=========================================-->
+            <section class="conTopWrap commonWrap">
+                <div class="conTop_lft">
+                    <div class="quickMWrap quickMlft">
+                        <a href="#">
+                            <div>
+                                <img src="image/sns1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="image/sns2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="image/sns3.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                <img src="image/sns4.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="searchWrap">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+
+                        <div class="searchBtnWrap">
+                            <input type="submit" value="">
+                        </div>
+                        <button class="closeBtn">
+                            ×
+                        </button>
+                    </div>
+                    <div class="customMenuWrap">
+
+                        <div class="titleWrap">
+                            <strong>방문자별 맞춤 메뉴</strong>
+                            <span class="customTabWrap">
+                                <button class="on" onclick="ShowTabex('0')">
+                                    기관기관
+                                </button>
+                                <button onclick="ShowTabex('1')">
+                                    기관기관
+                                </button>
+                                <button onclick="ShowTabex('2')">
+                                    일반
+                                </button>
+                            </span>
+                            <!-- <a class="applyBtn" href="#">
+                                <span> 신청서비스</span>
+                            </a> -->
+                        </div>
+                        <div class="tabCon">
+                            <!-- swiper슬라이더 맞춤메뉴(기관) -->
+                            <div class="swiper-containerTab0 swiper-container">
+                                <!-- 보여지는 영역 -->
+                                <div class="swiper-wrapper">
+                                    <!-- div class="swiper-slide" 를 추가하면된다 -->
+                                    <div class="swiper-slide">
+                                        <!--신청등록-->
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_resident.svg">
+                                                    </div>
+                                                    <p>입주자 등록신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_change_rental.svg">
+                                                    </div>
+                                                    <p>임대차계약 해지/연장/갱신 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_idcard.svg">
+                                                    </div>
+                                                    <p>ID카드 발급신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_parking.svg">
+                                                    </div>
+                                                    <p>주차권 발급신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_fix.svg">
+                                                    </div>
+                                                    <p>시설물 보수 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_phon.svg">
+                                                    </div>
+                                                    <p>전화 가설/이전/철거 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_floorplan.svg">
+                                                    </div>
+                                                    <p>도면신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon//apply_Equipment.svg">
+                                                    </div>
+                                                    <p>장비 반출입 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_Schedule.svg">
+                                                    </div>
+                                                    <p>건물출입스케줄조정신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_heating.svg">
+                                                    </div>
+                                                    <p>냉난방 신청</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!--신청등록-->
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_lighting.svg">
+                                                    </div>
+                                                    <p>조명 스케줄 조정신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_cleaning.svg">
+                                                    </div>
+                                                    <p>청소 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_guest.svg">
+                                                    </div>
+                                                    <p>게스트하우스 사용신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_taecherhouse.svg">
+                                                    </div>
+                                                    <p>교수하우징 사용신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/apply_residence.svg">
+                                                    </div>
+                                                    <p>거주확인서 발급신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_Result.svg">
+                                                    </div>
+                                                    <p>처리결과 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_apply.svg">
+                                                    </div>
+                                                    <p>신청현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon//my_question.svg">
+                                                    </div>
+                                                    <p>나의 상담내역</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_infor.svg">
+                                                    </div>
+                                                    <p>회원정보관리</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_paymonth.svg">
+                                                    </div>
+                                                    <p>이달에 납부할 내역</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!--신청등록/마이페이지/변경신고/시설사용대관-->
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_recentPay.svg">
+                                                    </div>
+                                                    <p>최근 청구/납부내역</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_checkpay.svg">
+                                                    </div>
+                                                    <p>납부 내역 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_payinfo.svg">
+                                                    </div>
+                                                    <p>납부/청구 정보</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_message.svg">
+                                                    </div>
+                                                    <p>메시지 수신함</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/my_setmessage.svg">
+                                                    </div>
+                                                    <p>메시지 알림 설정</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/change_resident.svg">
+                                                    </div>
+                                                    <p>입주자 정보 변경 신고</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon//change_install.svg">
+                                                    </div>
+                                                    <p>시설물설치/변경승인신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/change_restore.svg">
+                                                    </div>
+                                                    <p>시설물원상복구확인신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/rent_checkfacility.svg">
+                                                    </div>
+                                                    <p>시설/대관 예약현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/rent_facility.svg">
+                                                    </div>
+                                                    <p>시설사용 신청</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <!--시설사용대관-->
+                                        <ul>
+
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/rent_checkplace.svg">
+                                                    </div>
+                                                    <p>대관현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/rent_place.svg">
+                                                    </div>
+                                                    <p>시설대관 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Payrental_lookup.svg">
+                                                    </div>
+                                                    <p>임대차계약현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Payresident_lookup.svg">
+                                                    </div>
+                                                    <p>하우징거주자현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_facility.svg">
+                                                    </div>
+                                                    <p>사용료/대관료 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_manage.svg">
+                                                    </div>
+                                                    <p>관리비납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_phon.svg">
+                                                    </div>
+                                                    <p>전화요금 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_idcard.svg">
+                                                    </div>
+                                                    <p>ID카드 발급 비용 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_housing.svg">
+                                                    </div>
+                                                    <p>하우징 관리비 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon//Pay_Adjourn.svg">
+                                                    </div>
+                                                    <p>납부유예신청</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_installment.svg">
+                                                    </div>
+                                                    <p>연납/분활납부 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_lookup.svg">
+                                                    </div>
+                                                    <p>납부내역 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Payrental_print.svg">
+                                                    </div>
+                                                    <p>납부확인서 출력</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_receipt.svg">
+                                                    </div>
+                                                    <p>세금계산서/ 현금영수증발행 신청</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- 페이징 버튼 처리 -->
+                                <div class="swiper-pagination"></div>
+                                <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <!-- swiper슬라이더 맞춤메뉴(일반) -->
+                            <div class="swiper-containerTab1 swiper-container ">
+                                <!-- 보여지는 영역 -->
+                                <div class="swiper-wrapper">
+                                    <!-- div class="swiper-slide" 를 추가하면된다 -->
+                                    <div class="swiper-slide">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스</p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/eng.svg">
+                                                    </div>
+                                                    <p>서비스이름서비스이름</p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 페이징 버튼 처리 -->
+                                <div class="swiper-pagination"></div>
+                                <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conTop_rit">
+                    <div class="conTop_ritCon conTop_ritTop">
+                        <a href="IGCfacility/Rental_1.html" class="titleWrap">
+                            <strong>
+                                대관신청
+                            </strong>
+                            <p>
+                                캠퍼스 내 다양한 시설을 이용해보세요.<br>
+                                쉽고 빠른 신청 서비스를 제공합니다.
+                            </p>
+                        </a>
+                        <a href="#" class="titleWrap">
+                            <strong>
+                                대관현황
+                            </strong>
+                            <p>
+                                신청한 대관의 진행 현황을 확인 해 보세요.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="conTop_ritCon conTop_ritBT">
+                        <div class="iconVisual">
+                            <img src="image/3cVS_2.svg" alt="">
+                        </div>
+                        <a href="#" class="titleWrap">
+                            <strong>
+                                시설사용예약
+                            </strong>
+                            <p>
+                                캠퍼스 내 다양한 시설을 이용해보세요.<br>
+                                쉽고 빠른 신청 서비스를 제공합니다.
+                            </p>
+                        </a>
+                        <a href="#" class="titleWrap">
+                            <strong>
+                                시설사용현황
+                            </strong>
+                            <p>
+                                신청한 시설의 진행 현황을 확인 해 보세요.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--contentmiddle=========================================-->
+            <section class="conMiddleWrap">
+                <div class="commonWrap">
+                    <!-- FST_납부서비스 -->
+                    <div class="payMenuWrap">
+                        <div class="titleWrap">
+                            <strong>
+                                납부<br>
+                                서비스
+                            </strong>
+                            <a href="">
+                                나의서비스<br>
+                                등록 +
+                            </a>
+                        </div>
+                        <!-- swiper슬라이더 납부서비스 -->
+                        <div class="FstFloorWrap">
+                            <div class="swiper-container swiper-containerPay">
+                                <!-- 보여지는 영역 -->
+                                <div class="swiper-wrapper">
+                                    <!-- div class="swiper-slide" 를 추가하면된다 -->
+                                    <div class="swiper-slide">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Payrental_lookup.svg">
+                                                    </div>
+                                                    <p>임대차계약현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Payresident_lookup.svg">
+                                                    </div>
+                                                    <p>하우징거주자현황 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_facility.svg">
+                                                    </div>
+                                                    <p>사용료/대관료 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_manage.svg">
+                                                    </div>
+                                                    <p>관리비납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_phon.svg">
+                                                    </div>
+                                                    <p>전화요금 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_idcard.svg">
+                                                    </div>
+                                                    <p>ID카드 발급 비용 납부</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_housing.svg">
+                                                    </div>
+                                                    <p>하우징 관리비 납부</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon//Pay_Adjourn.svg">
+                                                    </div>
+                                                    <p>납부유예신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_installment.svg">
+                                                    </div>
+                                                    <p>연납/분활납부 신청</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_lookup.svg">
+                                                    </div>
+                                                    <p>납부내역 조회</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Payrental_print.svg">
+                                                    </div>
+                                                    <p>납부확인서 출력</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="Iconbox">
+                                                        <img src="image/menuIcon/Pay_receipt.svg">
+                                                    </div>
+                                                    <p>세금계산서/현금영수증발행신청</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 페이징 버튼 처리 -->
+                                <div class="swiper-pagination"></div>
+                                <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SCD_공지사항 -->
+                    <div class="notiWrap">
+                        <!-- swiper슬라이더 공지사항 -->
+
+                        <div class="notiCon_left">
+
+                            <div class="titleWrap">
+                                <strong>
+                                    공지사항
+                                </strong>
+                            </div>
+                            <div class="swiper-containerV">
+                                <!-- 보여지는 영역 -->
+                                <div class="swiper-wrapper">
+                                    <!-- div class="swiper-slide" 를 추가하면된다 -->
+                                    <div class="swiper-slide">
+                                        <a>
+                                            2022 IGC 입주자지원포털 구축 완료! 서비스 소개
+                                            2022 IGC 입주자지원포털 구축 완료! 서비스 소개
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a>
+                                            공지사항입니다.
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a>
+                                            공지사항입니다.
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <a href="" class="notiBtn titleWrap">
+                            <div class="iconVisual">
+                                <div>
+                                    <img src="image/3cVS_3.svg" alt="">
+                                </div>
+                            </div>
+                            <strong>
+                                공지사항
+                            </strong>
+                        </a>
+                    </div>
+                    <!-- THRD_안내/홍보존 -->
+                    <div class="infoWrap">
+                        <div class="infoLft infoBox titleWrap">
+                            <div class="iconVisual">
+                                <div>
+                                    <img src="/image/3cVS_4.svg" alt="">
+                                </div>
+                            </div>
+                            <strong>
+                                IGC 안내
+                            </strong>
+                            <a href="#" class="guideBtn linkLT">
+                                <strong>
+                                    IGC 입주안내
+                                </strong>
+                                <p>
+                                    IGC 입주를 위해 필요한</br>
+                                    이용 및 입주 정보를 안내해드립니다.
+                                </p>
+                            </a>
+                            <a href="#" class="introBtn linkLT">
+                                <strong>
+                                    IGC 소개
+                                </strong>
+                                <p>
+                                    인천글로벌캠퍼스는 세계 수준의</br>
+                                    글로벌 교육허브입니다.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="infoMdl infoBox">
+                            <div class="titleWrap">
+                                <strong>
+                                    홍보존
+                                </strong>
+                                <div class="custom-fraction">
+                                    <span class="current">1</span>/<span class="all">3
+                                </div>
+                            </div>
+                            <!-- swiper슬라이더 홍보존-->
+                            <div class="swiper-containerStop">
+                                <!-- 보여지는 영역 -->
+                                <div class="swiper-wrapper">
+                                    <!-- div class="swiper-slide" 를 추가하면된다 -->
+                                    <div class="swiper-slide">
+                                        <div class="promoCon">
+                                            <div class="noimgBox"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="promoCon">
+                                            <div class="noimgBox"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="promoCon">
+                                            <div class="noimgBox"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 페이징 버튼 처리 -->
+                                <div class="swiper-pagination"></div>
+                                <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="infoRit infoBox">
+                            <a href="#">
+                                주차권 신청
+                            </a>
+                            <a href="#">
+                                ID카드 발급신청
+                            </a>
+                            <a href="#">
+                                게스트하우스 사용신청
+                            </a>
+                            <a href="#">
+                                냉난방 신청
+                            </a>
+                            <a href="#">
+                                시설물 보수 신청
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FRTH_문의 -->
+                    <div class="serviceCTWrap titleWrap">
+                        <div class="iconVisual">
+                            <img src="image/3cVS_8.svg">
+                        </div>
+                        <strong>고객센터</strong>
+                        <div class="CTConWrap">
+                            <a href="#" class="serviceCTlft linkLT">
+                                <div class="iconVisual">
+                                    <img src="image/3cVS_5.svg">
+                                </div>
+                                <strong>
+                                    Q & A
+                                </strong>
+                                <p>
+                                    좀 더 쉽고 빠르게 고객서비스를 받으실 수<br>
+                                    있도록 자주 찾는 문의를 안내해 드립니다.
+                                </p>
+                            </a>
+                            <a href="#" class="serviceCTmd linkLT">
+                                <div class="iconVisual">
+                                    <div>
+                                        <img src="image/3cVS_6.svg">
+                                    </div>
+                                </div>
+                                <strong>
+                                    1:1 문의
+                                </strong>
+                                <p>
+                                    IGC 입주자포털에서는 1:1 문의 상담<br>
+                                    서비스를 제공하고 있습니다.
+                                </p>
+                            </a>
+                            <a href="#" class="serviceCTrit linkLT">
+                                <div class="iconVisual">
+                                    <img src="image/3cVS_8.svg">
+                                </div>
+                                <strong>
+                                    업무별 전화번호
+                                </strong>
+                                <p>
+                                    전화 상담시간은 오전 9:00 - 18:00 입니다.<br>
+                                    업무별 맞는 부서의 전화번호를 알려드립니다.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--contentbottom=========================================-->
+            <!--INCLUED========================================-->
+            <footer data-include="include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>

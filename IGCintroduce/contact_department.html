@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>IGC 입주자 통합정보시스템</title>
+    <link rel=" shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <!--mata======================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <!--css==========================================================================================-->
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/form_content.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--css 2022.11.7작업 시작 조직도 및 부서별 연락처 작업 한상윤=======================================-->
+    <link rel="stylesheet" href="/css/contact_by_department.css">
+
+    <!--js==========================================================================================-->
+    <script src="/vendor/js/jquery.min.js"></script>
+    <script src="/vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/js/swiper-bundle.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/sub.js"></script>
+    <script src="/js/include.js"></script>
+    <!--script==========================================================================================-->
+    <script>
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+<!--body==========================================================================================-->
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <!--INCLUED========================================-->
+            <header class="" data-include="/include/header.html"></header>
+            <!--INCLUED========================================-->
+
+            <section class="commonWrap">
+                <section class="breadCrumbWrap">
+                    <ul>
+                        <li class="home">
+
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                메뉴1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="return false">
+                                하위메뉴1
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contentWrap">
+                    <section class="subM_left">
+                        <h2>
+                            IGC 입주안내
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="intro.html">
+                                    IGC소개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="imfor.html">
+                                    입주안내
+                                </a>
+                            </li>
+                            <li>
+                                <a class="on" href="contact_department.html">
+                                    부서별 연락처 안내
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="content_ritBox">
+                        <h3>입주안내</h3>
+                        <div class="content_rit">
+                            <div class="content_ritBox_notice">
+                                <div class="content_ritBox_notice_img">
+                                    <img src="/image/information.png" alt="notice-logo">
+                                </div>
+                                <div class="content_ritBox_notice_text">
+                                    <div>주의사항 및 설명글입니다.</div>
+                                    <div>신청에 관한 궁금한 사항은 해당 기관에 문의하시기 바랍니다.</div>
+                                    <div>IGC캠퍼스 입주자 통합정보시스템에서는업무별 전화번호를 제공하고 있습니다.</div>
+                                </div>
+                            </div>
+                            <div class="content_ritBox_middle">
+                                <div class="content_rit organizationWrap">
+                                    <div class="content_rit_title">
+                                        <img src="/image/logo_7.svg" alt="notice-logo">
+                                        <h2>조직도</h2>
+                                    </div>
+                                    <div class="organization_chart">
+                                        <div><a class="name1" href="#chart1"><span>이사장<br>인천광역시장</span></a></div>
+                                        <ul class="organization_topmiddle">
+                                            <li>
+                                                <div><a class="name" href="#chart2"></a></div>
+                                                <p>이사회</p>
+                                            </li>
+                                            <li>
+                                                <div></div>
+                                            </li>
+                                            <li>
+                                                <div><a class="name" href="#chart3"></a></div>
+                                                <p>감사</p>
+                                            </li>
+                                        </ul>
+                                        <div class="organization_ceo">
+                                            <div><a class="name" href="#chart4"></a></div>
+                                            <p>대표이사</p>
+                                        </div>
+                                        <div class="organization_secretary_general">
+                                            <div><a class="name" href="#chart5"></a></div>
+                                            <p>사무총장</p>
+                                        </div>
+                                        <ul class="organization_bottom">
+                                            <li>
+                                                <div>
+                                                    <div class="img_box"><a href="#chart6"><img src="/image/manage.svg" alt="경영관리본부 아이콘"></a></div>
+                                                </div>
+                                                <p>경영관리본부</p>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="img_box"><a href="#chart7"><img src="/image/cooperation.svg" alt="대학협력본부 아이콘"></a></div>
+                                                </div>
+                                                <p>대학협력본부</p>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="img_box"><a href="#chart8"><img src="/image/safety.svg" alt="시설안전관리본부 아이콘"></a></div>
+                                                </div>
+                                                <p>시설안전관리본부</p>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div class="img_box"><a href="#chart9"><img src="/image/operate.svg" alt="캠퍼스운영본부 아이콘"></a></div>
+                                                </div>
+                                                <p>캠퍼스운영본부</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="organizationWrap_text">
+                                        <div class="content_rit_title" id="chart1">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>이사장</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>이사장</td>
+                                                        <td>유정복</td>
+                                                        <td>-</td>
+                                                        <td>인천글로벌캠퍼스 이사장</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart2">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>이사회</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart3">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>감사</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart4">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>대표이사</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대표이사</td>
+                                                        <td>유병윤</td>
+                                                        <td>032-626-0500</td>
+                                                        <td>인천글로벌캠퍼스 대표이사</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart5">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>사무총장</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>사무총장</td>
+                                                        <td>한영열</td>
+                                                        <td>032-626-0503</td>
+                                                        <td>대표이사 보좌 및 부서업무 총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart6">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>경영관리본부</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>본부장</td>
+                                                        <td>이영</td>
+                                                        <td>032-626-0521</td>
+                                                        <td>경영관리본부 업무총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>유채영</td>
+                                                        <td>032-626-0528</td>
+                                                        <td>경영기획팀 업무 총괄, 제규정 관리, 이사회 운영, 지출원</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>최동명</td>
+                                                        <td>032-626-0536</td>
+                                                        <td>인사총무팀 업무 총괄, 조직·기구, 평가업무</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>과장</td>
+                                                        <td>정혜숙</td>
+                                                        <td>032-626-0525</td>
+                                                        <td>국회·시의회, 회계, 법인 세무행정, 총인건비, 정책조정위원회 운영</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>홍유안</td>
+                                                        <td>032-626-0558</td>
+                                                        <td>입찰 및 계약, 사회적가치, 고객만족도</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>김채린</td>
+                                                        <td>032-626-0502</td>
+                                                        <td>경영평가, ESG경영, 감사</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>조영문</td>
+                                                        <td>032-626-0524</td>
+                                                        <td>기획일반, 예산결산, 중장기 재정관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>김서연</td>
+                                                        <td>032-626-0526</td>
+                                                        <td>인사·노사·노무, 경력평정 및 연차관리, 성과급, 제증명</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>서유진</td>
+                                                        <td>032-626-0544</td>
+                                                        <td>총무, 복무, 기록물 관리, 캠퍼스폴리스 운영업무 지원</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart7">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>대한협력본부</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>본부장</td>
+                                                        <td>김영창</td>
+                                                        <td>032-626-0530</td>
+                                                        <td>대학협력본부 업무총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>권도희</td>
+                                                        <td>032-626-0555</td>
+                                                        <td>대학지원팀 업무총괄, 생활관 및 게스트하우스·교수하우징 관리·운영 총괄, 리더십·실무협의회 운영, 축제행사
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>박상민</td>
+                                                        <td>032-626-0551</td>
+                                                        <td>홍보, 대외협력 및 입주대학 소통 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>과장</td>
+                                                        <td>차유진</td>
+                                                        <td>032-626-0553</td>
+                                                        <td>건강센터 운영 및 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>이윤주</td>
+                                                        <td>032-626-0587</td>
+                                                        <td>산학연협력, 입주대학 지역사회공헌</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>공석</td>
+                                                        <td>032-626-0547</td>
+                                                        <td>생활관 관리·운영 지원, 리더십·학생처 협의체, 축제·행사, 방학캠프</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>공석</td>
+                                                        <td>032-626-0554</td>
+                                                        <td>홍보, 대외협력, 입주대학 협의체 운영, 직장어린이집 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>김정호</td>
+                                                        <td>032-626-0567</td>
+                                                        <td>생활관, 교수하우징·게스트하우스 운영지원, 축제·행사, 미화 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart8">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>시설안전관리본부</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>본부장</td>
+                                                        <td>이진선</td>
+                                                        <td>032-626-0510</td>
+                                                        <td>시설안전관리본부 업무 총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>김태현</td>
+                                                        <td>032-626-0532</td>
+                                                        <td>시설관리팀 업무 총괄, 건축(총괄) 분야 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>최원선</td>
+                                                        <td>032-626-0571</td>
+                                                        <td>시설지원팀 업무 총괄, 소방(방재) 분야 관리, 안전보건팀 업무 총괄(안전보건팀장 업무대행)</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>송준일</td>
+                                                        <td>032-626-0557</td>
+                                                        <td>기계(냉난방 및 공조) 분야 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>송민성</td>
+                                                        <td>032-626-0572</td>
+                                                        <td>전기 분야 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>강호진</td>
+                                                        <td>032-626-0573</td>
+                                                        <td>조경 분야 관리, 방역 및 소독관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>김근영</td>
+                                                        <td>032-626-0574</td>
+                                                        <td>기계(상하수도 및 가스) 분야 관리, 에너지관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>김병현</td>
+                                                        <td>032-626-0534</td>
+                                                        <td>건축 분야 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="content_rit_title" id="chart9">
+                                            <img src="/image/logo_7.svg" alt="notice-logo">
+                                            <h2>캠퍼스운영본부</h2>
+                                        </div>
+                                        <div class="XscrollBox">
+                                            <table class="add_common TB_addBtn td_twoline td_amount td_many">
+                                                <colgroup>
+                                                    <col width="12%">
+                                                    <col width="12%">
+                                                    <col width="22%">
+                                                    <col width="44%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>직위</th>
+                                                        <th>성명</th>
+                                                        <th>전화번호</th>
+                                                        <th>담당업무</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>본부장</td>
+                                                        <td>김봉곤</td>
+                                                        <td>032-626-0580</td>
+                                                        <td>캠퍼스운영본부 업무 총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>김일광</td>
+                                                        <td>032-626-0205</td>
+                                                        <td>IT 센터, 방송국 업무 총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>팀장</td>
+                                                        <td>김태은</td>
+                                                        <td>032-626-0556</td>
+                                                        <td>도서관, 시설임대·사용허가 업무 총괄</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>과장</td>
+                                                        <td>김민용</td>
+                                                        <td>032-626-0206</td>
+                                                        <td>IT 인프라 및 정보보안 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>과장</td>
+                                                        <td>이현민</td>
+                                                        <td>032-626-0207</td>
+                                                        <td>IT 및 대학방송미디어센터 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>대리</td>
+                                                        <td>윤성환</td>
+                                                        <td>032-626-0251</td>
+                                                        <td>도서관 운영·관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>김근영</td>
+                                                        <td>032-626-0574</td>
+                                                        <td>기계(상하수도 및 가스) 분야 관리, 에너지관리</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>주임</td>
+                                                        <td>김병현</td>
+                                                        <td>032-626-0534</td>
+                                                        <td>건축 분야 관리</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            <!--INCLUED========================================-->
+            <footer data-include="/include/footer.html"></footer>
+            <!--INCLUED========================================-->
+        </div>
+    </div>
+</body>
+<!--==========================================================================================-->
+
+</html>
